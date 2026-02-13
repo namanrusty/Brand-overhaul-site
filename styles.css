@@ -221,11 +221,11 @@ p {
 
 .underline::after {
   content: "";
-  width: 80px;
+  width: 100px;
   height: 2px;
   background: #ffffff;
   display: block;
-  margin: 2px auto 0;
+  margin: 15px auto 0;
 }
 
 /* ============================================
