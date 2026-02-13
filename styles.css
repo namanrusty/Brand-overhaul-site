@@ -2,13 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #f5f6f8;
+  background: #f4f5f7;
   color: #111;
-  line-height: 1.6;
 }
 
 .container {
@@ -17,17 +16,12 @@ body {
   margin: auto;
 }
 
-.narrow {
-  max-width: 750px;
-}
-
 .header {
-  background: #fff;
-  padding: 14px 0;
-  border-bottom: 1px solid #eee;
+  background: #f4f5f7;
+  padding: 12px 0;
 }
 
-.header__inner {
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +31,7 @@ body {
   height: 70px;
 }
 
-.nav a {
+nav a {
   margin-left: 28px;
   text-decoration: none;
   color: #111;
@@ -45,130 +39,149 @@ body {
 }
 
 .hero {
-  background: #061b36;
-  color: #fff;
+  background: #0b1d33;
+  color: white;
   padding: 90px 0 80px;
   text-align: center;
 }
 
-.hero--small {
-  padding: 80px 0 70px;
+.small-hero {
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+
+.hero-sub {
+  max-width: 650px;
+  margin: 0 auto 24px;
+  line-height: 1.5;
+  color: #d2d8e2;
 }
 
 .eyebrow {
   font-size: 12px;
   letter-spacing: 2px;
-  margin-bottom: 16px;
-  opacity: 0.7;
-}
-
-.hero h1 {
-  font-size: 48px;
   margin-bottom: 18px;
+  color: #9fb3c8;
 }
 
-.hero__desc {
-  max-width: 700px;
-  margin: 0 auto 24px;
-  opacity: 0.85;
+.section {
+  padding: 70px 0;
+}
+
+.section-light {
+  background: #f4f5f7;
+}
+
+.section-dark {
+  background: #0b1d33;
+  color: white;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.section-sub {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #555;
+}
+
+.section-sub.left {
+  text-align: left;
+  margin-left: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.dark-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 28px;
+  padding: 12px 26px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
-  transition: 0.3s;
 }
 
-.btn--primary {
-  background: #fff;
-  color: #061b36;
+.primary {
+  background: white;
+  color: #0b1d33;
 }
 
-.btn--outline {
-  border: 1px solid #fff;
-  color: #fff;
+.outline {
+  border: 1px solid white;
+  color: white;
 }
 
-.what {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.section-desc {
-  margin: 10px 0 40px;
-  opacity: 0.7;
-}
-
-.glass-grid {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.glass-card {
-  padding: 28px;
-  border-radius: 14px;
-  background: rgba(255,255,255,0.65);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.6);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  text-align: left;
-}
-
-.glass-card.dark {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.15);
-  color: #fff;
-}
-
-.flagship {
-  background: #061b36;
-  color: #fff;
-  padding: 70px 0;
-  text-align: center;
-}
-
-.flagship-title {
-  font-size: 36px;
+.flagship-sub {
+  max-width: 650px;
+  margin: 18px auto 30px;
+  color: #d2d8e2;
 }
 
 .underline {
-  width: 60px;
-  height: 3px;
-  background: rgba(255,255,255,0.6);
-  margin: 10px auto 20px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
-.flagship-desc {
-  max-width: 650px;
-  margin: 0 auto 24px;
-  opacity: 0.85;
+.underline::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #9fb3c8;
+  margin: 8px auto 0;
 }
 
 .footer {
-  background: #f1f2f4;
+  background: #f4f5f7;
   padding: 40px 0;
 }
 
-.footer__grid {
+.footer-grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   gap: 40px;
 }
 
 .footer-logo {
-  height: 60px;
+  height: 50px;
   margin-bottom: 10px;
 }
 
-.footer-col h4 {
-  margin-bottom: 12px;
+.footer h4 {
+  margin-bottom: 10px;
 }
 
-.footer-col a {
+.footer a {
   text-decoration: none;
   color: #111;
 }
