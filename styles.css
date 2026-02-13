@@ -52,7 +52,7 @@ a {
 }
 
 .header__logo img {
-  height: 60px;
+  height: 80px;
 }
 
 .header__nav {
@@ -222,7 +222,7 @@ a {
 }
 
 .footer__brand img {
-  height: 60px;
+  height: 80px;
   margin-bottom: 16px;
 }
 
