@@ -233,7 +233,7 @@ p {
 ============================================ */
 
 .footer--tight {
-  padding: 50px 0;
+  padding: 30px 0;
   background: #f2f2f2;
 }
 
@@ -245,7 +245,7 @@ p {
 
 .footer__logo {
   height: 60px;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 .footer h4 {
