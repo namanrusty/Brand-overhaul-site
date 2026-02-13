@@ -1,94 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brand Overhaul – Structured Infrastructure for Physical Brands</title>
-  <meta name="description" content="Structured marketing systems for physical businesses.">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Overhaul — Structured Infrastructure</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">
-      <img src="assets/logo.png" alt="Brand Overhaul">
-    </a>
-    <nav>
-      <a href="#product">Product</a>
-      <a href="mailto:info@brandoverhaul.in">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/logo.png" alt="Brand Overhaul" />
+      </a>
 
-<section class="hero">
-  <div class="container hero-inner">
-    <p class="eyebrow">STRUCTURED MARKETING SYSTEMS</p>
-    <h1>Infrastructure for physical brands.</h1>
-    <p class="hero-sub">
-      We build structured, repeatable systems that help offline businesses grow
-      with clarity, retention mechanics, and disciplined execution.
-    </p>
-    <a href="#product" class="btn primary">Explore Revisit</a>
-  </div>
-</section>
+      <nav class="header__nav">
+        <a href="#product" class="header__link">Product</a>
+        <a href="mailto:info@brandoverhaul.in" class="header__link">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="section section-light">
-  <div class="container center">
-    <h2>What We Build</h2>
-    <p class="section-sub">
-      Every system we design solves a structural problem inside physical businesses.
-    </p>
+  <!-- HERO -->
+  <section class="hero hero--dark">
+    <div class="container hero__inner">
+      <p class="hero__eyebrow">STRUCTURED MARKETING SYSTEMS</p>
+      <h1 class="hero__title">Infrastructure for physical brands.</h1>
+      <p class="hero__subtitle">
+        We build structured, repeatable systems that help offline businesses grow with clarity, retention mechanics, and disciplined execution.
+      </p>
+      <a href="#product" class="btn btn--primary">Explore Revisit</a>
+    </div>
+  </section>
 
-    <div class="card-grid">
-      <div class="card">
-        <h3>Retail Visibility</h3>
-        <p>Structured in-store positioning and experience design that increases perceived value and recall.</p>
+  <!-- WHAT WE BUILD -->
+  <section class="section section--tinted">
+    <div class="container text-center">
+      <h2>What We Build</h2>
+      <p class="section__subtitle">
+        Every system we design solves a structural problem inside physical businesses.
+      </p>
+
+      <div class="features__grid glass-grid">
+        <div class="glass-card">
+          <h3>Retail Visibility</h3>
+          <p>
+            Structured in-store positioning and experience design that increases perceived value and recall.
+          </p>
+        </div>
+
+        <div class="glass-card">
+          <h3>Retention Systems</h3>
+          <p>
+            Visit-triggered communication loops that convert one-time buyers into repeat customers.
+          </p>
+        </div>
+
+        <div class="glass-card">
+          <h3>Digital–Physical Integration</h3>
+          <p>
+            Controlled bridges between offline behavior and digital infrastructure.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLAGSHIP PRODUCT -->
+  <section id="product" class="section hero--dark hero--tight text-center">
+    <div class="container">
+      <p class="hero__eyebrow">FLAGSHIP PRODUCT</p>
+      <h2 class="product__name underline">Revisit</h2>
+
+      <p class="hero__subtitle hero__subtitle--tight">
+        A QR-based visit-triggered WhatsApp infrastructure built for cafés and retail outlets.
+        Designed to make repeat visits measurable and automatic.
+      </p>
+
+      <a href="revisit.html" class="btn btn--outline">
+        View Product Details
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer footer--tight">
+    <div class="container footer__grid">
+      <div>
+        <img src="assets/logo.png" class="footer__logo" alt="Brand Overhaul" />
+        <p>Structured infrastructure for physical businesses.</p>
       </div>
 
-      <div class="card">
-        <h3>Retention Systems</h3>
-        <p>Visit-triggered communication loops that convert one-time buyers into repeat customers.</p>
+      <div>
+        <h4>Product</h4>
+        <a href="revisit.html">Revisit</a>
       </div>
 
-      <div class="card">
-        <h3>Digital–Physical Integration</h3>
-        <p>Controlled bridges between offline behavior and digital infrastructure.</p>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:info@brandoverhaul.in">info@brandoverhaul.in</a>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="product" class="section section-dark flagship">
-  <div class="container center">
-    <p class="eyebrow">FLAGSHIP PRODUCT</p>
-    <h2 class="underline">Revisit</h2>
-    <p class="flagship-sub">
-      A QR-based visit-triggered WhatsApp infrastructure built for cafés and retail outlets.
-      Designed to make repeat visits measurable and automatic.
-    </p>
-    <a href="revisit.html" class="btn outline">View Product Details</a>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <img src="assets/logo.png" class="footer-logo">
-      <p>Structured infrastructure for physical businesses.</p>
-    </div>
-
-    <div>
-      <h4>Product</h4>
-      <a href="revisit.html">Revisit</a>
-    </div>
-
-    <div>
-      <h4>Contact</h4>
-      <a href="mailto:info@brandoverhaul.in">info@brandoverhaul.in</a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>
