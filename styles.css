@@ -240,16 +240,16 @@ p {
 .footer__grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 40px;
+  gap: 24px;
 }
 
 .footer__logo {
   height: 60px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .footer h4 {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-size: 0.95rem;
 }
 
@@ -261,6 +261,7 @@ p {
 
 .footer p {
   font-size: 0.9rem;
+   margin: 4px 0 0 0;
 }
 
 /* ============================================
