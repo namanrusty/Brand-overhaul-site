@@ -449,40 +449,37 @@ p {
 }
 
 /* ============================================
-   REVISIT — FINAL CTA (STRUCTURED + STRONG)
+   REVISIT — FINAL CTA (REFINED)
 ============================================ */
 
 .cta-section {
   background: #ffffff;
-  padding: 70px 0 85px; /* tighter and intentional */
+  padding: 60px 0 75px; /* slightly tighter */
   border-top: 1px solid #e6e6e6;
 }
 
 .cta-title {
   font-size: 2.2rem;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   letter-spacing: -0.02em;
 }
 
 .cta-subtitle {
-  max-width: 520px; /* forces clean wrapping */
-  margin: 0 auto 28px;
+  max-width: 600px; /* allow cleaner wrapping */
+  margin: 0 auto 22px; /* reduce gap above button */
   color: #555555;
   line-height: 1.6;
 }
 
-/* Strong Button */
-
 .btn--dark-cta {
-  background: #071a2f;  /* brand navy */
+  background: #071a2f;
   color: #ffffff;
+  padding: 12px 32px; /* slightly stronger presence */
 }
 
 .btn--dark-cta:hover {
-  opacity: 0.9;
+  opacity: 0.92;
 }
-
-/* Responsive */
 
 @media (max-width: 640px) {
   .cta-title {
@@ -490,6 +487,6 @@ p {
   }
 
   .cta-subtitle {
-    max-width: 90%;
+    max-width: 92%;
   }
 }
