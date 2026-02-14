@@ -490,3 +490,27 @@ p {
     max-width: 92%;
   }
 }
+
+/* ============================================
+   REVISIT — GLOBAL SECTION TIGHTENING
+============================================ */
+
+/* The Problem — tighter */
+.problem-section {
+  padding: 50px 0 55px;
+}
+
+/* How It Works — balanced but tighter */
+.how-section {
+  padding: 55px 0 70px;
+}
+
+/* Infrastructure — slightly premium but tighter */
+.infra-section {
+  padding: 70px 0 80px;
+}
+
+/* CTA — more compact and structured */
+.cta-section {
+  padding: 50px 0 60px;
+}
