@@ -322,3 +322,10 @@ p {
 .problem-section h2 {
   margin-bottom: 20px;
 }
+/* ============================================
+   REVISIT — HOW IT WORKS BACKGROUND
+============================================ */
+
+.how-section {
+  background-color: #e9edf2; /* slightly darker than #f3f5f7 */
+}
