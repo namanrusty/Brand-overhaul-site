@@ -376,38 +376,61 @@ p {
 ============================================ */
 
 .infra-section {
-  padding-top: 70px;
-  padding-bottom: 80px;
+  padding: 80px 0 90px;
 }
 
+/* Heading size refinement */
+.infra-section h2 {
+  font-size: 2.2rem;   /* slightly larger than default */
+  margin-bottom: 18px; /* increases gap under heading */
+}
+
+/* Subtitle spacing refinement */
 .infra-subtitle {
   color: rgba(255,255,255,0.75);
-  max-width: 600px;
-  margin: 12px auto 40px;
+  max-width: 620px;
+  margin: 0 auto 50px; /* more breathing room below subtitle */
+  line-height: 1.65;
 }
 
+/* Grid */
 .infra-grid {
   grid-template-columns: repeat(3, 1fr);
 }
 
+/* Cards — refined glass for dark background */
 .infra-card {
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 32px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.infra-card p {
-  color: rgba(255,255,255,0.8);
+/* Hover subtle lift */
+.infra-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
 }
 
+/* Correct text hierarchy for dark background */
 .infra-card h3 {
-  color: #111111;
+  color: #ffffff;
+  margin-bottom: 12px;
 }
 
 .infra-card p {
-  color: #555555;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
 }
 
-/* Responsive Safety */
+/* ============================================
+   RESPONSIVE SAFETY
+============================================ */
 
 @media (max-width: 960px) {
   .infra-grid {
@@ -418,5 +441,9 @@ p {
 @media (max-width: 640px) {
   .infra-grid {
     grid-template-columns: 1fr;
+  }
+
+  .infra-section h2 {
+    font-size: 1.8rem;
   }
 }
