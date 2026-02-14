@@ -312,6 +312,10 @@ p {
    REVISIT — The Problem Section Spacing
 ============================================ */
 
+.problem-section {
+  padding: 60px 0;
+}
+
 .problem-section .section__subtitle {
-  margin: 18px auto 25px;
+  margin: 22px auto 25px;
 }
