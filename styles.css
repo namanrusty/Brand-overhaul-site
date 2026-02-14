@@ -329,3 +329,10 @@ p {
 .how-section {
   background-color: #e4e8ee; /* slightly darker than #f3f5f7 */
 }
+/* ============================================
+   REVISIT — 4 STEP GRID FIX
+============================================ */
+
+.revisit-steps {
+  grid-template-columns: repeat(4, 1fr);
+}
