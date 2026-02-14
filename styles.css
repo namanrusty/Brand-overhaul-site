@@ -449,11 +449,11 @@ p {
 }
 
 /* ============================================
-   REVISIT — FINAL CTA SECTION
+   REVISIT — FINAL CTA SECTION (LIGHT)
 ============================================ */
 
 .cta-section {
-  padding: 85px 0 95px;
+  padding: 90px 0 100px;
 }
 
 .cta-title {
@@ -461,10 +461,10 @@ p {
   margin-bottom: 18px;
 }
 
-.cta-subtitle {
+.cta-subtitle-light {
   max-width: 560px;
-  margin: 0 auto 28px;
-  color: rgba(255,255,255,0.85);
+  margin: 0 auto 30px;
+  color: #555555;
 }
 
 /* Responsive */
