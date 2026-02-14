@@ -313,7 +313,7 @@ p {
 ============================================ */
 
 .problem-section h2 {
-  margin-bottom: 18px; /* increases gap below heading */
+  margin-bottom: 2px; /* increases gap below heading */
 }
 
 .problem-section .section__subtitle {
