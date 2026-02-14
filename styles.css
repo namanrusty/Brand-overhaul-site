@@ -308,4 +308,14 @@ p {
 
 }
 
+/* ============================================
+   REVISIT — The Problem Section Spacing
+============================================ */
 
+.problem-section h2 {
+  margin-bottom: 18px; /* increases gap below heading */
+}
+
+.problem-section .section__subtitle {
+  margin-top: 6px; /* optional fine control */
+}
