@@ -370,3 +370,45 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================
+   REVISIT — INFRASTRUCTURE SECTION
+============================================ */
+
+.infra-section {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.infra-subtitle {
+  color: rgba(255,255,255,0.75);
+  max-width: 600px;
+  margin: 12px auto 40px;
+}
+
+.infra-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.infra-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.infra-card p {
+  color: rgba(255,255,255,0.8);
+}
+
+/* Responsive Safety */
+
+@media (max-width: 960px) {
+  .infra-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .infra-grid {
+    grid-template-columns: 1fr;
+  }
+}
