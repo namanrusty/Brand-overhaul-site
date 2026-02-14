@@ -319,3 +319,6 @@ p {
 .problem-section .section__subtitle {
   margin: 22px auto 25px;
 }
+.problem-section h2 {
+  margin-bottom: 20px;
+}
