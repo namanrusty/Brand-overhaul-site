@@ -492,25 +492,25 @@ p {
 }
 
 /* ============================================
-   REVISIT — GLOBAL SECTION TIGHTENING
+   REVISIT — GLOBAL SECTION TIGHTENING (MORE COMPACT)
 ============================================ */
 
-/* The Problem — tighter */
+/* The Problem */
 .problem-section {
-  padding: 50px 0 55px;
+  padding: 42px 0 48px;
 }
 
-/* How It Works — balanced but tighter */
+/* How It Works */
 .how-section {
-  padding: 55px 0 70px;
+  padding: 48px 0 60px;
 }
 
-/* Infrastructure — slightly premium but tighter */
+/* Infrastructure */
 .infra-section {
-  padding: 70px 0 80px;
+  padding: 60px 0 70px;
 }
 
-/* CTA — more compact and structured */
+/* CTA */
 .cta-section {
-  padding: 50px 0 60px;
+  padding: 42px 0 52px;
 }
