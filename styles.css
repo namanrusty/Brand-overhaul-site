@@ -323,16 +323,50 @@ p {
   margin-bottom: 20px;
 }
 /* ============================================
-   REVISIT — HOW IT WORKS BACKGROUND
+   REVISIT — HOW IT WORKS SECTION (REFINED)
 ============================================ */
 
+/* Section background + tighter spacing */
 .how-section {
-  background-color: #e4e8ee; /* slightly darker than #f3f5f7 */
+  background-color: #e4e8ee;   /* darker separation from Problem section */
+  padding: 60px 0 80px;       /* reduced top padding, balanced bottom */
 }
+
+/* Increase gap under heading slightly */
+.how-section h2 {
+  margin-bottom: 18px;
+}
+
+/* Control subtitle spacing */
+.how-section .section__subtitle {
+  margin: 0 auto 40px;
+}
+
 /* ============================================
    REVISIT — 4 STEP GRID FIX
 ============================================ */
 
 .revisit-steps {
   grid-template-columns: repeat(4, 1fr);
+}
+
+/* Improve contrast slightly for this section */
+.how-section .glass-card {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* ============================================
+   RESPONSIVE SAFETY
+============================================ */
+
+@media (max-width: 1100px) {
+  .revisit-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .revisit-steps {
+    grid-template-columns: 1fr;
+  }
 }
