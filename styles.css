@@ -465,7 +465,7 @@ p {
 }
 
 .cta-subtitle {
-  max-width: 600px; /* allow cleaner wrapping */
+  max-width: 680px; /* allow cleaner wrapping */
   margin: 0 auto 22px; /* reduce gap above button */
   color: #555555;
   line-height: 1.6;
