@@ -313,3 +313,102 @@ body {
     gap: 20px;
   }
 }
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+  padding: 60px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* ================= FORM ================= */
+
+.contact-form {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+
+  background: #050505;
+  border: 1px solid #222;
+  border-radius: 8px;
+
+  color: #fff;
+  font-size: 0.95rem;
+
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #666;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: #f5b841;
+}
+
+/* Button */
+.contact-form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* ================= INFO ================= */
+
+.contact-info {
+  padding: 20px 10px;
+}
+
+.contact-info h2 {
+  margin-bottom: 12px;
+}
+
+.contact-info p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.info-block {
+  margin-bottom: 20px;
+}
+
+.info-block h4 {
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+  color: #f5b841;
+}
+
+.info-block p {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
