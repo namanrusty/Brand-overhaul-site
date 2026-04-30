@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brand Overhaul</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Overhaul</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header class="header">
-  <div class="container header__inner">
-    <img src="assets/logo.png">
-    <nav class="header__nav">
-      <a class="active">Home</a>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">B <span>BRAND OVERHAUL</span></div>
+    <nav>
+      <a href="#" class="active">Home</a>
       <a href="products.html">Products</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <a class="btn btn-primary">Let's Talk →</a>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="container hero__grid">
+  <div class="container hero-grid">
 
-    <div>
+    <div class="hero-text">
+      <p class="tag">WE BUILD BRANDS THAT WIN</p>
+
       <h1>
         STRATEGY.<br>
-        <span class="highlight">GROWTH.</span><br>
+        <span>GROWTH.</span><br>
         SYSTEMS.
       </h1>
 
@@ -34,45 +39,107 @@
         Brand Overhaul builds growth systems that help businesses acquire, retain, and scale customers with clarity and consistency.
       </p>
 
-      <a class="btn btn--primary">Explore Our Products</a>
-      <a class="btn btn--outline">Watch How It Works</a>
+      <div class="buttons">
+        <a class="btn btn-primary">Explore Our Products →</a>
+        <a class="btn btn-outline">Watch How It Works</a>
+      </div>
     </div>
 
-    <div>
-      <img src="assets/hero-b.png">
+    <div class="hero-image">
+      <img src="assets/hero.png">
     </div>
 
   </div>
 </section>
 
-<section class="container qr-section">
-  <div class="card qr-grid">
-    <img src="assets/qr.png">
+<!-- REVISIT CARD -->
+<section class="section">
+  <div class="container card revisit">
 
-    <div>
+    <div class="left">
+      <img src="assets/qr.png">
+    </div>
+
+    <div class="right">
+      <p class="tag">OUR FIRST PRODUCT</p>
       <h2>Revisit</h2>
       <p>Turn one scan into lifelong customers.</p>
-      <a class="btn btn--primary">Discover Revisit</a>
+      <a class="link">Discover Revisit →</a>
     </div>
+
   </div>
 </section>
 
-<section class="section-light">
-  <h2>Systems that drive real <span class="highlight">business growth.</span></h2>
+<!-- WHITE SECTION -->
+<section class="light">
+  <div class="container center">
 
-  <div class="container cards">
-    <div class="card">Brand Strategy</div>
-    <div class="card">Growth Systems</div>
-    <div class="card">Product Ecosystem</div>
+    <p class="tag">WHAT WE BUILD</p>
+    <h2>Systems that drive <span>real business growth</span>.</h2>
+
+    <div class="cards">
+      <div class="card-box">Brand Strategy</div>
+      <div class="card-box">Growth Systems</div>
+      <div class="card-box">Product Ecosystem</div>
+    </div>
+
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container footer__grid">
+<!-- INDUSTRIES -->
+<section class="section center">
+  <p class="tag">STARTING WITH BUSINESSES THAT NEED REPEAT CUSTOMERS</p>
+
+  <div class="industries">
+    <span class="active">Restaurants</span>
+    <span class="active">Cafes</span>
+    <span>Retail Stores (Coming Soon)</span>
+    <span>Salons (Coming Soon)</span>
+    <span>Gyms (Coming Soon)</span>
+    <span>Clinics (Coming Soon)</span>
+  </div>
+</section>
+
+<!-- FUTURE -->
+<section class="section">
+  <div class="container card">
 
     <div>
-      <img src="assets/logo.png">
-      <p>Building growth systems that help businesses scale customers with clarity and consistency.</p>
+      <h2>We’re building the future of business growth.</h2>
+      <p>
+        Brand Overhaul is creating a suite of products that help businesses grow smarter — from customer retention to data-driven growth systems.
+      </p>
+      <p class="highlight">Revisit is just the beginning.</p>
+    </div>
+
+    <img src="assets/book.png">
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container card cta">
+
+    <div>
+      <h3>Great businesses don’t grow by chance.<br>They grow by <span>systems.</span></h3>
+    </div>
+
+    <div class="buttons">
+      <a class="btn btn-primary">Explore Revisit →</a>
+      <a class="btn btn-outline">Let’s Talk →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div>
+      <div class="logo">B BRAND OVERHAUL</div>
+      <p>Building growth systems that help businesses acquire, retain, and scale customers.</p>
     </div>
 
     <div>
@@ -83,15 +150,14 @@
     </div>
 
     <div>
-      <h4>Let's Connect</h4>
-      <a class="btn btn--primary">Let's Talk</a>
+      <h4>Let’s Connect</h4>
+      <a class="btn btn-primary">Let’s Talk →</a>
     </div>
 
   </div>
 
-  <div class="container footer-bottom">
-    <p>© 2025 Brand Overhaul</p>
-    <p>Made with ❤️ purpose</p>
+  <div class="bottom">
+    © 2025 Brand Overhaul. All rights reserved.
   </div>
 </footer>
 
