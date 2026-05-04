@@ -2,178 +2,236 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>Contact — Brand Overhaul</title>
-
-  <meta name="description" content="Get in touch with Brand Overhaul. Let’s build growth systems for your business." />
-
-  <link rel="stylesheet" href="styles.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Brand Overhaul</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="header header--dark">
-    <div class="container header__inner">
-
-      <a href="index.html" class="header__logo">
-        <img src="assets/logo.png" alt="Brand Overhaul"/>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">B</span>
+        <span class="logo-text">BRAND<br>OVERHAUL</span>
       </a>
-
-      <nav class="header__nav">
-        <a href="index.html" class="header__link">Home</a>
-        <a href="products.html" class="header__link">Products</a>
-        <a href="contact.html" class="header__link active">Contact</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
-
-      <a href="#" class="btn btn--gold">Let’s Talk →</a>
-
+      <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
     </div>
   </header>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero-dark">
-    <div class="container hero-grid">
-
-      <!-- LEFT -->
+  <!-- CONTACT HERO -->
+  <section class="hero hero-contact">
+    <div class="hero-inner container">
       <div class="hero-content">
-
-        <p class="hero-tag">CONTACT US</p>
-
-        <h1 class="hero-title">
-          Let’s build something <span class="gold">great together.</span>
+        <p class="eyebrow">CONTACT US</p>
+        <h1 class="hero-heading contact-heading">
+          Let's build<br>something great<br>
+          <span class="gold">together.</span>
         </h1>
-
-        <p class="hero-sub">
-          Whether you're exploring growth systems, want to try Revisit,
-          or just have a question — we’re here to help.
-        </p>
-
+        <p class="hero-sub">Have a question, want to learn more about our products, or ready to get started? We'd love to hear from you.</p>
+        <div class="contact-trust">
+          <div class="trust-item">
+            <div class="trust-icon">&#9889;</div>
+            <div>
+              <strong>Quick Response</strong>
+              <p>We respond within 24 business hours.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">&#x1F464;</div>
+            <div>
+              <strong>Real People</strong>
+              <p>Talk to our team of product experts.</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- RIGHT -->
-      <div class="hero-image">
-        <img src="assets/mug-book.png" alt="Brand Overhaul Contact" />
+      <div class="hero-visual contact-hero-visual">
+        <div class="notebook-mock">
+          <div class="notebook-inner">
+            <span class="notebook-b">B</span>
+            <p>BRAND<br>OVERHAUL</p>
+            <p class="notebook-quote">BUILDING<br>WHAT<br>MATTERS.</p>
+          </div>
+        </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ================= CONTACT FORM ================= -->
-  <section class="contact-section">
-    <div class="container contact-grid">
+  <!-- CONTACT FORM + INFO -->
+  <section class="contact-main">
+    <div class="container contact-main-inner">
 
       <!-- FORM -->
-      <div class="contact-form">
-
-        <h2>Send us a message</h2>
-
-        <form>
-
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="text" placeholder="Business Name" />
-
-          <select>
-            <option>What are you looking for?</option>
-            <option>Explore Revisit</option>
-            <option>Growth Strategy</option>
-            <option>Partnership</option>
-            <option>Other</option>
-          </select>
-
-          <textarea rows="4" placeholder="Your Message"></textarea>
-
-          <button class="btn btn--gold" type="submit">
-            Send Message →
-          </button>
-
+      <div class="contact-form-wrap">
+        <p class="eyebrow">SEND US A MESSAGE</p>
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" placeholder="Your full name" />
+            </div>
+            <div class="form-group">
+              <label for="work-email">Work Email</label>
+              <input type="email" id="work-email" placeholder="you@company.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name (Optional)</label>
+            <input type="text" id="company" placeholder="Your company name" />
+          </div>
+          <div class="form-group">
+            <label for="help-topic">What can we help you with?</label>
+            <select id="help-topic">
+              <option value="" disabled selected>Select an option</option>
+              <option>Product Demo</option>
+              <option>Custom Solution</option>
+              <option>Growth Advice</option>
+              <option>Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us more about your project or question..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message &rarr;</button>
         </form>
-
       </div>
 
-      <!-- INFO -->
-      <div class="contact-info">
-
-        <h2>Get in touch</h2>
-
-        <p>
-          We typically respond within 24–48 hours.  
-          You can also reach us directly via email.
-        </p>
-
-        <div class="info-block">
-          <h4>Email</h4>
-          <p>info@brandoverhaul.in</p>
+      <!-- GET IN TOUCH -->
+      <div class="contact-info-wrap">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <p class="contact-info-sub">Choose the way that works best for you.</p>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="ci-icon">&#x2709;</div>
+            <div>
+              <strong>Email Us</strong>
+              <p>hello@brandoverhaul.in</p>
+              <p class="ci-note">We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">&#x260E;</div>
+            <div>
+              <strong>Call Us</strong>
+              <p>+91 12345 67890</p>
+              <p class="ci-note">Mon - Fri, 10:00 AM - 6:00 PM IST</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">&#x1F4CD;</div>
+            <div>
+              <strong>Our Location</strong>
+              <p>Mumbai, India</p>
+              <p class="ci-note">Working with businesses across India and beyond.</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">&#x23F0;</div>
+            <div>
+              <strong>Business Hours</strong>
+              <p>Monday - Friday</p>
+              <p class="ci-note">10:00 AM - 6:00 PM IST</p>
+            </div>
+          </div>
         </div>
-
-        <div class="info-block">
-          <h4>Location</h4>
-          <p>India</p>
-        </div>
-
-        <div class="info-block">
-          <h4>Focus</h4>
-          <p>Building systems for business growth</p>
-        </div>
-
       </div>
 
     </div>
   </section>
 
-  <!-- ================= CTA ================= -->
-  <section class="cta">
-    <div class="container cta-grid">
-
-      <div>
-        <h2>
-          Want to see how Revisit works?<br />
-          Let’s get you started.
-        </h2>
+  <!-- WHY REACH OUT -->
+  <section class="why-reach-out">
+    <div class="container why-reach-inner">
+      <div class="why-reach-text">
+        <p class="eyebrow">WHY REACH OUT?</p>
+        <h2>We're here to help<br>your business <span class="gold">grow.</span></h2>
+        <p>Whether you're exploring Revisit or have a question about our products, our team is here to help.</p>
       </div>
+      <div class="why-reach-grid">
+        <div class="reach-item">
+          <div class="reach-icon">&#x1F4AC;</div>
+          <h4>Product Demos</h4>
+          <p>See how Revisit can work for your business.</p>
+        </div>
+        <div class="reach-item">
+          <div class="reach-icon">&#x1F4A1;</div>
+          <h4>Custom Solutions</h4>
+          <p>We'll help you find the right solution for your needs.</p>
+        </div>
+        <div class="reach-item">
+          <div class="reach-icon">&#x1F4C8;</div>
+          <h4>Growth Advice</h4>
+          <p>Get expert insights to grow repeat visits and customer loyalty.</p>
+        </div>
+        <div class="reach-item">
+          <div class="reach-icon">&#x1F91D;</div>
+          <h4>Partnerships</h4>
+          <p>Interested in partnering with us? Let's talk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="cta-buttons">
-        <a href="products.html" class="btn btn--gold">
-          Explore Revisit →
+  <!-- CONTACT CTA BANNER -->
+  <section class="cta-banner cta-banner-dark-img">
+    <div class="container cta-banner-inner">
+      <div class="cta-visual-leaf"></div>
+      <div class="cta-text-block">
+        <h3>Ready to take the next step?</h3>
+        <p>Let's connect and build something amazing together.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">B</span>
+          <span class="logo-text">BRAND<br>OVERHAUL</span>
         </a>
+        <p>Building growth systems that help businesses acquire, retain, and scale customers with clarity and consistency.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">&#x25A1;</a>
+          <a href="#" aria-label="Email">&#x2709;</a>
+        </div>
       </div>
-
-    </div>
-  </section>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer-dark">
-    <div class="container footer-grid">
-
-      <div>
-        <img src="assets/logo.png" class="footer-logo" />
-        <p>
-          Building growth systems that help businesses acquire,
-          retain, and scale customers.
-        </p>
-      </div>
-
-      <div>
-        <h4>Quick Links</h4>
+      <div class="footer-links">
+        <h4>QUICK LINKS</h4>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="gold">Contact</a>
       </div>
-
-      <div>
-        <h4>Let’s Connect</h4>
-        <p>Have a question or want to learn more?</p>
-        <a href="mailto:info@brandoverhaul.in" class="btn btn--gold">
-          Email Us →
-        </a>
+      <div class="footer-connect">
+        <h4>LET'S CONNECT</h4>
+        <p>Have a question or want to learn more about our products?</p>
+        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
       </div>
-
     </div>
-
-    <div class="footer-bottom">
-      © 2026 Brand Overhaul. All rights reserved.
+    <div class="footer-bottom container">
+      <div class="footer-bottom-info">
+        <span>&#x2709; hello@brandoverhaul.in</span>
+        <span>&#x260E; +91 12345 67890</span>
+        <span>&#x1F4CD; Mumbai, India</span>
+      </div>
+      <div class="footer-bottom-copy">
+        <p>© 2025 Brand Overhaul. All rights reserved.</p>
+        <p>Made with &#x2665; purpose.</p>
+      </div>
     </div>
   </footer>
 
