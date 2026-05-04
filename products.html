@@ -3,236 +3,239 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Products — Brand Overhaul</title>
-
-  <meta name="description" content="Products built for real business growth. Discover Revisit — our flagship system for customer retention and repeat visits." />
-
+  <title>Products – Brand Overhaul</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="header header--dark">
-    <div class="container header__inner">
-
-      <a href="index.html" class="header__logo">
-        <img src="assets/logo.png" alt="Brand Overhaul" />
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">B</span>
+        <span class="logo-text">BRAND<br>OVERHAUL</span>
       </a>
-
-      <nav class="header__nav">
-        <a href="index.html" class="header__link">Home</a>
-        <a href="products.html" class="header__link active">Products</a>
-        <a href="contact.html" class="header__link">Contact</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact</a>
       </nav>
-
-      <a href="contact.html" class="btn btn--gold">
-        Let’s Talk →
-      </a>
-
+      <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
     </div>
   </header>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero-dark">
-    <div class="container hero-grid">
-
-      <!-- LEFT -->
+  <!-- PRODUCTS HERO -->
+  <section class="hero hero-products">
+    <div class="hero-inner container">
       <div class="hero-content">
-
-        <p class="hero-tag">OUR PRODUCTS</p>
-
-        <h1 class="hero-title">
-          Products built for <span class="gold">real business growth.</span>
+        <p class="eyebrow">OUR PRODUCTS</p>
+        <h1 class="hero-heading">
+          Products built for<br>
+          <span class="gold">real business growth.</span>
         </h1>
-
-        <p class="hero-sub">
-          We create simple, powerful, and easy-to-use products that help
-          businesses attract, retain, and grow customers while driving
-          measurable results.
-        </p>
-
-      </div>
-
-      <!-- RIGHT -->
-      <div class="hero-image">
-        <img src="assets/mug-book.png" alt="Brand Overhaul Products" />
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= FEATURES ================= -->
-  <section class="features-dark">
-    <div class="container features-grid">
-
-      <div class="feature">
-        <h4>Easy to Use</h4>
-        <p>Built for teams, not tech experts.</p>
-      </div>
-
-      <div class="feature">
-        <h4>Secure & Reliable</h4>
-        <p>Enterprise-grade security you can trust.</p>
-      </div>
-
-      <div class="feature">
-        <h4>Built for Growth</h4>
-        <p>Scales with your business, every step of the way.</p>
-      </div>
-
-      <div class="feature">
-        <h4>Real Impact</h4>
-        <p>Designed to deliver measurable growth and ROI.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= REVISIT PRODUCT ================= -->
-  <section class="product-block">
-    <div class="container product-grid">
-
-      <!-- LEFT TEXT -->
-      <div class="product-content">
-
-        <p class="product-tag">OUR FLAGSHIP PRODUCT</p>
-
-        <h2 class="product-title">
-          <span class="gold">Revisit</span>
-        </h2>
-
-        <p class="product-sub">
-          Turn first-time visitors into repeat customers.
-        </p>
-
-        <ul class="product-list">
-          <li>Instant customer connection</li>
-          <li>Personalized offers & rewards</li>
-          <li>Smart reminders & engagement</li>
-          <li>Real-time analytics & insights</li>
-          <li>Works offline & online</li>
-        </ul>
-
-        <div class="product-buttons">
-          <a href="#" class="btn btn--gold">Explore Revisit →</a>
-          <a href="#" class="btn btn--outline">See How It Works</a>
+        <p class="hero-sub">We create simple, powerful, and easy-to-use products that help businesses attract, retain, and grow customers while driving measurable results.</p>
+        <div class="product-badges">
+          <div class="badge-item">
+            <div class="badge-icon">&#9889;</div>
+            <div>
+              <strong>Easy to Use</strong>
+              <p>Built for teams, not tech experts.</p>
+            </div>
+          </div>
+          <div class="badge-item">
+            <div class="badge-icon">&#x1F6E1;</div>
+            <div>
+              <strong>Secure &amp; Reliable</strong>
+              <p>Enterprise-grade security you can trust.</p>
+            </div>
+          </div>
+          <div class="badge-item">
+            <div class="badge-icon">&#x1F4C8;</div>
+            <div>
+              <strong>Built for Growth</strong>
+              <p>Scales with your business, every step of the way.</p>
+            </div>
+          </div>
+          <div class="badge-item">
+            <div class="badge-icon">&#x25CE;</div>
+            <div>
+              <strong>Real Impact</strong>
+              <p>Designed to deliver measurable growth and ROI.</p>
+            </div>
+          </div>
         </div>
-
       </div>
-
-      <!-- RIGHT VISUAL -->
-      <div class="product-visual">
-
-        <img src="assets/qr.png" class="qr-img" alt="QR System" />
-        <img src="assets/phone.png" class="phone-img" alt="Analytics Dashboard" />
-
+      <div class="hero-visual products-hero-visual">
+        <div class="mug-mock large">
+          <span class="mug-b">B</span>
+          <p>BRAND<br>OVERHAUL</p>
+        </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ================= WHY ================= -->
-  <section class="why">
-    <div class="container why-grid">
-
-      <div>
-        <h4>Builds Loyalty</h4>
-        <p>Turn first-time visitors into repeat customers.</p>
+  <!-- REVISIT FLAGSHIP -->
+  <section class="revisit-flagship">
+    <div class="container">
+      <p class="eyebrow">OUR FLAGSHIP PRODUCT</p>
+      <div class="flagship-inner">
+        <div class="flagship-left">
+          <div class="revisit-brand">
+            <span class="revisit-r">&#x211B;</span>
+            <h2 class="revisit-name">Revisit</h2>
+          </div>
+          <p class="revisit-tagline">Turn first-time visitors into repeat customers.</p>
+          <p class="revisit-desc">Revisit helps businesses connect instantly with customers and keep them coming back with offers &amp; rewards.</p>
+          <ul class="revisit-features">
+            <li><span class="check">&#x2713;</span> Instant customer connection</li>
+            <li><span class="check">&#x2713;</span> Personalized offers &amp; rewards</li>
+            <li><span class="check">&#x2713;</span> Smart reminders &amp; engagement</li>
+            <li><span class="check">&#x2713;</span> Real-time analytics &amp; insights</li>
+            <li><span class="check">&#x2713;</span> Works offline &amp; online</li>
+          </ul>
+          <div class="flagship-btns">
+            <a href="contact.html" class="btn btn-primary">Explore Revisit &rarr;</a>
+            <a href="#" class="btn btn-outline">&#9654; See How It Works</a>
+          </div>
+        </div>
+        <div class="flagship-right">
+          <div class="qr-tent flagship-qr">
+            <div class="qr-tent-top">
+              <p class="qr-label">SCAN &amp; GET<br><strong>SPECIAL OFFERS</strong></p>
+              <div class="qr-box"></div>
+              <p class="qr-steps">Scan &rarr; Tap &rarr; Send &rarr; Done</p>
+              <p class="qr-note">No app needed &nbsp;·&nbsp; Takes 5 seconds</p>
+              <p class="qr-powered">powered by <strong>Revisit</strong></p>
+            </div>
+          </div>
+          <div class="phone-mock">
+            <div class="phone-screen">
+              <div class="phone-header">
+                <span class="revisit-r small">&#x211B;</span> Revisit
+              </div>
+              <div class="phone-body">
+                <p class="phone-welcome">Welcome back!</p>
+                <h4>You have special<br>offers waiting!</h4>
+                <button class="btn btn-primary phone-btn">View Offers</button>
+                <div class="phone-stats">
+                  <div class="stat-row">
+                    <span>Your Activity</span><span>This Week &#x25BE;</span>
+                  </div>
+                  <div class="stat-numbers">
+                    <div><strong>1,250</strong><p>Scans</p></div>
+                    <div><strong class="gold">320</strong><p>Redemptions</p></div>
+                  </div>
+                  <div class="stat-growth">
+                    <span>Growth Overview</span><span class="gold">+28%</span>
+                  </div>
+                  <div class="growth-bar">
+                    <div class="growth-line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div>
-        <h4>Drives More Sales</h4>
-        <p>Engage customers with targeted offers.</p>
-      </div>
-
-      <div>
-        <h4>Smart Insights</h4>
-        <p>Track what matters and make data-driven decisions.</p>
-      </div>
-
-      <div>
-        <h4>Saves Time</h4>
-        <p>Automate engagement and focus on what matters.</p>
-      </div>
-
     </div>
   </section>
 
-  <!-- ================= STATEMENT ================= -->
-  <section class="statement">
-    <div class="container statement-grid">
-
-      <div class="statement-text">
-        <h2>
-          Focused. Powerful.<br />
-          <span class="gold">Built to perform.</span>
-        </h2>
-
-        <p>
-          We don’t build multiple products for the sake of it.
-          We build focused systems that solve real business problems —
-          one at a time, and done right.
-        </p>
-
-        <a href="#" class="btn btn--gold">Explore Revisit →</a>
+  <!-- WHY BUSINESSES LOVE REVISIT -->
+  <section class="why-revisit">
+    <div class="container">
+      <p class="eyebrow center">WHY BUSINESSES LOVE REVISIT</p>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon">&#x2665;</div>
+          <h4>Builds Loyalty</h4>
+          <p>Turn first-time visitors into repeat customers.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#x1F4B0;</div>
+          <h4>Drives More Sales</h4>
+          <p>Engage customers with targeted offers.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#x1F4CA;</div>
+          <h4>Smart Insights</h4>
+          <p>Track what matters and make data-driven decisions.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#x23F0;</div>
+          <h4>Saves Time</h4>
+          <p>Automate engagement and focus on what matters.</p>
+        </div>
       </div>
-
-      <div class="statement-image">
-        <img src="assets/hero-b.png" alt="Brand Overhaul" />
-      </div>
-
     </div>
   </section>
 
-  <!-- ================= FINAL CTA ================= -->
-  <section class="cta">
-    <div class="container cta-grid">
-
-      <div>
-        <h2>
-          Ready to grow your business?<br />
-          Let’s build something <span class="gold">great together.</span>
-        </h2>
+  <!-- FOCUSED POWERFUL -->
+  <section class="focused-section">
+    <div class="container focused-inner">
+      <div class="focused-text">
+        <h2>Focused. Powerful.<br><span class="gold">Built to perform.</span></h2>
+        <p>We don't build multiple products for the sake of it. We build focused systems that solve real business problems — one at a time, and done right.</p>
+        <a href="contact.html" class="btn btn-primary">Explore Revisit &rarr;</a>
       </div>
-
-      <div class="cta-buttons">
-        <a href="contact.html" class="btn btn--gold">Let’s Talk →</a>
+      <div class="focused-visual">
+        <div class="hero-logo-box">
+          <span class="big-b">B</span>
+          <p class="big-b-label">BRAND OVERHAUL</p>
+        </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="footer-dark">
-    <div class="container footer-grid">
-
-      <div>
-        <img src="assets/logo.png" class="footer-logo" />
-        <p>
-          Building growth systems that help businesses acquire,
-          retain, and scale customers with clarity and consistency.
-        </p>
+  <!-- PRODUCTS CTA BANNER -->
+  <section class="cta-banner cta-banner-light">
+    <div class="container cta-banner-inner">
+      <div class="cta-text-block">
+        <p>Ready to grow your business?<br>Let's build something great <span class="gold">together.</span></p>
       </div>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
+      </div>
+    </div>
+  </section>
 
-      <div>
-        <h4>Quick Links</h4>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">B</span>
+          <span class="logo-text">BRAND<br>OVERHAUL</span>
+        </a>
+        <p>Building growth systems that help businesses acquire, retain, and scale customers with clarity and consistency.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">&#x25A1;</a>
+          <a href="#" aria-label="Email">&#x2709;</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>QUICK LINKS</h4>
         <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
+        <a href="products.html" class="gold">Products</a>
         <a href="contact.html">Contact</a>
       </div>
-
-      <div>
-        <h4>Let’s Connect</h4>
-        <p>Have a question or want to learn more?</p>
-        <a href="contact.html" class="btn btn--gold">Let’s Talk →</a>
+      <div class="footer-connect">
+        <h4>LET'S CONNECT</h4>
+        <p>Have a question or want to learn more about our products?</p>
+        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
       </div>
-
     </div>
-
-    <div class="footer-bottom">
-      © 2026 Brand Overhaul. All rights reserved.
+    <div class="footer-bottom container">
+      <div class="footer-bottom-info">
+        <span>&#x2709; hello@brandoverhaul.in</span>
+        <span>&#x260E; +91 12345 67890</span>
+        <span>&#x1F4CD; Mumbai, India</span>
+      </div>
+      <div class="footer-bottom-copy">
+        <p>© 2025 Brand Overhaul. All rights reserved.</p>
+        <p>Made with &#x2665; purpose.</p>
+      </div>
     </div>
   </footer>
 
