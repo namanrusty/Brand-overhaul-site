@@ -1,38 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Brand Overhaul</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-<header class="nav">
-  <img src="assets/logo.png" class="logo">
-
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a class="active">Contact</a>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">B</span>
+        <span class="logo-text">BRAND<br>OVERHAUL</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-primary nav-cta">Let's Talk &rarr;</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="menuClose">&times;</button>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary mobile-cta">Let's Talk &rarr;</a>
+    </nav>
   </div>
-</header>
+  <div class="mobile-overlay" id="menuOverlay"></div>
 
-<section class="hero center">
-  <h1>Let's build something great together.</h1>
-</section>
+  <!-- CONTACT HERO -->
+  <section class="hero hero-contact">
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <p class="eyebrow">CONTACT US</p>
+        <h1 class="hero-heading contact-heading">
+          Let's build<br>something great<br>
+          <span class="gold">together.</span>
+        </h1>
+        <p class="hero-sub">Have a question, want to learn more about our products, or ready to get started? We'd love to hear from you.</p>
+        <div class="contact-trust">
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l2.5 6H18l-4.5 3.5 1.5 6L10 14l-5 3.5 1.5-6L2 8h5.5z" stroke="#F5A623" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <strong>Quick Response</strong>
+              <p>We respond within 24 business hours.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="4" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M3 19c0-4 3-7 7-7s7 3 7 7" stroke="#F5A623" stroke-width="1.5" fill="none"/></svg>
+            </div>
+            <div>
+              <strong>Real People</strong>
+              <p>Talk to our team of product experts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual contact-hero-visual">
+        <!-- Notebook SVG -->
+        <svg class="contact-notebook-svg" viewBox="0 0 320 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="cng" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFE08A"/>
+              <stop offset="50%" stop-color="#F5A623"/>
+              <stop offset="100%" stop-color="#B8720E"/>
+            </linearGradient>
+            <radialGradient id="cnglow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#F5A623" stop-opacity="0.12"/>
+              <stop offset="100%" stop-color="#F5A623" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="cnshadow"><feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#F5A623" flood-opacity="0.18"/></filter>
+          </defs>
+          <ellipse cx="160" cy="170" rx="140" ry="130" fill="url(#cnglow)"/>
+          <!-- Notebook cover -->
+          <rect x="50" y="30" width="210" height="280" rx="8" fill="#1A1200" stroke="#F5A623" stroke-width="1" stroke-opacity="0.25" filter="url(#cnshadow)"/>
+          <!-- Spiral binding on left -->
+          <rect x="50" y="30" width="26" height="280" rx="6" fill="#111000"/>
+          <circle cx="63" cy="58" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <circle cx="63" cy="78" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <circle cx="63" cy="98" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <circle cx="63" cy="118" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <circle cx="63" cy="138" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <circle cx="63" cy="158" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <circle cx="63" cy="178" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <circle cx="63" cy="198" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <circle cx="63" cy="218" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <circle cx="63" cy="238" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <circle cx="63" cy="258" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <circle cx="63" cy="278" r="5" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.5" fill="none"/>
+          <!-- Page area -->
+          <rect x="76" y="30" width="184" height="280" rx="4" fill="#1E1600"/>
+          <!-- Top accent -->
+          <rect x="76" y="30" width="184" height="3" rx="1.5" fill="url(#cng)" opacity="0.7"/>
+          <!-- B Logo small -->
+          <text x="105" y="85" font-family="Barlow Condensed, sans-serif" font-size="42" font-weight="800" fill="url(#cng)" opacity="0.8">B</text>
+          <text x="103" y="100" font-family="Barlow Condensed, sans-serif" font-size="8" font-weight="700" letter-spacing="2" fill="#F5A623" opacity="0.55">BRAND</text>
+          <text x="103" y="112" font-family="Barlow Condensed, sans-serif" font-size="8" font-weight="700" letter-spacing="2" fill="#F5A623" opacity="0.55">OVERHAUL</text>
+          <!-- Divider line -->
+          <line x1="90" y1="128" x2="248" y2="128" stroke="#F5A623" stroke-width="0.5" stroke-opacity="0.2"/>
+          <!-- Quote text on notebook -->
+          <text x="100" y="168" font-family="Barlow Condensed, sans-serif" font-size="32" font-weight="800" fill="#FFFFFF" opacity="0.92">BUILDING</text>
+          <text x="100" y="204" font-family="Barlow Condensed, sans-serif" font-size="32" font-weight="800" fill="#FFFFFF" opacity="0.92">WHAT</text>
+          <text x="100" y="240" font-family="Barlow Condensed, sans-serif" font-size="32" font-weight="800" fill="url(#cng)">MATTERS.</text>
+          <!-- Bottom B mark -->
+          <text x="210" y="300" font-family="Barlow Condensed, sans-serif" font-size="48" font-weight="800" fill="url(#cng)" opacity="0.2">B</text>
+          <!-- Floating accents -->
+          <circle cx="288" cy="40" r="18" stroke="#F5A623" stroke-width="0.8" stroke-opacity="0.15" fill="none" stroke-dasharray="4 3"/>
+          <circle cx="44" cy="330" r="12" stroke="#F5A623" stroke-width="0.8" stroke-opacity="0.12" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-<section class="contact">
-  <input placeholder="Name">
-  <input placeholder="Email">
-  <textarea placeholder="Message"></textarea>
-  <button class="btn primary">Send Message</button>
-</section>
+  <!-- CONTACT FORM + INFO -->
+  <section class="contact-main">
+    <div class="container contact-main-inner">
+      <div class="contact-form-wrap">
+        <p class="eyebrow">SEND US A MESSAGE</p>
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" placeholder="Your full name" />
+            </div>
+            <div class="form-group">
+              <label for="work-email">Work Email</label>
+              <input type="email" id="work-email" placeholder="you@company.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name (Optional)</label>
+            <input type="text" id="company" placeholder="Your company name" />
+          </div>
+          <div class="form-group">
+            <label for="help-topic">What can we help you with?</label>
+            <select id="help-topic">
+              <option value="" disabled selected>Select an option</option>
+              <option>Product Demo</option>
+              <option>Custom Solution</option>
+              <option>Growth Advice</option>
+              <option>Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us more about your project or question..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message &rarr;</button>
+        </form>
+      </div>
+      <div class="contact-info-wrap">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <p class="contact-info-sub">Choose the way that works best for you.</p>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="ci-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="3" width="16" height="12" rx="2" stroke="#F5A623" stroke-width="1.5" fill="none"/><polyline points="1,3 9,10 17,3" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+            </div>
+            <div>
+              <strong>Email Us</strong>
+              <p>hello@brandoverhaul.in</p>
+              <p class="ci-note">We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 2h4l2 5-2 2a11 11 0 005 5l2-2 5 2v4a1 1 0 01-1 1C7 19 0 12 0 3a1 1 0 011-1z" stroke="#F5A623" stroke-width="1.5" fill="none"/></svg>
+            </div>
+            <div>
+              <strong>Call Us</strong>
+              <p>+91 12345 67890</p>
+              <p class="ci-note">Mon - Fri, 10:00 AM - 6:00 PM IST</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="8" r="3" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M9 1C5 1 2 4 2 8c0 5 7 10 7 10s7-5 7-10c0-4-3-7-7-7z" stroke="#F5A623" stroke-width="1.5" fill="none"/></svg>
+            </div>
+            <div>
+              <strong>Our Location</strong>
+              <p>Mumbai, India</p>
+              <p class="ci-note">Working with businesses across India and beyond.</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#F5A623" stroke-width="1.5" fill="none"/><polyline points="9,5 9,9 12,11" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <strong>Business Hours</strong>
+              <p>Monday - Friday</p>
+              <p class="ci-note">10:00 AM - 6:00 PM IST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer class="footer">
-  <img src="assets/logo.png">
-</footer>
+  <!-- WHY REACH OUT -->
+  <section class="why-reach-out">
+    <div class="container why-reach-inner">
+      <div class="why-reach-text">
+        <p class="eyebrow">WHY REACH OUT?</p>
+        <h2>We're here to help<br>your business <span class="gold">grow.</span></h2>
+        <p>Whether you're exploring Revisit or have a question about our products, our team is here to help.</p>
+      </div>
+      <div class="why-reach-grid">
+        <div class="reach-item">
+          <div class="reach-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 6h20v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M4 6l10 8 10-8" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></div>
+          <h4>Product Demos</h4>
+          <p>See how Revisit can work for your business.</p>
+        </div>
+        <div class="reach-item">
+          <div class="reach-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="4" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M6 24c0-4 3-8 8-8s8 4 8 8" stroke="#F5A623" stroke-width="1.5" fill="none"/><line x1="20" y1="6" x2="26" y2="6" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/><line x1="20" y1="10" x2="24" y2="10" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h4>Custom Solutions</h4>
+          <p>We'll help you find the right solution for your needs.</p>
+        </div>
+        <div class="reach-item">
+          <div class="reach-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="2" y="16" width="6" height="9" rx="1.5" fill="#F5A623" opacity="0.4"/><rect x="11" y="10" width="6" height="15" rx="1.5" fill="#F5A623" opacity="0.65"/><rect x="20" y="3" width="6" height="22" rx="1.5" fill="#F5A623"/><polyline points="4,14 14,8 23,2" stroke="#F5A623" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+          <h4>Growth Advice</h4>
+          <p>Get expert insights to grow repeat visits and customer loyalty.</p>
+        </div>
+        <div class="reach-item">
+          <div class="reach-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 14C4 8 8 4 14 4s10 4 10 10-4 10-10 10S4 20 4 14z" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M10 14c0-2 1.5-4 4-4s4 2 4 4-1.5 4-4 4" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" fill="none"/><circle cx="14" cy="14" r="2" fill="#F5A623" opacity="0.5"/></svg></div>
+          <h4>Partnerships</h4>
+          <p>Interested in partnering with us? Let's talk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- CONTACT CTA -->
+  <section class="cta-banner">
+    <div class="container cta-banner-inner">
+      <div class="cta-text-block">
+        <h3>Ready to take the next step?</h3>
+        <p class="cta-sub">Let's connect and build something amazing together.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">B</span>
+          <span class="logo-text">BRAND<br>OVERHAUL</span>
+        </a>
+        <p>Building growth systems that help businesses acquire, retain, and scale customers with clarity and consistency.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="10.5" cy="3.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Email">&#x2709;</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>QUICK LINKS</h4>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="gold">Contact</a>
+      </div>
+      <div class="footer-connect">
+        <h4>LET'S CONNECT</h4>
+        <p>Have a question or want to learn more about our products?</p>
+        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <div class="footer-bottom-info">
+        <span>&#x2709; hello@brandoverhaul.in</span>
+        <span>&#x260E; +91 12345 67890</span>
+        <span>&#x1F4CD; Mumbai, India</span>
+      </div>
+      <div class="footer-bottom-copy">
+        <p>&copy; 2025 Brand Overhaul. All rights reserved.</p>
+        <p>Made with &#x2665; purpose.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuClose = document.getElementById('menuClose');
+    const menuOverlay = document.getElementById('menuOverlay');
+    function openMenu() { mobileMenu.classList.add('open'); menuOverlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeMenu() { mobileMenu.classList.remove('open'); menuOverlay.classList.remove('open'); document.body.style.overflow = ''; }
+    hamburger.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+  </script>
 </body>
 </html>
