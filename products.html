@@ -1,49 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Products</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products – Brand Overhaul</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-<header class="nav">
-  <img src="assets/logo.png" class="logo">
-
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a class="active">Products</a>
-    <a href="contact.html">Contact</a>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">B</span>
+        <span class="logo-text">BRAND<br>OVERHAUL</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-primary nav-cta">Let's Talk &rarr;</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="menuClose">&times;</button>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary mobile-cta">Let's Talk &rarr;</a>
+    </nav>
   </div>
-</header>
+  <div class="mobile-overlay" id="menuOverlay"></div>
 
-<section class="hero">
-  <div class="hero-left">
-    <h1>Products built for real business growth.</h1>
-  </div>
+  <!-- PRODUCTS HERO -->
+  <section class="hero hero-products">
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <p class="eyebrow">OUR PRODUCTS</p>
+        <h1 class="hero-heading">
+          Products built for<br>
+          <span class="gold">real business growth.</span>
+        </h1>
+        <p class="hero-sub">We create simple, powerful, and easy-to-use products that help businesses attract, retain, and grow customers while driving measurable results.</p>
+        <div class="product-badges">
+          <div class="badge-item">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2L13 8H19L14 12L16 18L11 14L6 18L8 12L3 8H9Z" stroke="#F5A623" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+            <div><strong>Easy to Use</strong><p>Built for teams, not tech experts.</p></div>
+          </div>
+          <div class="badge-item">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2l8 4v6c0 4-3.5 7.5-8 8-4.5-.5-8-4-8-8V6z" stroke="#F5A623" stroke-width="1.5" fill="none" stroke-linejoin="round"/><polyline points="7,11 10,14 15,9" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><strong>Secure &amp; Reliable</strong><p>Enterprise-grade security you can trust.</p></div>
+          </div>
+          <div class="badge-item">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="14" width="4" height="6" rx="1" fill="#F5A623" opacity="0.4"/><rect x="9" y="9" width="4" height="11" rx="1" fill="#F5A623" opacity="0.65"/><rect x="16" y="3" width="4" height="17" rx="1" fill="#F5A623"/></svg>
+            <div><strong>Built for Growth</strong><p>Scales with your business, every step.</p></div>
+          </div>
+          <div class="badge-item">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="#F5A623" stroke-width="1.5" fill="none"/><polyline points="7,11 10,14 15,8" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><strong>Real Impact</strong><p>Designed to deliver measurable growth and ROI.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual products-hero-visual">
+        <svg class="hero-svg" viewBox="0 0 380 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="phg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFE08A"/>
+              <stop offset="50%" stop-color="#F5A623"/>
+              <stop offset="100%" stop-color="#B8720E"/>
+            </linearGradient>
+            <radialGradient id="phglow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#F5A623" stop-opacity="0.14"/>
+              <stop offset="100%" stop-color="#F5A623" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="phshadow"><feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#F5A623" flood-opacity="0.18"/></filter>
+          </defs>
+          <ellipse cx="190" cy="170" rx="160" ry="140" fill="url(#phglow)"/>
+          <!-- Book / notebook shape -->
+          <rect x="60" y="60" width="200" height="240" rx="6" fill="#1A1200" stroke="#F5A623" stroke-width="1" stroke-opacity="0.25" filter="url(#phshadow)"/>
+          <!-- Spine -->
+          <rect x="60" y="60" width="18" height="240" rx="4" fill="#111000"/>
+          <rect x="60" y="60" width="18" height="240" rx="4" stroke="#F5A623" stroke-width="0.5" stroke-opacity="0.3"/>
+          <!-- Spiral marks on spine -->
+          <circle cx="69" cy="90" r="4" stroke="#F5A623" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+          <circle cx="69" cy="110" r="4" stroke="#F5A623" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+          <circle cx="69" cy="130" r="4" stroke="#F5A623" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+          <circle cx="69" cy="150" r="4" stroke="#F5A623" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+          <circle cx="69" cy="170" r="4" stroke="#F5A623" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+          <circle cx="69" cy="190" r="4" stroke="#F5A623" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+          <circle cx="69" cy="210" r="4" stroke="#F5A623" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+          <circle cx="69" cy="230" r="4" stroke="#F5A623" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+          <circle cx="69" cy="250" r="4" stroke="#F5A623" stroke-width="1" stroke-opacity="0.5" fill="none"/>
+          <!-- Page content area -->
+          <rect x="78" y="60" width="182" height="240" rx="4" fill="#1E1600"/>
+          <!-- Top gold accent -->
+          <rect x="78" y="60" width="182" height="3" rx="1.5" fill="url(#phg)" opacity="0.7"/>
+          <!-- B on page -->
+          <text x="169" y="190" font-family="Barlow Condensed, sans-serif" font-size="130" font-weight="800" text-anchor="middle" dominant-baseline="middle" fill="url(#phg)" opacity="0.9">B</text>
+          <!-- Text lines on page -->
+          <text x="169" y="252" font-family="Barlow Condensed, sans-serif" font-size="11" font-weight="700" letter-spacing="2.5" text-anchor="middle" fill="#F5A623" opacity="0.6">BUILDING TOOLS</text>
+          <text x="169" y="268" font-family="Barlow Condensed, sans-serif" font-size="11" font-weight="700" letter-spacing="2.5" text-anchor="middle" fill="#F5A623" opacity="0.6">THAT DRIVE GROWTH.</text>
+          <!-- Mug outline to the right -->
+          <rect x="276" y="80" width="80" height="100" rx="10" fill="#161000" stroke="#F5A623" stroke-width="0.8" stroke-opacity="0.2"/>
+          <path d="M356 110 Q376 110 376 130 Q376 150 356 150" stroke="#F5A623" stroke-width="1" stroke-opacity="0.3" fill="none"/>
+          <text x="316" y="124" font-family="Barlow Condensed, sans-serif" font-size="28" font-weight="800" text-anchor="middle" dominant-baseline="middle" fill="url(#phg)" opacity="0.8">B</text>
+          <text x="316" y="148" font-family="Barlow Condensed, sans-serif" font-size="7" font-weight="700" letter-spacing="1.5" text-anchor="middle" fill="#F5A623" opacity="0.5">BRAND</text>
+          <text x="316" y="158" font-family="Barlow Condensed, sans-serif" font-size="7" font-weight="700" letter-spacing="1.5" text-anchor="middle" fill="#F5A623" opacity="0.5">OVERHAUL</text>
+          <!-- Pen -->
+          <rect x="278" y="200" width="8" height="80" rx="3" fill="#1E1600" stroke="#F5A623" stroke-width="0.8" stroke-opacity="0.3" transform="rotate(-20 278 200)"/>
+          <polygon points="278,280 286,280 282,296" fill="#F5A623" opacity="0.4" transform="rotate(-20 278 200)"/>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-  <div class="hero-right">
-    <img src="assets/mug-book.png">
-  </div>
-</section>
+  <!-- REVISIT FLAGSHIP -->
+  <section class="revisit-flagship">
+    <div class="container">
+      <p class="eyebrow">OUR FLAGSHIP PRODUCT</p>
+      <div class="flagship-inner">
+        <div class="flagship-left">
+          <div class="revisit-brand">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="19" r="19" fill="#F5A623" opacity="0.1"/><text x="19" y="25" font-family="Barlow Condensed, sans-serif" font-size="24" font-weight="800" text-anchor="middle" fill="#F5A623">R</text></svg>
+            <h2 class="revisit-name">Revisit</h2>
+          </div>
+          <p class="revisit-tagline">Turn first-time visitors into repeat customers.</p>
+          <p class="revisit-desc">Revisit helps businesses connect instantly with customers and keep them coming back with offers &amp; rewards.</p>
+          <ul class="revisit-features">
+            <li><span class="check">&#x2713;</span> Instant customer connection</li>
+            <li><span class="check">&#x2713;</span> Personalized offers &amp; rewards</li>
+            <li><span class="check">&#x2713;</span> Smart reminders &amp; engagement</li>
+            <li><span class="check">&#x2713;</span> Real-time analytics &amp; insights</li>
+            <li><span class="check">&#x2713;</span> Works offline &amp; online</li>
+          </ul>
+          <div class="flagship-btns">
+            <a href="contact.html" class="btn btn-primary">Explore Revisit &rarr;</a>
+            <a href="#" class="btn btn-outline">&#9654; See How It Works</a>
+          </div>
+        </div>
+        <div class="flagship-right">
+          <!-- QR Tent -->
+          <svg class="qr-svg flagship-qr" viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="ftg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F5A623"/><stop offset="100%" stop-color="#C97D10"/></linearGradient></defs>
+            <rect x="6" y="6" width="168" height="208" rx="12" fill="url(#ftg)"/>
+            <text x="90" y="34" font-family="Barlow Condensed, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" text-anchor="middle" fill="#1A0F00">SCAN &amp; GET</text>
+            <text x="90" y="50" font-family="Barlow Condensed, sans-serif" font-size="14" font-weight="800" letter-spacing="1" text-anchor="middle" fill="#1A0F00">SPECIAL OFFERS</text>
+            <rect x="42" y="60" width="96" height="96" rx="7" fill="#111"/>
+            <rect x="50" y="68" width="22" height="22" rx="3" fill="#F5A623" opacity="0.9"/>
+            <rect x="53" y="71" width="16" height="16" rx="1" fill="#111"/>
+            <rect x="56" y="74" width="10" height="10" rx="1" fill="#F5A623" opacity="0.8"/>
+            <rect x="108" y="68" width="22" height="22" rx="3" fill="#F5A623" opacity="0.9"/>
+            <rect x="111" y="71" width="16" height="16" rx="1" fill="#111"/>
+            <rect x="114" y="74" width="10" height="10" rx="1" fill="#F5A623" opacity="0.8"/>
+            <rect x="50" y="124" width="22" height="22" rx="3" fill="#F5A623" opacity="0.9"/>
+            <rect x="53" y="127" width="16" height="16" rx="1" fill="#111"/>
+            <rect x="56" y="130" width="10" height="10" rx="1" fill="#F5A623" opacity="0.8"/>
+            <rect x="80" y="68" width="6" height="6" rx="1" fill="#F5A623" opacity="0.6"/>
+            <rect x="88" y="68" width="14" height="6" rx="1" fill="#F5A623" opacity="0.4"/>
+            <rect x="80" y="76" width="22" height="6" rx="1" fill="#F5A623" opacity="0.45"/>
+            <rect x="80" y="84" width="10" height="14" rx="1" fill="#F5A623" opacity="0.4"/>
+            <rect x="108" y="96" width="22" height="6" rx="1" fill="#F5A623" opacity="0.45"/>
+            <rect x="108" y="104" width="12" height="6" rx="1" fill="#F5A623" opacity="0.4"/>
+            <rect x="108" y="112" width="22" height="8" rx="1" fill="#F5A623" opacity="0.4"/>
+            <rect x="108" y="122" width="22" height="6" rx="1" fill="#F5A623" opacity="0.35"/>
+            <rect x="80" y="124" width="20" height="6" rx="1" fill="#F5A623" opacity="0.4"/>
+            <rect x="80" y="132" width="10" height="10" rx="1" fill="#F5A623" opacity="0.35"/>
+            <rect x="92" y="132" width="10" height="5" rx="1" fill="#F5A623" opacity="0.3"/>
+            <text x="90" y="172" font-family="Barlow, sans-serif" font-size="8" font-weight="600" text-anchor="middle" fill="#1A0F00">Scan → Tap → Send → Done</text>
+            <text x="90" y="184" font-family="Barlow, sans-serif" font-size="7.5" text-anchor="middle" fill="#3D2600" opacity="0.8">No app needed · Takes 5 seconds</text>
+            <text x="90" y="196" font-family="Barlow, sans-serif" font-size="7.5" text-anchor="middle" fill="#3D2600" opacity="0.8">powered by Revisit</text>
+          </svg>
+          <!-- Phone mock -->
+          <div class="phone-mock">
+            <div class="phone-screen">
+              <div class="phone-header">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="7" fill="#F5A623" opacity="0.15"/><text x="7" y="10" font-family="Barlow Condensed, sans-serif" font-size="9" font-weight="800" text-anchor="middle" fill="#F5A623">R</text></svg>
+                Revisit
+              </div>
+              <p class="phone-welcome">Welcome back!</p>
+              <h4>You have special<br>offers waiting!</h4>
+              <button class="btn btn-primary phone-btn">View Offers</button>
+              <div class="phone-stats">
+                <div class="stat-row"><span>Your Activity</span><span>This Week &#x25BE;</span></div>
+                <div class="stat-numbers">
+                  <div><strong>1,250</strong><p>Scans</p></div>
+                  <div><strong class="gold">320</strong><p>Redemptions</p></div>
+                </div>
+                <div class="stat-growth"><span>Growth Overview</span><span class="gold">+28%</span></div>
+                <div class="growth-bar"><div class="growth-line"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="revisit">
-  <div class="revisit-left">
-    <img src="assets/qr.png" class="qr">
-    <img src="assets/phone.png" class="phone">
-  </div>
+  <!-- WHY BUSINESSES LOVE REVISIT -->
+  <section class="why-revisit">
+    <div class="container">
+      <p class="eyebrow center">WHY BUSINESSES LOVE REVISIT</p>
+      <div class="why-grid">
+        <div class="why-item">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 31S5 23 5 14a7 7 0 0113-3.5A7 7 0 0131 14c0 9-13 17-13 17z" stroke="#F5A623" stroke-width="1.5" fill="none"/></svg>
+          <h4>Builds Loyalty</h4>
+          <p>Turn first-time visitors into repeat customers.</p>
+        </div>
+        <div class="why-item">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="13" cy="14" r="5" stroke="#F5A623" stroke-width="1.5" fill="none"/><circle cx="23" cy="14" r="5" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M4 30c0-6 4-10 9-10h10c5 0 9 4 9 10" stroke="#F5A623" stroke-width="1.5" fill="none"/></svg>
+          <h4>Drives More Sales</h4>
+          <p>Engage customers with targeted offers.</p>
+        </div>
+        <div class="why-item">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="3" y="18" width="6" height="14" rx="1.5" fill="#F5A623" opacity="0.4"/><rect x="13" y="12" width="6" height="20" rx="1.5" fill="#F5A623" opacity="0.65"/><rect x="23" y="4" width="6" height="28" rx="1.5" fill="#F5A623"/><polyline points="5,16 16,10 26,3" stroke="#F5A623" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+          <h4>Smart Insights</h4>
+          <p>Track what matters and make data-driven decisions.</p>
+        </div>
+        <div class="why-item">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="#F5A623" stroke-width="1.5" fill="none"/><polyline points="18,10 18,18 24,22" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h4>Saves Time</h4>
+          <p>Automate engagement and focus on what matters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="revisit-right">
-    <h2>Revisit</h2>
-    <p>Turn first-time visitors into repeat customers.</p>
-  </div>
-</section>
+  <!-- FOCUSED POWERFUL -->
+  <section class="focused-section">
+    <div class="container focused-inner">
+      <div class="focused-text">
+        <h2>Focused. Powerful.<br><span class="gold">Built to perform.</span></h2>
+        <p>We don't build multiple products for the sake of it. We build focused systems that solve real business problems — one at a time, and done right.</p>
+        <a href="contact.html" class="btn btn-primary">Explore Revisit &rarr;</a>
+      </div>
+      <div class="focused-visual">
+        <svg class="hero-svg" viewBox="0 0 360 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="focg" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFE08A"/>
+              <stop offset="50%" stop-color="#F5A623"/>
+              <stop offset="100%" stop-color="#B8720E"/>
+            </linearGradient>
+            <radialGradient id="focglow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#F5A623" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#F5A623" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="focshadow"><feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#F5A623" flood-opacity="0.2"/></filter>
+          </defs>
+          <ellipse cx="180" cy="160" rx="155" ry="135" fill="url(#focglow)"/>
+          <rect x="55" y="35" width="250" height="230" rx="20" fill="#1C1400" stroke="#F5A623" stroke-width="1" stroke-opacity="0.25" filter="url(#focshadow)"/>
+          <rect x="55" y="35" width="250" height="3" rx="1.5" fill="url(#focg)" opacity="0.75"/>
+          <rect x="55" y="35" width="18" height="2.5" rx="1.2" fill="#F5A623"/>
+          <rect x="55" y="35" width="2.5" height="18" rx="1.2" fill="#F5A623"/>
+          <rect x="287" y="35" width="18" height="2.5" rx="1.2" fill="#F5A623"/>
+          <rect x="302.5" y="35" width="2.5" height="18" rx="1.2" fill="#F5A623"/>
+          <text x="180" y="168" font-family="Barlow Condensed, sans-serif" font-size="175" font-weight="800" text-anchor="middle" dominant-baseline="middle" fill="url(#focg)" opacity="0.95">B</text>
+          <rect x="90" y="245" width="180" height="1" fill="#F5A623" opacity="0.18"/>
+          <text x="180" y="262" font-family="Barlow Condensed, sans-serif" font-size="12" font-weight="700" letter-spacing="4.5" text-anchor="middle" fill="#F5A623" opacity="0.7">BRAND OVERHAUL</text>
+          <circle cx="308" cy="296" r="24" stroke="#F5A623" stroke-width="1" stroke-opacity="0.14" fill="none" stroke-dasharray="5 4"/>
+          <circle cx="55" cy="14" r="4" fill="#F5A623" opacity="0.45"/>
+          <circle cx="305" cy="14" r="3" fill="#F5A623" opacity="0.35"/>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-<footer class="footer">
-  <img src="assets/logo.png">
-</footer>
+  <!-- PRODUCTS CTA -->
+  <section class="cta-banner">
+    <div class="container cta-banner-inner">
+      <div class="cta-text-block">
+        <h3>Ready to grow your business?<br>Let's build something great <span class="gold">together.</span></h3>
+      </div>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">B</span>
+          <span class="logo-text">BRAND<br>OVERHAUL</span>
+        </a>
+        <p>Building growth systems that help businesses acquire, retain, and scale customers with clarity and consistency.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="10.5" cy="3.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Email">&#x2709;</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>QUICK LINKS</h4>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="gold">Products</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-connect">
+        <h4>LET'S CONNECT</h4>
+        <p>Have a question or want to learn more about our products?</p>
+        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <div class="footer-bottom-info">
+        <span>&#x2709; hello@brandoverhaul.in</span>
+        <span>&#x260E; +91 12345 67890</span>
+        <span>&#x1F4CD; Mumbai, India</span>
+      </div>
+      <div class="footer-bottom-copy">
+        <p>&copy; 2025 Brand Overhaul. All rights reserved.</p>
+        <p>Made with &#x2665; purpose.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuClose = document.getElementById('menuClose');
+    const menuOverlay = document.getElementById('menuOverlay');
+    function openMenu() { mobileMenu.classList.add('open'); menuOverlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeMenu() { mobileMenu.classList.remove('open'); menuOverlay.classList.remove('open'); document.body.style.overflow = ''; }
+    hamburger.addEventListener('click', openMenu);
+    menuClose.addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+  </script>
 </body>
 </html>
