@@ -9,7 +9,9 @@
 
   <link rel="stylesheet" href="styles.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
   <!-- NAVBAR -->
 
   <header class="navbar">
-    <div class="nav-inner container">
+    <div class="container nav-inner">
 
       <a href="index.html" class="logo">
         <img src="assets/logo.png" alt="Brand Overhaul">
@@ -29,244 +31,209 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <div class="nav-right">
+      <a href="contact.html" class="btn btn-outline nav-btn">
+        Let's Talk →
+      </a>
 
-        <a href="contact.html" class="btn btn-outline nav-btn">
-          Let’s Talk →
-        </a>
-
-        <button class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-      </div>
     </div>
   </header>
 
-  <!-- MOBILE MENU -->
-
-  <div class="mobile-menu" id="mobileMenu">
-
-    <button class="mobile-close" id="closeMenu">
-      ×
-    </button>
-
-    <a href="index.html">Home</a>
-    <a href="products.html" class="active">Products</a>
-    <a href="contact.html">Contact</a>
-
-    <a href="contact.html" class="btn btn-primary mobile-btn">
-      Let’s Talk →
-    </a>
-
-  </div>
-
-  <div class="mobile-overlay" id="mobileOverlay"></div>
-
   <!-- HERO -->
 
-  <section class="products-hero">
+  <section class="revisit-hero">
 
-    <div class="container products-hero-grid">
+    <div class="container revisit-hero-grid">
 
       <!-- LEFT -->
 
-      <div class="products-hero-content">
+      <div class="revisit-hero-content">
 
-        <p class="eyebrow">
-          OUR PRODUCTS
-        </p>
+        <p class="section-tag">REVISIT</p>
 
-        <h1 class="products-heading">
-          Products built for
-          <span>real business growth.</span>
+        <h1>
+          Turn first-time<br>
+          visitors into<br>
+          <span>repeat customers.</span>
         </h1>
 
-        <p class="products-subtext">
-          We create focused systems that help businesses attract,
-          retain, and grow customers with clarity and consistency.
+        <p class="hero-description">
+          Revisit is a WhatsApp-based system that helps
+          businesses bring customers back with the right
+          offer at the right time.
         </p>
 
-        <!-- BADGES -->
+        <a href="contact.html" class="btn btn-primary hero-cta">
+          Book a Demo
+        </a>
 
-        <div class="products-badges">
+        <!-- FEATURES -->
 
-          <div class="product-badge">
-            <img src="assets/icons/growth.svg" alt="">
-            <h4>Easy to Use</h4>
-            <p>Built for businesses, not tech experts.</p>
+        <div class="hero-mini-features">
+
+          <div class="mini-feature">
+            <div class="mini-icon">☎</div>
+            <p>WhatsApp<br>Based</p>
           </div>
 
-          <div class="product-badge">
-            <img src="assets/icons/ecosystem.svg" alt="">
-            <h4>Reliable</h4>
-            <p>Simple systems that work consistently.</p>
+          <div class="mini-feature">
+            <div class="mini-icon">▣</div>
+            <p>No App for<br>Customers</p>
           </div>
 
-          <div class="product-badge">
-            <img src="assets/icons/strategy.svg" alt="">
-            <h4>Built for Growth</h4>
-            <p>Designed to help businesses grow faster.</p>
+          <div class="mini-feature">
+            <div class="mini-icon">☑</div>
+            <p>Easy to<br>Setup</p>
           </div>
 
-          <div class="product-badge">
-            <img src="assets/icons/growth.svg" alt="">
-            <h4>Real Impact</h4>
-            <p>Focused on measurable business outcomes.</p>
+          <div class="mini-feature">
+            <div class="mini-icon">◷</div>
+            <p>Works<br>24/7</p>
           </div>
 
         </div>
+
+      </div>
+
+      <!-- CENTER -->
+
+      <div class="revisit-hero-center">
+        <img src="assets/qr.png" alt="Revisit QR">
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="revisit-phone-wrap">
+
+        <div class="phone-ui">
+
+          <div class="phone-top"></div>
+
+          <div class="phone-content">
+
+            <div class="phone-brand">
+              <span class="brand-r">R</span>
+              <span>Revisit</span>
+            </div>
+
+            <div class="gift-circle">
+              🎁
+            </div>
+
+            <h3>
+              You've received an<br>
+              offer from<br>
+              <span>Blue House Cafe.</span>
+            </h3>
+
+            <div class="offer-box">
+              <strong>20% OFF</strong>
+              <span>on your next order.</span>
+            </div>
+
+            <div class="claim-note">
+              Show this message<br>
+              at the counter to claim.
+            </div>
+
+            <div class="phone-stats">
+
+              <div class="stat-box">
+                <strong>1,240</strong>
+                <span>Customers<br>Reached</span>
+              </div>
+
+              <div class="stat-box">
+                <strong>320</strong>
+                <span>Offers<br>Claimed</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WHAT IS REVISIT -->
+
+  <section class="what-is-revisit">
+
+    <div class="container what-is-grid">
+
+      <!-- LEFT -->
+
+      <div class="what-left">
+
+        <h2>WHAT IS REVISIT?</h2>
+
+        <p>
+          Revisit helps you stay connected with your
+          customers even after their first visit.
+        </p>
+
+        <ul>
+
+          <li>Build stronger customer relationships</li>
+
+          <li>Bring customers back with timely offers</li>
+
+          <li>Increase repeat visits & sales</li>
+
+          <li>All through WhatsApp — no extra apps</li>
+
+        </ul>
 
       </div>
 
       <!-- RIGHT -->
 
-      <div class="products-hero-image">
+      <div class="what-right">
 
-        <img src="assets/mug-book.png" alt="Brand Overhaul">
+        <div class="flow-step">
 
-      </div>
+          <div class="flow-icon">📱</div>
 
-    </div>
+          <div class="flow-number">1</div>
 
-  </section>
-
-  <!-- REVISIT SECTION -->
-
-  <section class="revisit-showcase">
-
-    <div class="container">
-
-      <div class="revisit-card-new">
-
-        <!-- LEFT -->
-
-        <div class="revisit-left">
-
-          <p class="eyebrow">
-            OUR FIRST PRODUCT
+          <p>
+            Customer scans<br>
+            your QR
           </p>
-
-          <h2 class="revisit-logo-heading">
-            Revisit
-          </h2>
-
-          <h3 class="revisit-main-heading">
-            Turn one scan into
-            lifelong customers.
-          </h3>
-
-          <p class="revisit-description">
-            Revisit helps businesses connect instantly with customers
-            and bring them back with smart offers and repeat engagement.
-          </p>
-
-          <!-- FLOW -->
-
-          <div class="revisit-flow">
-
-            <div class="flow-item">
-              <span>1</span>
-              <p>Display QR</p>
-            </div>
-
-            <div class="flow-line"></div>
-
-            <div class="flow-item">
-              <span>2</span>
-              <p>Customer Scans</p>
-            </div>
-
-            <div class="flow-line"></div>
-
-            <div class="flow-item">
-              <span>3</span>
-              <p>Offer Sent</p>
-            </div>
-
-            <div class="flow-line"></div>
-
-            <div class="flow-item">
-              <span>4</span>
-              <p>Customer Returns</p>
-            </div>
-
-            <div class="flow-line"></div>
-
-            <div class="flow-item">
-              <span>5</span>
-              <p>Repeat & Grow</p>
-            </div>
-
-          </div>
-
-          <!-- BUTTON -->
-
-          <div class="revisit-buttons">
-
-            <a href="contact.html" class="btn btn-primary">
-              Book a Demo →
-            </a>
-
-          </div>
 
         </div>
 
-        <!-- RIGHT -->
+        <div class="flow-arrow">→</div>
 
-        <div class="revisit-right">
+        <div class="flow-step">
 
-          <div class="tent-card-wrap">
-            <img src="assets/qr.png" alt="QR Tent Card" class="tent-card-img">
-          </div>
+          <div class="flow-icon">🏪</div>
 
-          <div class="phone-ui-card">
+          <div class="flow-number">2</div>
 
-            <div class="phone-top">
-              <div class="phone-dot"></div>
-              <div class="phone-dot"></div>
-              <div class="phone-dot"></div>
-            </div>
+          <p>
+            They receive an<br>
+            automated offer
+          </p>
 
-            <div class="offer-card">
+        </div>
 
-              <div class="offer-brand">
-                Revisit
-              </div>
+        <div class="flow-arrow">→</div>
 
-              <h4>
-                You’ve received an offer
-                from Blue House Cafe.
-              </h4>
+        <div class="flow-step">
 
-              <div class="offer-highlight">
-                20% OFF on your next order
-              </div>
+          <div class="flow-icon">🛍</div>
 
-              <p>
-                Show this offer at the counter
-                to claim it.
-              </p>
+          <div class="flow-number">3</div>
 
-            </div>
-
-            <div class="mini-stats">
-
-              <div class="mini-stat">
-                <span>1,240</span>
-                <p>Customers Reached</p>
-              </div>
-
-              <div class="mini-stat">
-                <span>320</span>
-                <p>Offers Claimed</p>
-              </div>
-
-            </div>
-
-          </div>
+          <p>
+            They revisit to claim<br>
+            the offer & you make a sale
+          </p>
 
         </div>
 
@@ -276,64 +243,52 @@
 
   </section>
 
-  <!-- WHY REVISIT -->
+  <!-- WHY BUSINESSES LOVE REVISIT -->
 
-  <section class="why-revisit-section">
+  <section class="why-revisit">
 
     <div class="container">
 
-      <p class="section-label">
+      <h2 class="section-center-title">
         WHY BUSINESSES LOVE REVISIT
-      </p>
+      </h2>
 
-      <div class="why-grid-new">
+      <div class="why-grid">
 
         <div class="why-card">
-
-          <img src="assets/icons/restaurant.svg" alt="">
-
-          <h4>Builds Loyalty</h4>
-
+          <div class="why-icon">👥</div>
+          <h3>More Repeat Visits</h3>
           <p>
-            Turn first-time visitors into repeat customers.
+            Bring customers back with
+            the right offer at the right time.
           </p>
-
         </div>
 
         <div class="why-card">
-
-          <img src="assets/icons/growth.svg" alt="">
-
-          <h4>Drives More Sales</h4>
-
+          <div class="why-icon">📢</div>
+          <h3>Easy & Effortless</h3>
           <p>
-            Bring customers back with targeted offers.
+            Simple setup. No apps,
+            no logins for your customers.
           </p>
-
         </div>
 
         <div class="why-card">
-
-          <img src="assets/icons/ecosystem.svg" alt="">
-
-          <h4>Simple System</h4>
-
+          <div class="why-icon">📈</div>
+          <h3>Increase Sales</h3>
           <p>
-            Easy to use and simple to operate daily.
+            Timely offers drive more
+            orders and higher revenue.
           </p>
-
         </div>
 
         <div class="why-card">
-
-          <img src="assets/icons/strategy.svg" alt="">
-
-          <h4>Saves Time</h4>
-
+          <div class="why-icon">◷</div>
+          <h3>Saves Time</h3>
           <p>
-            Automate customer engagement effortlessly.
+            Automated WhatsApp offers
+            so you can focus on your business.
           </p>
-
         </div>
 
       </div>
@@ -342,33 +297,120 @@
 
   </section>
 
-  <!-- FOCUSED SECTION -->
+  <!-- HOW IT WORKS -->
 
-  <section class="focused-section-new">
+  <section class="how-it-works">
 
-    <div class="container focused-grid">
+    <div class="container">
 
-      <div class="focused-left">
+      <h2 class="section-center-title">
+        HOW REVISIT WORKS
+      </h2>
 
-        <h2>
-          Focused. Powerful.
-          <span>Built to perform.</span>
-        </h2>
+      <div class="steps-grid">
 
-        <p>
-          We build focused systems that solve real business problems —
-          designed for clarity, consistency, and growth.
-        </p>
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Display QR</h3>
+          <p>
+            Place your Revisit QR
+            at tables, counters,
+            or billing areas.
+          </p>
+        </div>
 
-        <a href="contact.html" class="btn btn-primary">
-          Explore Revisit →
-        </a>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Customer Scans</h3>
+          <p>
+            Customers scan the QR
+            and get connected on WhatsApp.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Offer Sent</h3>
+          <p>
+            They receive an automated
+            offer from your business.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h3>Customer Returns</h3>
+          <p>
+            They come back to your
+            restaurant to claim the offer.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">5</div>
+          <h3>Sale Made</h3>
+          <p>
+            They claim the offer
+            and you make another sale.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">6</div>
+          <h3>Repeat & Grow</h3>
+          <p>
+            More repeat customers.
+            More sales. Business growth.
+          </p>
+        </div>
 
       </div>
 
-      <div class="focused-right">
+    </div>
 
-        <img src="assets/hero-b.png" alt="Brand Overhaul">
+  </section>
+
+  <!-- WHO IT'S FOR -->
+
+  <section class="who-its-for">
+
+    <div class="container">
+
+      <h2 class="section-center-title">
+        WHO IT'S FOR
+      </h2>
+
+      <div class="industry-grid">
+
+        <div class="industry-card">
+          <img src="assets/icons/restaurant.svg" alt="">
+          <p>Restaurants</p>
+        </div>
+
+        <div class="industry-card">
+          <img src="assets/icons/cafe.svg" alt="">
+          <p>Cafes</p>
+        </div>
+
+        <div class="industry-card">
+          <img src="assets/icons/retail.svg" alt="">
+          <p>Retail Stores</p>
+        </div>
+
+        <div class="industry-card">
+          <img src="assets/icons/salon.svg" alt="">
+          <p>Salons</p>
+        </div>
+
+        <div class="industry-card">
+          <img src="assets/icons/gym.svg" alt="">
+          <p>Gyms</p>
+        </div>
+
+        <div class="industry-card">
+          <img src="assets/icons/clinic.svg" alt="">
+          <p>Clinics</p>
+        </div>
 
       </div>
 
@@ -380,28 +422,28 @@
 
   <section class="products-cta">
 
-    <div class="container">
+    <div class="container cta-box-products">
 
-      <div class="products-cta-box">
+      <div class="cta-left">
 
-        <div class="products-cta-text">
+        <img src="assets/hero-b.png" alt="Brand Overhaul">
 
+        <div>
           <h2>
             Ready to turn your visitors
-            into loyal customers?
+            into <span>loyal customers?</span>
           </h2>
 
           <p>
-            Let’s build something great together.
+            Let's build something great together.
           </p>
-
         </div>
 
-        <a href="contact.html" class="btn btn-primary">
-          Let’s Talk →
-        </a>
-
       </div>
+
+      <a href="contact.html" class="btn btn-primary">
+        Let's Talk →
+      </a>
 
     </div>
 
@@ -418,9 +460,16 @@
         <img src="assets/logo.png" alt="Brand Overhaul">
 
         <p>
-          Building growth systems that help businesses acquire,
-          retain, and scale customers with clarity and consistency.
+          Building growth systems that help
+          businesses acquire, retain, and scale
+          customers with clarity and consistency.
         </p>
+
+        <div class="socials">
+          <a href="#">in</a>
+          <a href="#">◎</a>
+          <a href="#">✉</a>
+        </div>
 
       </div>
 
@@ -429,22 +478,22 @@
         <h4>QUICK LINKS</h4>
 
         <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
+        <a href="products.html" class="active-footer">Products</a>
         <a href="contact.html">Contact</a>
 
       </div>
 
       <div class="footer-contact">
 
-        <h4>LET’S CONNECT</h4>
+        <h4>LET'S CONNECT</h4>
 
         <p>
-          Have a question or want to learn more
-          about our products?
+          Have a question or want to
+          learn more about Revisit?
         </p>
 
-        <a href="contact.html" class="btn btn-outline">
-          Let’s Talk →
+        <a href="contact.html" class="btn btn-primary">
+          Let's Talk →
         </a>
 
       </div>
@@ -455,45 +504,15 @@
 
       <div class="container footer-bottom-inner">
 
-        <p>
-          © 2025 Brand Overhaul. All rights reserved.
-        </p>
+        <p>© 2025 Brand Overhaul. All rights reserved.</p>
 
-        <p>
-          Growth engineered with clarity.
-        </p>
+        <p>Growth engineered with clarity.</p>
 
       </div>
 
     </div>
 
   </footer>
-
-  <!-- MOBILE MENU SCRIPT -->
-
-  <script>
-
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const closeMenu = document.getElementById('closeMenu');
-    const overlay = document.getElementById('mobileOverlay');
-
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.add('active');
-      overlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
-
-    closeMenu.addEventListener('click', closeMobileMenu);
-    overlay.addEventListener('click', closeMobileMenu);
-
-    function closeMobileMenu() {
-      mobileMenu.classList.remove('active');
-      overlay.classList.remove('active');
-      document.body.style.overflow = 'auto';
-    }
-
-  </script>
 
 </body>
 
