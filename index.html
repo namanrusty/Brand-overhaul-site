@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Brand Overhaul – Strategy. Growth. Systems.</title>
+  <title>Brand Overhaul — Strategy. Growth. Systems.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-
+  <!-- =========================================
+       NAVBAR
+  ========================================== -->
   <header class="navbar">
+
     <div class="container nav-inner">
 
       <a href="index.html" class="logo">
-        <img src="assets/logo.png" alt="Brand Overhaul">
+        <img src="images/logo.png" alt="Brand Overhaul" class="logo-img">
       </a>
 
       <nav class="nav-links">
@@ -29,46 +34,75 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <a href="contact.html" class="btn btn-primary nav-btn">
-        Let's Talk →
-      </a>
+      <div class="nav-right">
+
+        <a href="contact.html" class="btn btn-primary nav-cta">
+          Let’s Talk →
+        </a>
+
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
 
     </div>
+
   </header>
 
-  <!-- HERO -->
+  <!-- MOBILE MENU -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
 
+  <aside class="mobile-menu" id="mobileMenu">
+
+    <button class="mobile-menu-close" id="closeMenu">×</button>
+
+    <nav class="mobile-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+
+      <a href="contact.html" class="btn btn-primary mobile-cta">
+        Let’s Talk →
+      </a>
+    </nav>
+
+  </aside>
+
+  <!-- =========================================
+       HERO
+  ========================================== -->
   <section class="hero">
-
-    <div class="hero-glow"></div>
-    <div class="hero-grid"></div>
 
     <div class="container hero-inner">
 
       <div class="hero-content">
 
-        <p class="hero-eyebrow">
+        <p class="eyebrow">
           WE BUILD BRANDS THAT WIN
         </p>
 
-        <h1 class="hero-title">
+        <h1 class="hero-heading">
           STRATEGY.<br>
-          <span>GROWTH.</span><br>
+          <span class="gold">GROWTH.</span><br>
           SYSTEMS.
         </h1>
 
-        <p class="hero-description">
-          Brand Overhaul builds growth systems that help businesses acquire,
-          retain, and scale customers with clarity and consistency.
+        <p class="hero-sub">
+          Brand Overhaul builds growth systems that help
+          businesses acquire, retain, and scale customers
+          with clarity and consistency.
         </p>
 
-        <div class="hero-buttons">
+        <div class="hero-btns">
 
           <a href="products.html" class="btn btn-primary">
             Explore Our Products →
           </a>
 
-          <a href="#" class="btn btn-secondary">
+          <a href="#revisit" class="btn btn-outline">
             Watch How It Works
           </a>
 
@@ -78,13 +112,11 @@
 
       <div class="hero-visual">
 
-        <div class="hero-image-wrap">
-
-          <div class="hero-image-glow"></div>
-
-          <img src="assets/hero-b.png" alt="Brand Overhaul">
-
-        </div>
+        <img
+          src="images/hero-main.png"
+          alt="Brand Overhaul"
+          class="hero-img"
+        >
 
       </div>
 
@@ -92,56 +124,50 @@
 
   </section>
 
-  <!-- REVISIT -->
+  <!-- =========================================
+       REVISIT SECTION
+  ========================================== -->
+  <section class="revisit-strip" id="revisit">
 
-  <section class="revisit-section">
+    <div class="container revisit-strip-inner">
 
-    <div class="container">
+      <div class="revisit-qr-wrap">
 
-      <div class="revisit-card">
+        <img
+          src="images/revisit-qr.png"
+          alt="Revisit QR"
+          class="qr-img"
+        >
 
-        <div class="revisit-overlay"></div>
+      </div>
 
-        <div class="revisit-left">
+      <div class="revisit-info">
 
-          <div class="revisit-image-wrap">
+        <p class="eyebrow small">
+          OUR FIRST PRODUCT
+        </p>
 
-            <img src="assets/qr.png" alt="Revisit QR">
+        <div class="revisit-brand">
 
-          </div>
-
-        </div>
-
-        <div class="revisit-right">
-
-          <p class="section-mini">
-            OUR FIRST PRODUCT
-          </p>
-
-          <div class="revisit-branding">
-
-            <div class="revisit-icon">
-              R
-            </div>
-
-            <h2>Revisit</h2>
-
-          </div>
-
-          <h3>
-            Turn one scan into lifelong customers.
-          </h3>
-
-          <p>
-            Revisit helps businesses connect instantly with customers
-            and keep them coming back with offers & rewards.
-          </p>
-
-          <a href="products.html" class="gold-link">
-            Discover Revisit →
-          </a>
+          <h2 class="revisit-name">
+            Revisit
+          </h2>
 
         </div>
+
+        <p class="revisit-tagline">
+          Turn one scan into lifelong customers.
+        </p>
+
+        <p class="revisit-desc">
+          Revisit helps businesses connect instantly with
+          customers and keep them coming back with offers
+          & rewards.
+        </p>
+
+        <a href="products.html" class="link-gold">
+          Discover Revisit →
+        </a>
 
       </div>
 
@@ -149,42 +175,43 @@
 
   </section>
 
-  <!-- WHAT WE BUILD -->
-
-  <section class="build-section">
+  <!-- =========================================
+       WHAT WE BUILD
+  ========================================== -->
+  <section class="what-we-build">
 
     <div class="container">
 
-      <p class="section-mini center">
+      <p class="eyebrow center">
         WHAT WE BUILD
       </p>
 
-      <h2 class="section-title center">
+      <h2 class="section-heading center">
         Systems that drive
-        <span>real business growth.</span>
+        <span class="gold-dark">real business growth.</span>
       </h2>
 
-      <div class="build-grid">
+      <div class="pillars-grid">
 
-        <div class="build-card">
+        <div class="pillar">
 
-          <div class="build-icon">
-            ◎
+          <div class="pillar-icon">
+            🎯
           </div>
 
           <h3>Brand Strategy</h3>
 
           <p>
-            We craft strategies that position your business clearly,
-            define your edge, and drive long-term growth.
+            We craft strategies that position your business
+            clearly, define your edge, and drive long-term growth.
           </p>
 
         </div>
 
-        <div class="build-card">
+        <div class="pillar">
 
-          <div class="build-icon">
-            ↗
+          <div class="pillar-icon">
+            📈
           </div>
 
           <h3>Growth Systems</h3>
@@ -196,10 +223,10 @@
 
         </div>
 
-        <div class="build-card">
+        <div class="pillar">
 
-          <div class="build-icon">
-            ◇
+          <div class="pillar-icon">
+            ◻️
           </div>
 
           <h3>Product Ecosystem</h3>
@@ -217,44 +244,53 @@
 
   </section>
 
-  <!-- WHO WE SERVE -->
-
-  <section class="serve-section">
+  <!-- =========================================
+       WHO WE SERVE
+  ========================================== -->
+  <section class="who-we-serve">
 
     <div class="container">
 
-      <p class="section-mini center">
+      <p class="eyebrow center">
         STARTING WITH BUSINESSES THAT NEED REPEAT CUSTOMERS
       </p>
 
       <div class="serve-grid">
 
         <div class="serve-item active">
-          Restaurants
+          <p>Restaurants</p>
         </div>
 
         <div class="serve-item active">
-          Cafes
+          <p>Cafes</p>
         </div>
 
         <div class="serve-item">
-          Retail Stores
-          <span>Coming Soon</span>
+          <p>
+            Retail Stores
+            <span class="coming-soon">Coming Soon</span>
+          </p>
         </div>
 
         <div class="serve-item">
-          Salons
-          <span>Coming Soon</span>
+          <p>
+            Salons
+            <span class="coming-soon">Coming Soon</span>
+          </p>
         </div>
 
         <div class="serve-item">
-          Gyms
-          <span>Coming Soon</span>
+          <p>
+            Gyms
+            <span class="coming-soon">Coming Soon</span>
+          </p>
         </div>
 
         <div class="serve-item">
-          Clinics
-          <span>Coming Soon</span>
+          <p>
+            Clinics
+            <span class="coming-soon">Coming Soon</span>
+          </p>
         </div>
 
       </div>
@@ -263,79 +299,40 @@
 
   </section>
 
-  <!-- FUTURE -->
-
+  <!-- =========================================
+       FUTURE SECTION
+  ========================================== -->
   <section class="future-section">
-
-    <div class="future-glow"></div>
 
     <div class="container future-inner">
 
-      <div class="future-content">
+      <div class="future-text">
 
         <h2>
           We’re building the
-          <span>future</span>
-          of business
-          <span>growth.</span>
+          <span class="gold">future</span>
+          of business growth.
         </h2>
 
         <p>
-          Brand Overhaul is creating a suite of products that help
-          businesses grow smarter — from customer retention to
-          data-driven growth systems.
+          Brand Overhaul is creating a suite of products
+          that help businesses grow smarter —
+          from customer retention to data-driven growth systems.
         </p>
 
-        <h4>
+        <p class="future-highlight">
           Revisit is just the beginning.
-        </h4>
+        </p>
 
       </div>
 
-      <div class="future-image-wrap">
+      <div class="future-visual">
 
-        <div class="future-image-glow"></div>
-
-        <img src="assets/mug-book.png" alt="Brand Overhaul">
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- CTA -->
-
-  <section class="cta-section">
-
-    <div class="container">
-
-      <div class="cta-card">
-
-        <div class="cta-left">
-
-          <div class="cta-icon">
-            ↗
-          </div>
-
-          <h2>
-            Great businesses don’t grow by chance.
-            They grow by <span>systems.</span>
-          </h2>
-
-        </div>
-
-        <div class="cta-right">
-
-          <a href="products.html" class="btn btn-primary">
-            Explore Revisit →
-          </a>
-
-          <a href="contact.html" class="btn btn-secondary">
-            Let’s Talk →
-          </a>
-
-        </div>
+        <img
+          src="images/future-growth.png"
+          alt="Future Growth"
+          class="future-img"
+        >
 
       </div>
 
@@ -343,19 +340,61 @@
 
   </section>
 
-  <!-- FOOTER -->
+  <!-- =========================================
+       CTA SECTION
+  ========================================== -->
+  <section class="cta-banner">
 
+    <div class="container cta-banner-inner">
+
+      <div class="cta-text-block">
+
+        <h3>
+          Great businesses don’t grow by chance.
+          They grow by <span class="gold">systems.</span>
+        </h3>
+
+      </div>
+
+      <div class="cta-btns">
+
+        <a href="products.html" class="btn btn-primary">
+          Explore Revisit →
+        </a>
+
+        <a href="contact.html" class="btn btn-outline">
+          Let’s Talk →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
   <footer class="footer">
 
-    <div class="container footer-inner">
+    <div class="container footer-top">
 
       <div class="footer-brand">
 
-        <img src="assets/logo.png" alt="Brand Overhaul">
+        <a href="index.html" class="footer-logo">
+
+          <img
+            src="images/logo.png"
+            alt="Brand Overhaul"
+            class="footer-logo-img"
+          >
+
+        </a>
 
         <p>
-          Building growth systems that help businesses acquire,
-          retain, and scale customers with clarity and consistency.
+          Building growth systems that help businesses
+          acquire, retain, and scale customers
+          with clarity and consistency.
         </p>
 
       </div>
@@ -370,12 +409,13 @@
 
       </div>
 
-      <div class="footer-contact">
+      <div class="footer-connect">
 
         <h4>LET’S CONNECT</h4>
 
         <p>
-          Have a question or want to learn more about our products?
+          Have a question or want to learn more
+          about our products?
         </p>
 
         <a href="contact.html" class="btn btn-primary">
@@ -388,9 +428,11 @@
 
     <div class="footer-bottom">
 
-      <div class="container footer-bottom-inner">
+      <div class="footer-bottom-copy">
 
-        <p>© 2025 Brand Overhaul. All rights reserved.</p>
+        <p>
+          © 2025 Brand Overhaul. All rights reserved.
+        </p>
 
         <p>
           Growth engineered with clarity.
@@ -401,6 +443,33 @@
     </div>
 
   </footer>
+
+  <!-- =========================================
+       MOBILE MENU SCRIPT
+  ========================================== -->
+  <script>
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const closeMenu = document.getElementById('closeMenu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      mobileOverlay.classList.add('open');
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      mobileOverlay.classList.remove('open');
+    });
+
+    mobileOverlay.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      mobileOverlay.classList.remove('open');
+    });
+
+  </script>
 
 </body>
 </html>
