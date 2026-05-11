@@ -425,15 +425,11 @@ FOOTER
 
 .socials{
   display:flex;
-  gap:14px;
-  margin-top:24px;
+  gap:18px;
+  margin-top:28px;
 }
 
 .socials a{
-  width:42px;
-  height:42px;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:12px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -441,13 +437,19 @@ FOOTER
 }
 
 .socials a:hover{
-  border-color:#f5b12a;
+  transform:translateY(-2px);
 }
 
 .socials img{
-  width:18px;
-  height:18px;
+  width:28px;
+  height:28px;
   object-fit:contain;
+  opacity:.88;
+  transition:.3s;
+}
+
+.socials img:hover{
+  opacity:1;
 }
 
 .footer-bottom{
@@ -620,26 +622,27 @@ PRODUCT PAGE
 
 .what-right{
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   justify-content:center;
-  gap:28px;
+  gap:26px;
+  padding-top:10px;
 }
 
 .flow-step{
+  width:170px;
   text-align:center;
-  max-width:190px;
   display:flex;
   flex-direction:column;
   align-items:center;
 }
 
 .flow-icon{
-  width:72px;
-  height:72px;
-  margin:0 auto 18px;
+  width:68px;
+  height:68px;
   display:flex;
   align-items:center;
   justify-content:center;
+  margin-bottom:18px;
 }
 
 .flow-icon img{
@@ -657,22 +660,22 @@ PRODUCT PAGE
   display:flex;
   align-items:center;
   justify-content:center;
-  margin:0 auto 16px;
   font-weight:700;
   font-size:18px;
+  margin-bottom:18px;
 }
 
 .flow-step p{
   color:#d1d1d1;
-  line-height:1.55;
+  line-height:1.75;
   font-size:17px;
-  max-width:180px;
+  max-width:160px;
 }
 
 .flow-arrow{
   color:#f5b12a;
   font-size:34px;
-  margin-top:-30px;
+  margin-top:92px;
 }
 
 /* WHY REVISIT */
@@ -891,11 +894,12 @@ TABLET
 
   .what-right{
     flex-direction:column;
+    align-items:center;
   }
 
   .flow-arrow{
     transform:rotate(90deg);
-    margin:0;
+    margin-top:0;
   }
 
   .footer-grid{
@@ -986,15 +990,21 @@ MOBILE
 
   .what-right{
     flex-direction:column;
+    align-items:center;
+    gap:22px;
   }
 
   .flow-arrow{
     transform:rotate(90deg);
-    margin:0;
+    margin-top:0;
   }
 
   .flow-step{
-    max-width:100%;
+    width:100%;
+  }
+
+  .flow-step p{
+    max-width:240px;
   }
 
   .why-grid,
@@ -1039,10 +1049,6 @@ MOBILE
 
   .cta-box-products .btn{
     width:100%;
-  }
-
-  .socials{
-    justify-content:flex-start;
   }
 
   .footer-bottom-inner{
