@@ -444,19 +444,19 @@ PRODUCT PAGE
 .revisit-hero{
   position:relative;
   overflow:hidden;
-  padding:90px 0 70px;
+  padding:48px 0 42px;
 
   background-image:
   linear-gradient(
     90deg,
     rgba(0,0,0,.96) 0%,
-    rgba(0,0,0,.90) 28%,
-    rgba(0,0,0,.52) 55%,
-    rgba(0,0,0,.14) 72%
+    rgba(0,0,0,.92) 26%,
+    rgba(0,0,0,.56) 52%,
+    rgba(0,0,0,.18) 72%
   ),
   url('assets/revisit-hero-bg.png');
 
-  background-size:contain;
+  background-size:cover;
   background-position:right center;
   background-repeat:no-repeat;
   background-color:#050505;
@@ -465,21 +465,21 @@ PRODUCT PAGE
 .revisit-hero-grid{
   display:grid;
   grid-template-columns:1fr;
-  min-height:720px;
+  min-height:620px;
   align-items:center;
 }
 
 .revisit-hero-content{
-  max-width:560px;
+  max-width:540px;
   position:relative;
   z-index:2;
 }
 
 .revisit-hero-content h1{
   font-family:'Barlow Condensed',sans-serif;
-  font-size:92px;
+  font-size:72px;
   line-height:.92;
-  margin-bottom:24px;
+  margin-bottom:18px;
 }
 
 .revisit-hero-content h1 span{
@@ -488,23 +488,23 @@ PRODUCT PAGE
 
 .section-tag{
   color:#f5b12a;
-  font-size:16px;
-  letter-spacing:4px;
-  margin-bottom:24px;
+  font-size:15px;
+  letter-spacing:5px;
+  margin-bottom:22px;
 }
 
 .hero-description{
   color:#d0d0d0;
-  font-size:22px;
-  line-height:1.7;
-  margin-bottom:32px;
-  max-width:520px;
+  font-size:20px;
+  line-height:1.65;
+  margin-bottom:26px;
+  max-width:500px;
 }
 
 .hero-mini-features{
   display:flex;
-  gap:34px;
-  margin-top:42px;
+  gap:26px;
+  margin-top:36px;
   flex-wrap:wrap;
 }
 
@@ -513,8 +513,8 @@ PRODUCT PAGE
 }
 
 .mini-icon{
-  width:62px;
-  height:62px;
+  width:60px;
+  height:60px;
   border:1px solid rgba(245,177,42,.18);
   border-radius:18px;
   display:flex;
@@ -525,8 +525,8 @@ PRODUCT PAGE
 }
 
 .mini-icon img{
-  width:28px;
-  height:28px;
+  width:26px;
+  height:26px;
   object-fit:contain;
 }
 
@@ -612,8 +612,8 @@ PRODUCT PAGE
 }
 
 .flow-number{
-  width:38px;
-  height:38px;
+  width:42px;
+  height:42px;
   background:#f5b12a;
   color:#111;
   border-radius:50%;
@@ -622,6 +622,7 @@ PRODUCT PAGE
   justify-content:center;
   margin:0 auto 16px;
   font-weight:700;
+  font-size:18px;
 }
 
 .flow-step p{
@@ -633,7 +634,7 @@ PRODUCT PAGE
 .flow-arrow{
   color:#f5b12a;
   font-size:34px;
-  margin-top:-34px;
+  margin-top:-30px;
 }
 
 /* WHY REVISIT */
@@ -677,8 +678,9 @@ PRODUCT PAGE
 }
 
 .why-card h3{
-  font-size:30px;
+  font-size:28px;
   margin-bottom:14px;
+  line-height:1.15;
 }
 
 .why-card p{
@@ -707,8 +709,8 @@ PRODUCT PAGE
 }
 
 .step-number{
-  width:38px;
-  height:38px;
+  width:40px;
+  height:40px;
   background:#f5b12a;
   color:#111;
   border-radius:50%;
@@ -732,7 +734,7 @@ PRODUCT PAGE
 }
 
 .step-card h3{
-  font-size:30px;
+  font-size:28px;
   margin-bottom:14px;
 }
 
@@ -796,12 +798,12 @@ PRODUCT PAGE
 }
 
 .cta-left img{
-  width:140px;
+  width:160px;
   border-radius:18px;
 }
 
 .cta-left h2{
-  font-size:56px;
+  font-size:54px;
   line-height:1.05;
   margin-bottom:14px;
 }
@@ -816,7 +818,7 @@ PRODUCT PAGE
 }
 
 .cta-box-products .btn{
-  min-width:170px;
+  min-width:180px;
   min-height:64px;
   font-size:18px;
 }
@@ -827,10 +829,6 @@ TABLET
 
 @media(max-width:1100px){
 
-  .business-grid,
-  .build-grid,
-  .revisit-card,
-  .footer-grid,
   .why-grid,
   .steps-grid,
   .industry-grid,
@@ -838,30 +836,21 @@ TABLET
     grid-template-columns:1fr;
   }
 
-  .hero-heading{
-    font-size:72px;
-  }
-
-  .section-title{
-    font-size:42px;
-  }
-
-  .cta-box{
-    flex-direction:column;
-    gap:28px;
-    text-align:center;
-  }
-
   .nav-links{
     display:none;
   }
 
-  .revisit-content h2{
-    font-size:56px;
+  .revisit-hero{
+    padding:42px 0;
+    background-position:72% center;
   }
 
-  .revisit-content h3{
-    font-size:34px;
+  .revisit-hero-grid{
+    min-height:auto;
+  }
+
+  .revisit-hero-content h1{
+    font-size:64px;
   }
 
   .what-right{
@@ -878,10 +867,6 @@ TABLET
     align-items:flex-start;
   }
 
-  .revisit-hero-content h1{
-    font-size:74px;
-  }
-
 }
 
 /* =========================================================
@@ -890,166 +875,49 @@ MOBILE
 
 @media(max-width:768px){
 
-  .nav-inner{
-    height:88px;
-  }
-
-  .logo img{
-    width:110px;
-  }
-
-  .btn{
-    padding:14px 20px;
-    font-size:15px;
-  }
-
-  .hero{
-    padding:52px 0 44px;
-    background-position:72% center;
-  }
-
-  .hero-content{
-    max-width:100%;
-  }
-
-  .eyebrow{
-    font-size:13px;
-    letter-spacing:5px;
-    line-height:1.6;
-    margin-bottom:18px;
-  }
-
-  .hero-heading{
-    font-size:58px;
-    line-height:.92;
-    margin-bottom:22px;
-  }
-
-  .hero-heading span{
-    display:block;
-  }
-
-  .hero-sub{
-    font-size:18px;
-    line-height:1.65;
-    max-width:100%;
-  }
-
-  .hero-btns{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:14px;
-    margin-top:26px;
-  }
-
-  .hero-btns .btn{
-    width:100%;
-    text-align:center;
-  }
-
-  .business-strip{
-    padding:42px 0 52px;
-  }
-
-  .strip-heading{
-    font-size:13px;
-    line-height:1.8;
-    margin-bottom:34px;
-  }
-
-  .business-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:34px 18px;
-  }
-
-  .business-item{
-    border-right:none;
-    padding:0;
-  }
-
-  .business-item img{
-    width:52px;
-    margin-bottom:16px;
-  }
-
-  .business-item p{
-    font-size:17px;
-  }
-
-  .revisit-section{
-    padding:0 0 68px;
-  }
-
-  .revisit-card{
-    padding:18px;
-    border-radius:28px;
-    gap:24px;
-  }
-
-  .revisit-content h2{
-    font-size:48px;
-  }
-
-  .revisit-content h3{
-    font-size:26px;
-  }
-
-  .revisit-content p{
-    font-size:17px;
-  }
-
-  .section-title{
-    font-size:42px;
-  }
-
-  .build-grid{
-    gap:18px;
-  }
-
-  .build-card{
-    padding:26px;
-  }
-
-  .footer-grid{
-    gap:40px;
-    padding:50px 0;
-  }
-
-  .footer-bottom-inner{
-    height:auto;
-    flex-direction:column;
-    gap:10px;
-    padding:22px 0;
-    text-align:center;
-  }
-
-  /* PRODUCT MOBILE */
-
   .revisit-hero{
-    padding:54px 0 46px;
-    background-position:72% center;
+    padding:34px 0 28px;
+
+    background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,.88),
+      rgba(0,0,0,.94)
+    ),
+    url('assets/revisit-hero-bg.png');
+
+    background-size:cover;
+    background-position:68% center;
   }
 
-  .revisit-hero-grid{
-    min-height:auto;
+  .revisit-hero-content{
+    max-width:100%;
   }
 
   .revisit-hero-content h1{
-    font-size:58px;
+    font-size:54px;
+    line-height:.94;
+    margin-bottom:16px;
   }
 
   .hero-description{
     font-size:18px;
-    line-height:1.75;
+    line-height:1.7;
+    margin-bottom:22px;
   }
 
   .hero-mini-features{
-    gap:20px;
+    gap:18px;
+    margin-top:28px;
+  }
+
+  .mini-feature{
+    width:calc(50% - 10px);
   }
 
   .mini-icon{
-    width:56px;
-    height:56px;
+    width:54px;
+    height:54px;
   }
 
   .mini-icon img{
@@ -1084,6 +952,10 @@ MOBILE
     margin:0;
   }
 
+  .flow-step{
+    max-width:100%;
+  }
+
   .why-grid,
   .steps-grid,
   .industry-grid{
@@ -1104,15 +976,17 @@ MOBILE
   .cta-left{
     flex-direction:column;
     align-items:flex-start;
+    gap:22px;
   }
 
   .cta-left img{
     width:100%;
-    max-width:180px;
+    max-width:220px;
   }
 
   .cta-left h2{
     font-size:38px;
+    line-height:1.08;
   }
 
   .cta-left p{
