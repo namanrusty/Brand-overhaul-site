@@ -1,224 +1,647 @@
-<!DOCTYPE html>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Products – Brand Overhaul</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
-</head>
-<body>
+body{
+  font-family:'Barlow',sans-serif;
+  background:#050505;
+  color:#fff;
+  overflow-x:hidden;
+}
 
-  <!-- NAVBAR -->
+img{
+  max-width:100%;
+  display:block;
+}
 
-  <header class="navbar">
-    <div class="nav-inner container">
-      <a href="index.html" class="logo">
-        <img src="assets/logo.png" alt="Brand Overhaul" class="logo-img" />
-      </a>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="products.html" class="active">Products</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="nav-right">
-        <a href="contact.html" class="btn btn-primary nav-cta">Let's Talk &rarr;</a>
-        <button class="hamburger" id="hamburger" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-menu-close" id="menuClose">&times;</button>
-    <nav class="mobile-nav">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-primary mobile-cta">Let's Talk &rarr;</a>
-    </nav>
-  </div>
-  <div class="mobile-overlay" id="menuOverlay"></div>
+a{
+  text-decoration:none;
+}
 
-  <!-- PRODUCTS HERO -->
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
 
-  <section class="hero hero-products">
-    <div class="hero-inner container">
-      <div class="hero-content">
-        <p class="eyebrow">OUR PRODUCTS</p>
-        <h1 class="hero-heading">
-          Products built for<br>
-          <span class="gold">real business growth.</span>
-        </h1>
-        <p class="hero-sub">We create simple, powerful, and easy-to-use products that help businesses attract, retain, and grow customers while driving measurable results.</p>
-        <div class="product-badges">
-          <div class="badge-item">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2l2 6h6l-4.5 3.5 1.5 6L11 14l-5 3.5 1.5-6L3 8h6z" stroke="#F5A623" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
-            <div><strong>Easy to Use</strong><p>Built for teams, not tech experts.</p></div>
-          </div>
-          <div class="badge-item">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2l8 4v6c0 4-3.5 7.5-8 8-4.5-.5-8-4-8-8V6z" stroke="#F5A623" stroke-width="1.5" fill="none" stroke-linejoin="round"/><polyline points="7,11 10,14 15,9" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><strong>Secure &amp; Reliable</strong><p>Enterprise-grade security you can trust.</p></div>
-          </div>
-          <div class="badge-item">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="14" width="4" height="6" rx="1" fill="#F5A623" opacity="0.4"/><rect x="9" y="9" width="4" height="11" rx="1" fill="#F5A623" opacity="0.65"/><rect x="16" y="3" width="4" height="17" rx="1" fill="#F5A623"/></svg>
-            <div><strong>Built for Growth</strong><p>Scales with your business, every step.</p></div>
-          </div>
-          <div class="badge-item">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="#F5A623" stroke-width="1.5" fill="none"/><polyline points="7,11 10,14 15,8" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div><strong>Real Impact</strong><p>Designed to deliver measurable growth and ROI.</p></div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-visual products-hero-visual">
-        <img src="assets/mug-book.png" alt="Brand Overhaul tools" class="products-hero-img" />
-      </div>
-    </div>
-  </section>
+/* NAVBAR */
 
-  <!-- REVISIT FLAGSHIP -->
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(5,5,5,.88);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
 
-  <section class="revisit-flagship">
-    <div class="container">
-      <p class="eyebrow">OUR FLAGSHIP PRODUCT</p>
-      <div class="flagship-inner">
-        <div class="flagship-left">
-          <div class="revisit-brand">
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="19" r="19" fill="#F5A623" opacity="0.1"/><text x="19" y="26" font-family="Barlow Condensed, sans-serif" font-size="24" font-weight="800" text-anchor="middle" fill="#F5A623">R</text></svg>
-            <h2 class="revisit-name">Revisit</h2>
-          </div>
-          <p class="revisit-tagline">Turn first-time visitors into repeat customers.</p>
-          <p class="revisit-desc">Revisit helps businesses connect instantly with customers and keep them coming back with offers &amp; rewards.</p>
-          <ul class="revisit-features">
-            <li><span class="check">&#x2713;</span> Instant customer connection</li>
-            <li><span class="check">&#x2713;</span> Personalized offers &amp; rewards</li>
-            <li><span class="check">&#x2713;</span> Smart reminders &amp; engagement</li>
-            <li><span class="check">&#x2713;</span> Real-time analytics &amp; insights</li>
-            <li><span class="check">&#x2713;</span> Works offline &amp; online</li>
-          </ul>
-          <div class="flagship-btns">
-            <a href="contact.html" class="btn btn-primary">Explore Revisit &rarr;</a>
-            <a href="#" class="btn btn-outline">&#9654; See How It Works</a>
-          </div>
-        </div>
-        <div class="flagship-right">
-          <img src="assets/qr.png" alt="Revisit QR Tent Card" class="flagship-qr-img" />
-          <img src="assets/phone.png" alt="Revisit App on Phone" class="flagship-phone-img" />
-        </div>
-      </div>
-    </div>
-  </section>
+.nav-inner{
+  height:92px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
 
-  <!-- WHY BUSINESSES LOVE REVISIT -->
+.logo img{
+  width:135px;
+}
 
-  <section class="why-revisit">
-    <div class="container">
-      <p class="eyebrow center">WHY BUSINESSES LOVE REVISIT</p>
-      <div class="why-grid">
-        <div class="why-item">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 31S5 23 5 14a7 7 0 0113-3.5A7 7 0 0131 14c0 9-13 17-13 17z" stroke="#F5A623" stroke-width="1.5" fill="none"/></svg>
-          <h4>Builds Loyalty</h4>
-          <p>Turn first-time visitors into repeat customers.</p>
-        </div>
-        <div class="why-item">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="13" cy="14" r="5" stroke="#F5A623" stroke-width="1.5" fill="none"/><circle cx="23" cy="14" r="5" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M4 30c0-6 4-10 9-10h10c5 0 9 4 9 10" stroke="#F5A623" stroke-width="1.5" fill="none"/></svg>
-          <h4>Drives More Sales</h4>
-          <p>Engage customers with targeted offers.</p>
-        </div>
-        <div class="why-item">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="3" y="18" width="6" height="14" rx="1.5" fill="#F5A623" opacity="0.4"/><rect x="13" y="12" width="6" height="20" rx="1.5" fill="#F5A623" opacity="0.65"/><rect x="23" y="4" width="6" height="28" rx="1.5" fill="#F5A623"/><polyline points="5,16 16,10 26,3" stroke="#F5A623" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
-          <h4>Smart Insights</h4>
-          <p>Track what matters and make data-driven decisions.</p>
-        </div>
-        <div class="why-item">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="#F5A623" stroke-width="1.5" fill="none"/><polyline points="18,10 18,18 24,22" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h4>Saves Time</h4>
-          <p>Automate engagement and focus on what matters.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+.nav-links{
+  display:flex;
+  gap:46px;
+}
 
-  <!-- FOCUSED POWERFUL -->
+.nav-links a{
+  color:#fff;
+  font-size:17px;
+  font-weight:500;
+  position:relative;
+}
 
-  <section class="focused-section">
-    <div class="container focused-inner">
-      <div class="focused-text">
-        <h2>Focused. Powerful.<br><span class="gold">Built to perform.</span></h2>
-        <p>We don't build multiple products for the sake of it. We build focused systems that solve real business problems — one at a time, and done right.</p>
-        <a href="contact.html" class="btn btn-primary">Explore Revisit &rarr;</a>
-      </div>
-      <div class="focused-visual">
-        <img src="assets/hero-b.png" alt="Brand Overhaul" class="focused-img" />
-      </div>
-    </div>
-  </section>
+.nav-links a.active::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-10px;
+  width:100%;
+  height:2px;
+  background:#f5b12a;
+}
 
-  <!-- PRODUCTS CTA -->
+/* BUTTONS */
 
-  <section class="cta-banner">
-    <div class="container cta-banner-inner">
-      <div class="cta-text-block">
-        <h3>Ready to grow your business?<br>Let's build something great <span class="gold">together.</span></h3>
-      </div>
-      <div class="cta-btns">
-        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
-      </div>
-    </div>
-  </section>
+.btn{
+  padding:14px 24px;
+  border-radius:14px;
+  font-weight:600;
+  transition:.3s;
+  font-size:16px;
+}
 
-  <!-- FOOTER -->
+.btn-primary{
+  background:#f5b12a;
+  color:#111;
+}
 
-  <footer class="footer">
-    <div class="container footer-top">
-      <div class="footer-brand">
-        <a href="index.html" class="logo footer-logo">
-          <img src="assets/logo.png" alt="Brand Overhaul" class="logo-img footer-logo-img" />
-        </a>
-        <p>Building growth systems that help businesses acquire, retain, and scale customers with clarity and consistency.</p>
-        <div class="social-links">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Instagram"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="10.5" cy="3.5" r="1" fill="currentColor"/></svg></a>
-          <a href="#" aria-label="Email">&#x2709;</a>
-        </div>
-      </div>
-      <div class="footer-links">
-        <h4>QUICK LINKS</h4>
-        <a href="index.html">Home</a>
-        <a href="products.html" class="gold">Products</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer-connect">
-        <h4>LET'S CONNECT</h4>
-        <p>Have a question or want to learn more about our products?</p>
-        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
-      </div>
-    </div>
-    <div class="footer-bottom container">
-      <div class="footer-bottom-info">
-        <span>&#x2709; hello@brandoverhaul.in</span>
-        <span>&#x260E; +91 12345 67890</span>
-        <span>&#x1F4CD; Mumbai, India</span>
-      </div>
-      <div class="footer-bottom-copy">
-        <p>&copy; 2025 Brand Overhaul. All rights reserved.</p>
-        <p>Made with &#x2665; purpose.</p>
-      </div>
-    </div>
-  </footer>
+.btn-primary:hover{
+  transform:translateY(-2px);
+}
 
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuClose = document.getElementById('menuClose');
-    const menuOverlay = document.getElementById('menuOverlay');
-    function openMenu() { mobileMenu.classList.add('open'); menuOverlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
-    function closeMenu() { mobileMenu.classList.remove('open'); menuOverlay.classList.remove('open'); document.body.style.overflow = ''; }
-    hamburger.addEventListener('click', openMenu);
-    menuClose.addEventListener('click', closeMenu);
-    menuOverlay.addEventListener('click', closeMenu);
-  </script>
+.btn-outline{
+  border:1px solid #f5b12a;
+  color:#f5b12a;
+}
 
-</body>
-</html>
+.btn-dark{
+  border:1px solid rgba(255,255,255,.14);
+  color:#fff;
+}
+
+/* HERO */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  padding:90px 0 72px;
+
+  background-image:
+  linear-gradient(
+  to bottom,
+  rgba(0,0,0,.48),
+  rgba(0,0,0,.72)
+  ),
+  url('assets/hero-bg.png');
+
+  background-size:cover;
+  background-position:center right;
+  background-repeat:no-repeat;
+}
+
+.hero-inner{
+  position:relative;
+  z-index:2;
+}
+
+.hero-content{
+  max-width:760px;
+}
+
+.eyebrow{
+  color:#f5b12a;
+  letter-spacing:4px;
+  font-size:15px;
+  margin-bottom:24px;
+}
+
+.hero-heading{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:clamp(64px,8vw,102px);
+  line-height:.92;
+  max-width:920px;
+  margin-bottom:28px;
+}
+
+.hero-heading span{
+  color:#f5b12a;
+}
+
+.hero-sub{
+  font-size:20px;
+  line-height:1.60;
+  color:#d1d1d1;
+  max-width:700px;
+  font-weight:500;
+}
+
+.hero-btns{
+  display:flex;
+  gap:18px;
+  margin-top:28px;
+}
+
+/* BUSINESS STRIP */
+
+.business-strip{
+  padding:48px 0 70px;
+  border-top:1px solid rgba(255,255,255,.05);
+}
+
+.strip-heading{
+  text-align:center;
+  color:#f5b12a;
+  letter-spacing:4px;
+  margin-bottom:42px;
+  font-size:15px;
+}
+
+.business-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:10px;
+}
+
+.business-item{
+  text-align:center;
+  border-right:1px solid rgba(255,255,255,.08);
+  padding:0 10px;
+}
+
+.business-item:last-child{
+  border-right:none;
+}
+
+.business-item img{
+  width:42px;
+  margin:auto;
+  margin-bottom:16px;
+}
+
+.business-item p{
+  font-size:16px;
+  margin-bottom:6px;
+}
+
+.business-item span{
+  color:#7d7d7d;
+  font-size:14px;
+}
+
+/* REVISIT */
+
+.revisit-section{
+  padding:10px 0 90px;
+}
+
+.revisit-card{
+  background:#090909;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:30px;
+  padding:34px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:42px;
+}
+
+.revisit-image img{
+  border-radius:22px;
+}
+
+.revisit-content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.revisit-content h2{
+  font-size:72px;
+  margin-bottom:10px;
+}
+
+.revisit-content h3{
+  font-size:42px;
+  line-height:1.12;
+  margin-bottom:20px;
+}
+
+.revisit-content p{
+  font-size:20px;
+  line-height:1.8;
+  color:#c7c7c7;
+}
+
+.gold-link{
+  margin-top:24px;
+  color:#f5b12a;
+  font-size:20px;
+  font-weight:600;
+}
+
+/* WHAT WE BUILD */
+
+.what-we-build{
+  background:#f2f0ec;
+  padding:90px 0;
+  color:#111;
+}
+
+.section-label{
+  text-align:center;
+  color:#d69414;
+  letter-spacing:4px;
+  margin-bottom:18px;
+  font-size:15px;
+}
+
+.section-title{
+  text-align:center;
+  font-size:56px;
+  margin-bottom:54px;
+  line-height:1.15;
+}
+
+.section-title span{
+  color:#d69414;
+}
+
+.build-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.build-card{
+  background:#f7f5f2;
+  border:1px solid rgba(0,0,0,.05);
+  border-radius:22px;
+  padding:34px;
+}
+
+.build-card img{
+  width:46px;
+  margin-bottom:24px;
+}
+
+.build-card h3{
+  font-size:30px;
+  margin-bottom:18px;
+  line-height:1.2;
+}
+
+.build-card p{
+  font-size:18px;
+  line-height:1.8;
+  color:#5f5f5f;
+}
+
+/* CTA */
+
+.cta-section{
+  background:#f2f0ec;
+  padding-bottom:90px;
+}
+
+.cta-box{
+  background:#090909;
+  border-radius:26px;
+  padding:38px 44px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.cta-text{
+  font-size:40px;
+  font-weight:700;
+  max-width:620px;
+  line-height:1.2;
+}
+
+.cta-text span{
+  color:#f5b12a;
+}
+
+.cta-buttons{
+  display:flex;
+  gap:16px;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#050505;
+}
+
+.footer-grid{
+  padding:60px 0;
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  gap:60px;
+}
+
+.footer-brand img{
+  width:135px;
+  margin-bottom:24px;
+}
+
+.footer-brand p{
+  color:#9d9d9d;
+  line-height:1.8;
+  font-size:18px;
+}
+
+.footer-links h4,
+.footer-contact h4{
+  color:#f5b12a;
+  letter-spacing:3px;
+  margin-bottom:22px;
+  font-size:14px;
+}
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+}
+
+.footer-links a{
+  color:#fff;
+  margin-bottom:16px;
+  font-size:18px;
+}
+
+.footer-contact p{
+  color:#a9a9a9;
+  line-height:1.8;
+  margin-bottom:22px;
+  font-size:18px;
+}
+
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.06);
+}
+
+.footer-bottom-inner{
+  height:80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.footer-bottom p{
+  color:#7f7f7f;
+  font-size:15px;
+}
+
+/* TABLET */
+
+@media(max-width:1100px){
+
+  .business-grid,
+  .build-grid,
+  .revisit-card,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-heading{
+    font-size:72px;
+  }
+
+  .section-title{
+    font-size:42px;
+  }
+
+  .cta-box{
+    flex-direction:column;
+    gap:28px;
+    text-align:center;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .revisit-content h2{
+    font-size:56px;
+  }
+
+  .revisit-content h3{
+    font-size:34px;
+  }
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .nav-inner{
+    height:88px;
+  }
+
+  .logo img{
+    width:110px;
+  }
+
+  .btn{
+    padding:14px 20px;
+    font-size:15px;
+  }
+
+  .hero{
+    padding:52px 0 44px;
+    background-position:72% center;
+  }
+
+  .hero-content{
+    max-width:100%;
+  }
+
+  .eyebrow{
+    font-size:13px;
+    letter-spacing:5px;
+    line-height:1.6;
+    margin-bottom:18px;
+  }
+
+  .hero-heading{
+    font-size:58px;
+    line-height:.92;
+    margin-bottom:22px;
+  }
+
+  .hero-heading span{
+    display:block;
+  }
+
+  .hero-sub{
+    font-size:18px;
+    line-height:1.65;
+    max-width:100%;
+  }
+
+  .hero-btns{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+    margin-top:26px;
+  }
+
+  .hero-btns .btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .business-strip{
+    padding:42px 0 52px;
+  }
+
+  .strip-heading{
+    font-size:13px;
+    line-height:1.8;
+    margin-bottom:34px;
+  }
+
+  .business-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:34px 18px;
+  }
+
+  .business-item{
+    border-right:none;
+    padding:0;
+  }
+
+  .business-item img{
+    width:52px;
+    margin-bottom:16px;
+  }
+
+  .business-item p{
+    font-size:17px;
+  }
+
+  .revisit-section{
+    padding:0 0 68px;
+  }
+
+  .revisit-card{
+    padding:18px;
+    border-radius:28px;
+    gap:24px;
+  }
+
+  .revisit-content h2{
+    font-size:48px;
+    margin-bottom:8px;
+  }
+
+  .revisit-content h3{
+    font-size:26px;
+    line-height:1.18;
+    margin-bottom:18px;
+  }
+
+  .revisit-content p{
+    font-size:17px;
+    line-height:1.8;
+  }
+
+  .gold-link{
+    font-size:18px;
+  }
+
+  .what-we-build{
+    padding:64px 0;
+  }
+
+  .section-title{
+    font-size:42px;
+    line-height:1.12;
+    margin-bottom:34px;
+  }
+
+  .build-grid{
+    gap:18px;
+  }
+
+  .build-card{
+    padding:26px;
+  }
+
+  .build-card h3{
+    font-size:24px;
+    margin-bottom:14px;
+  }
+
+  .build-card p{
+    font-size:17px;
+    line-height:1.75;
+  }
+
+  .cta-section{
+    padding-bottom:64px;
+  }
+
+  .cta-box{
+    padding:30px 22px;
+    border-radius:28px;
+    gap:24px;
+  }
+
+  .cta-text{
+    font-size:26px;
+    line-height:1.22;
+  }
+
+  .cta-buttons{
+    width:100%;
+    flex-direction:column;
+    gap:14px;
+  }
+
+  .cta-buttons .btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .footer-grid{
+    gap:40px;
+    padding:50px 0;
+  }
+
+  .footer-brand p,
+  .footer-contact p{
+    font-size:17px;
+    line-height:1.8;
+  }
+
+  .footer-bottom-inner{
+    height:auto;
+    flex-direction:column;
+    gap:10px;
+    padding:22px 0;
+    text-align:center;
+  }
+
+}
