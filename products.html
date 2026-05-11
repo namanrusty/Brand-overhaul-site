@@ -1,647 +1,500 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  font-family:'Barlow',sans-serif;
-  background:#050505;
-  color:#fff;
-  overflow-x:hidden;
-}
-
-img{
-  max-width:100%;
-  display:block;
-}
-
-a{
-  text-decoration:none;
-}
-
-.container{
-  width:min(1180px,92%);
-  margin:auto;
-}
-
-/* NAVBAR */
-
-.navbar{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(5,5,5,.88);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid rgba(255,255,255,.06);
-}
-
-.nav-inner{
-  height:92px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.logo img{
-  width:135px;
-}
-
-.nav-links{
-  display:flex;
-  gap:46px;
-}
-
-.nav-links a{
-  color:#fff;
-  font-size:17px;
-  font-weight:500;
-  position:relative;
-}
-
-.nav-links a.active::after{
-  content:'';
-  position:absolute;
-  left:0;
-  bottom:-10px;
-  width:100%;
-  height:2px;
-  background:#f5b12a;
-}
-
-/* BUTTONS */
-
-.btn{
-  padding:14px 24px;
-  border-radius:14px;
-  font-weight:600;
-  transition:.3s;
-  font-size:16px;
-}
-
-.btn-primary{
-  background:#f5b12a;
-  color:#111;
-}
-
-.btn-primary:hover{
-  transform:translateY(-2px);
-}
-
-.btn-outline{
-  border:1px solid #f5b12a;
-  color:#f5b12a;
-}
-
-.btn-dark{
-  border:1px solid rgba(255,255,255,.14);
-  color:#fff;
-}
-
-/* HERO */
-
-.hero{
-  position:relative;
-  overflow:hidden;
-  padding:90px 0 72px;
-
-  background-image:
-  linear-gradient(
-  to bottom,
-  rgba(0,0,0,.48),
-  rgba(0,0,0,.72)
-  ),
-  url('assets/hero-bg.png');
-
-  background-size:cover;
-  background-position:center right;
-  background-repeat:no-repeat;
-}
-
-.hero-inner{
-  position:relative;
-  z-index:2;
-}
-
-.hero-content{
-  max-width:760px;
-}
-
-.eyebrow{
-  color:#f5b12a;
-  letter-spacing:4px;
-  font-size:15px;
-  margin-bottom:24px;
-}
-
-.hero-heading{
-  font-family:'Barlow Condensed',sans-serif;
-  font-size:clamp(64px,8vw,102px);
-  line-height:.92;
-  max-width:920px;
-  margin-bottom:28px;
-}
-
-.hero-heading span{
-  color:#f5b12a;
-}
-
-.hero-sub{
-  font-size:20px;
-  line-height:1.60;
-  color:#d1d1d1;
-  max-width:700px;
-  font-weight:500;
-}
-
-.hero-btns{
-  display:flex;
-  gap:18px;
-  margin-top:28px;
-}
-
-/* BUSINESS STRIP */
-
-.business-strip{
-  padding:48px 0 70px;
-  border-top:1px solid rgba(255,255,255,.05);
-}
-
-.strip-heading{
-  text-align:center;
-  color:#f5b12a;
-  letter-spacing:4px;
-  margin-bottom:42px;
-  font-size:15px;
-}
-
-.business-grid{
-  display:grid;
-  grid-template-columns:repeat(6,1fr);
-  gap:10px;
-}
-
-.business-item{
-  text-align:center;
-  border-right:1px solid rgba(255,255,255,.08);
-  padding:0 10px;
-}
-
-.business-item:last-child{
-  border-right:none;
-}
-
-.business-item img{
-  width:42px;
-  margin:auto;
-  margin-bottom:16px;
-}
-
-.business-item p{
-  font-size:16px;
-  margin-bottom:6px;
-}
-
-.business-item span{
-  color:#7d7d7d;
-  font-size:14px;
-}
-
-/* REVISIT */
-
-.revisit-section{
-  padding:10px 0 90px;
-}
-
-.revisit-card{
-  background:#090909;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:30px;
-  padding:34px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:42px;
-}
-
-.revisit-image img{
-  border-radius:22px;
-}
-
-.revisit-content{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-
-.revisit-content h2{
-  font-size:72px;
-  margin-bottom:10px;
-}
-
-.revisit-content h3{
-  font-size:42px;
-  line-height:1.12;
-  margin-bottom:20px;
-}
-
-.revisit-content p{
-  font-size:20px;
-  line-height:1.8;
-  color:#c7c7c7;
-}
-
-.gold-link{
-  margin-top:24px;
-  color:#f5b12a;
-  font-size:20px;
-  font-weight:600;
-}
-
-/* WHAT WE BUILD */
-
-.what-we-build{
-  background:#f2f0ec;
-  padding:90px 0;
-  color:#111;
-}
-
-.section-label{
-  text-align:center;
-  color:#d69414;
-  letter-spacing:4px;
-  margin-bottom:18px;
-  font-size:15px;
-}
-
-.section-title{
-  text-align:center;
-  font-size:56px;
-  margin-bottom:54px;
-  line-height:1.15;
-}
-
-.section-title span{
-  color:#d69414;
-}
-
-.build-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-}
-
-.build-card{
-  background:#f7f5f2;
-  border:1px solid rgba(0,0,0,.05);
-  border-radius:22px;
-  padding:34px;
-}
-
-.build-card img{
-  width:46px;
-  margin-bottom:24px;
-}
-
-.build-card h3{
-  font-size:30px;
-  margin-bottom:18px;
-  line-height:1.2;
-}
-
-.build-card p{
-  font-size:18px;
-  line-height:1.8;
-  color:#5f5f5f;
-}
-
-/* CTA */
-
-.cta-section{
-  background:#f2f0ec;
-  padding-bottom:90px;
-}
-
-.cta-box{
-  background:#090909;
-  border-radius:26px;
-  padding:38px 44px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.cta-text{
-  font-size:40px;
-  font-weight:700;
-  max-width:620px;
-  line-height:1.2;
-}
-
-.cta-text span{
-  color:#f5b12a;
-}
-
-.cta-buttons{
-  display:flex;
-  gap:16px;
-}
-
-/* FOOTER */
-
-.footer{
-  background:#050505;
-}
-
-.footer-grid{
-  padding:60px 0;
-  display:grid;
-  grid-template-columns:1.5fr 1fr 1fr;
-  gap:60px;
-}
-
-.footer-brand img{
-  width:135px;
-  margin-bottom:24px;
-}
-
-.footer-brand p{
-  color:#9d9d9d;
-  line-height:1.8;
-  font-size:18px;
-}
-
-.footer-links h4,
-.footer-contact h4{
-  color:#f5b12a;
-  letter-spacing:3px;
-  margin-bottom:22px;
-  font-size:14px;
-}
-
-.footer-links{
-  display:flex;
-  flex-direction:column;
-}
-
-.footer-links a{
-  color:#fff;
-  margin-bottom:16px;
-  font-size:18px;
-}
-
-.footer-contact p{
-  color:#a9a9a9;
-  line-height:1.8;
-  margin-bottom:22px;
-  font-size:18px;
-}
-
-.footer-bottom{
-  border-top:1px solid rgba(255,255,255,.06);
-}
-
-.footer-bottom-inner{
-  height:80px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.footer-bottom p{
-  color:#7f7f7f;
-  font-size:15px;
-}
-
-/* TABLET */
-
-@media(max-width:1100px){
-
-  .business-grid,
-  .build-grid,
-  .revisit-card,
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
-  .hero-heading{
-    font-size:72px;
-  }
-
-  .section-title{
-    font-size:42px;
-  }
-
-  .cta-box{
-    flex-direction:column;
-    gap:28px;
-    text-align:center;
-  }
-
-  .nav-links{
-    display:none;
-  }
-
-  .revisit-content h2{
-    font-size:56px;
-  }
-
-  .revisit-content h3{
-    font-size:34px;
-  }
-
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-  .nav-inner{
-    height:88px;
-  }
-
-  .logo img{
-    width:110px;
-  }
-
-  .btn{
-    padding:14px 20px;
-    font-size:15px;
-  }
-
-  .hero{
-    padding:52px 0 44px;
-    background-position:72% center;
-  }
-
-  .hero-content{
-    max-width:100%;
-  }
-
-  .eyebrow{
-    font-size:13px;
-    letter-spacing:5px;
-    line-height:1.6;
-    margin-bottom:18px;
-  }
-
-  .hero-heading{
-    font-size:58px;
-    line-height:.92;
-    margin-bottom:22px;
-  }
-
-  .hero-heading span{
-    display:block;
-  }
-
-  .hero-sub{
-    font-size:18px;
-    line-height:1.65;
-    max-width:100%;
-  }
-
-  .hero-btns{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:14px;
-    margin-top:26px;
-  }
-
-  .hero-btns .btn{
-    width:100%;
-    text-align:center;
-  }
-
-  .business-strip{
-    padding:42px 0 52px;
-  }
-
-  .strip-heading{
-    font-size:13px;
-    line-height:1.8;
-    margin-bottom:34px;
-  }
-
-  .business-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:34px 18px;
-  }
-
-  .business-item{
-    border-right:none;
-    padding:0;
-  }
-
-  .business-item img{
-    width:52px;
-    margin-bottom:16px;
-  }
-
-  .business-item p{
-    font-size:17px;
-  }
-
-  .revisit-section{
-    padding:0 0 68px;
-  }
-
-  .revisit-card{
-    padding:18px;
-    border-radius:28px;
-    gap:24px;
-  }
-
-  .revisit-content h2{
-    font-size:48px;
-    margin-bottom:8px;
-  }
-
-  .revisit-content h3{
-    font-size:26px;
-    line-height:1.18;
-    margin-bottom:18px;
-  }
-
-  .revisit-content p{
-    font-size:17px;
-    line-height:1.8;
-  }
-
-  .gold-link{
-    font-size:18px;
-  }
-
-  .what-we-build{
-    padding:64px 0;
-  }
-
-  .section-title{
-    font-size:42px;
-    line-height:1.12;
-    margin-bottom:34px;
-  }
-
-  .build-grid{
-    gap:18px;
-  }
-
-  .build-card{
-    padding:26px;
-  }
-
-  .build-card h3{
-    font-size:24px;
-    margin-bottom:14px;
-  }
-
-  .build-card p{
-    font-size:17px;
-    line-height:1.75;
-  }
-
-  .cta-section{
-    padding-bottom:64px;
-  }
-
-  .cta-box{
-    padding:30px 22px;
-    border-radius:28px;
-    gap:24px;
-  }
-
-  .cta-text{
-    font-size:26px;
-    line-height:1.22;
-  }
-
-  .cta-buttons{
-    width:100%;
-    flex-direction:column;
-    gap:14px;
-  }
-
-  .cta-buttons .btn{
-    width:100%;
-    text-align:center;
-  }
-
-  .footer-grid{
-    gap:40px;
-    padding:50px 0;
-  }
-
-  .footer-brand p,
-  .footer-contact p{
-    font-size:17px;
-    line-height:1.8;
-  }
-
-  .footer-bottom-inner{
-    height:auto;
-    flex-direction:column;
-    gap:10px;
-    padding:22px 0;
-    text-align:center;
-  }
-
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Products – Brand Overhaul</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header class="navbar">
+    <div class="nav-inner container">
+
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Brand Overhaul">
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+
+        <a href="contact.html" class="btn btn-outline nav-btn">
+          Let’s Talk →
+        </a>
+
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+
+  <div class="mobile-menu" id="mobileMenu">
+
+    <button class="mobile-close" id="closeMenu">
+      ×
+    </button>
+
+    <a href="index.html">Home</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="contact.html">Contact</a>
+
+    <a href="contact.html" class="btn btn-primary mobile-btn">
+      Let’s Talk →
+    </a>
+
+  </div>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- HERO -->
+
+  <section class="products-hero">
+
+    <div class="container products-hero-grid">
+
+      <!-- LEFT -->
+
+      <div class="products-hero-content">
+
+        <p class="eyebrow">
+          OUR PRODUCTS
+        </p>
+
+        <h1 class="products-heading">
+          Products built for
+          <span>real business growth.</span>
+        </h1>
+
+        <p class="products-subtext">
+          We create focused systems that help businesses attract,
+          retain, and grow customers with clarity and consistency.
+        </p>
+
+        <!-- BADGES -->
+
+        <div class="products-badges">
+
+          <div class="product-badge">
+            <img src="assets/icons/growth.svg" alt="">
+            <h4>Easy to Use</h4>
+            <p>Built for businesses, not tech experts.</p>
+          </div>
+
+          <div class="product-badge">
+            <img src="assets/icons/ecosystem.svg" alt="">
+            <h4>Reliable</h4>
+            <p>Simple systems that work consistently.</p>
+          </div>
+
+          <div class="product-badge">
+            <img src="assets/icons/strategy.svg" alt="">
+            <h4>Built for Growth</h4>
+            <p>Designed to help businesses grow faster.</p>
+          </div>
+
+          <div class="product-badge">
+            <img src="assets/icons/growth.svg" alt="">
+            <h4>Real Impact</h4>
+            <p>Focused on measurable business outcomes.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="products-hero-image">
+
+        <img src="assets/mug-book.png" alt="Brand Overhaul">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- REVISIT SECTION -->
+
+  <section class="revisit-showcase">
+
+    <div class="container">
+
+      <div class="revisit-card-new">
+
+        <!-- LEFT -->
+
+        <div class="revisit-left">
+
+          <p class="eyebrow">
+            OUR FIRST PRODUCT
+          </p>
+
+          <h2 class="revisit-logo-heading">
+            Revisit
+          </h2>
+
+          <h3 class="revisit-main-heading">
+            Turn one scan into
+            lifelong customers.
+          </h3>
+
+          <p class="revisit-description">
+            Revisit helps businesses connect instantly with customers
+            and bring them back with smart offers and repeat engagement.
+          </p>
+
+          <!-- FLOW -->
+
+          <div class="revisit-flow">
+
+            <div class="flow-item">
+              <span>1</span>
+              <p>Display QR</p>
+            </div>
+
+            <div class="flow-line"></div>
+
+            <div class="flow-item">
+              <span>2</span>
+              <p>Customer Scans</p>
+            </div>
+
+            <div class="flow-line"></div>
+
+            <div class="flow-item">
+              <span>3</span>
+              <p>Offer Sent</p>
+            </div>
+
+            <div class="flow-line"></div>
+
+            <div class="flow-item">
+              <span>4</span>
+              <p>Customer Returns</p>
+            </div>
+
+            <div class="flow-line"></div>
+
+            <div class="flow-item">
+              <span>5</span>
+              <p>Repeat & Grow</p>
+            </div>
+
+          </div>
+
+          <!-- BUTTON -->
+
+          <div class="revisit-buttons">
+
+            <a href="contact.html" class="btn btn-primary">
+              Book a Demo →
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="revisit-right">
+
+          <div class="tent-card-wrap">
+            <img src="assets/qr.png" alt="QR Tent Card" class="tent-card-img">
+          </div>
+
+          <div class="phone-ui-card">
+
+            <div class="phone-top">
+              <div class="phone-dot"></div>
+              <div class="phone-dot"></div>
+              <div class="phone-dot"></div>
+            </div>
+
+            <div class="offer-card">
+
+              <div class="offer-brand">
+                Revisit
+              </div>
+
+              <h4>
+                You’ve received an offer
+                from Blue House Cafe.
+              </h4>
+
+              <div class="offer-highlight">
+                20% OFF on your next order
+              </div>
+
+              <p>
+                Show this offer at the counter
+                to claim it.
+              </p>
+
+            </div>
+
+            <div class="mini-stats">
+
+              <div class="mini-stat">
+                <span>1,240</span>
+                <p>Customers Reached</p>
+              </div>
+
+              <div class="mini-stat">
+                <span>320</span>
+                <p>Offers Claimed</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WHY REVISIT -->
+
+  <section class="why-revisit-section">
+
+    <div class="container">
+
+      <p class="section-label">
+        WHY BUSINESSES LOVE REVISIT
+      </p>
+
+      <div class="why-grid-new">
+
+        <div class="why-card">
+
+          <img src="assets/icons/restaurant.svg" alt="">
+
+          <h4>Builds Loyalty</h4>
+
+          <p>
+            Turn first-time visitors into repeat customers.
+          </p>
+
+        </div>
+
+        <div class="why-card">
+
+          <img src="assets/icons/growth.svg" alt="">
+
+          <h4>Drives More Sales</h4>
+
+          <p>
+            Bring customers back with targeted offers.
+          </p>
+
+        </div>
+
+        <div class="why-card">
+
+          <img src="assets/icons/ecosystem.svg" alt="">
+
+          <h4>Simple System</h4>
+
+          <p>
+            Easy to use and simple to operate daily.
+          </p>
+
+        </div>
+
+        <div class="why-card">
+
+          <img src="assets/icons/strategy.svg" alt="">
+
+          <h4>Saves Time</h4>
+
+          <p>
+            Automate customer engagement effortlessly.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOCUSED SECTION -->
+
+  <section class="focused-section-new">
+
+    <div class="container focused-grid">
+
+      <div class="focused-left">
+
+        <h2>
+          Focused. Powerful.
+          <span>Built to perform.</span>
+        </h2>
+
+        <p>
+          We build focused systems that solve real business problems —
+          designed for clarity, consistency, and growth.
+        </p>
+
+        <a href="contact.html" class="btn btn-primary">
+          Explore Revisit →
+        </a>
+
+      </div>
+
+      <div class="focused-right">
+
+        <img src="assets/hero-b.png" alt="Brand Overhaul">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <section class="products-cta">
+
+    <div class="container">
+
+      <div class="products-cta-box">
+
+        <div class="products-cta-text">
+
+          <h2>
+            Ready to turn your visitors
+            into loyal customers?
+          </h2>
+
+          <p>
+            Let’s build something great together.
+          </p>
+
+        </div>
+
+        <a href="contact.html" class="btn btn-primary">
+          Let’s Talk →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+
+        <img src="assets/logo.png" alt="Brand Overhaul">
+
+        <p>
+          Building growth systems that help businesses acquire,
+          retain, and scale customers with clarity and consistency.
+        </p>
+
+      </div>
+
+      <div class="footer-links">
+
+        <h4>QUICK LINKS</h4>
+
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+      <div class="footer-contact">
+
+        <h4>LET’S CONNECT</h4>
+
+        <p>
+          Have a question or want to learn more
+          about our products?
+        </p>
+
+        <a href="contact.html" class="btn btn-outline">
+          Let’s Talk →
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container footer-bottom-inner">
+
+        <p>
+          © 2025 Brand Overhaul. All rights reserved.
+        </p>
+
+        <p>
+          Growth engineered with clarity.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- MOBILE MENU SCRIPT -->
+
+  <script>
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+    const overlay = document.getElementById('mobileOverlay');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.add('active');
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeMenu.addEventListener('click', closeMobileMenu);
+    overlay.addEventListener('click', closeMobileMenu);
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+  </script>
+
+</body>
+
+</html>
