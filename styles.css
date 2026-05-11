@@ -456,9 +456,10 @@ PRODUCT PAGE
   ),
   url('assets/revisit-hero-bg.png');
 
-  background-size:cover;
-  background-position:center;
+  background-size:contain;
+  background-position:right center;
   background-repeat:no-repeat;
+  background-color:#050505;
 }
 
 .revisit-hero-grid{
