@@ -652,6 +652,10 @@ PRODUCT PAGE
   object-fit:contain;
 }
 
+.flow-icon-sale img{
+  transform:translateY(8px);
+}
+
 .flow-number{
   width:42px;
   height:42px;
