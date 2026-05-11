@@ -8,6 +8,10 @@ GLOBAL
   box-sizing:border-box;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   font-family:'Barlow',sans-serif;
   background:#050505;
@@ -419,6 +423,33 @@ FOOTER
   font-size:18px;
 }
 
+.socials{
+  display:flex;
+  gap:14px;
+  margin-top:24px;
+}
+
+.socials a{
+  width:42px;
+  height:42px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:.3s;
+}
+
+.socials a:hover{
+  border-color:#f5b12a;
+}
+
+.socials img{
+  width:18px;
+  height:18px;
+  object-fit:contain;
+}
+
 .footer-bottom{
   border-top:1px solid rgba(255,255,255,.06);
 }
@@ -596,13 +627,19 @@ PRODUCT PAGE
 
 .flow-step{
   text-align:center;
-  max-width:170px;
+  max-width:190px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 .flow-icon{
   width:72px;
   height:72px;
-  margin:auto auto 18px;
+  margin:0 auto 18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .flow-icon img{
@@ -627,8 +664,9 @@ PRODUCT PAGE
 
 .flow-step p{
   color:#d1d1d1;
-  line-height:1.6;
-  font-size:18px;
+  line-height:1.55;
+  font-size:17px;
+  max-width:180px;
 }
 
 .flow-arrow{
@@ -680,7 +718,8 @@ PRODUCT PAGE
 .why-card h3{
   font-size:28px;
   margin-bottom:14px;
-  line-height:1.15;
+  line-height:1.2;
+  min-height:68px;
 }
 
 .why-card p{
@@ -832,7 +871,11 @@ TABLET
   .why-grid,
   .steps-grid,
   .industry-grid,
-  .what-is-grid{
+  .what-is-grid,
+  .build-grid,
+  .business-grid,
+  .footer-grid,
+  .revisit-card{
     grid-template-columns:1fr;
   }
 
@@ -840,17 +883,10 @@ TABLET
     display:none;
   }
 
-  .revisit-hero{
-    padding:42px 0;
-    background-position:72% center;
-  }
-
-  .revisit-hero-grid{
-    min-height:auto;
-  }
-
-  .revisit-hero-content h1{
-    font-size:64px;
+  .cta-box,
+  .cta-box-products{
+    flex-direction:column;
+    align-items:flex-start;
   }
 
   .what-right{
@@ -862,11 +898,9 @@ TABLET
     margin:0;
   }
 
-  .cta-box-products{
-    flex-direction:column;
-    align-items:flex-start;
+  .footer-grid{
+    gap:40px;
   }
-
 }
 
 /* =========================================================
@@ -874,6 +908,19 @@ MOBILE
 ========================================================= */
 
 @media(max-width:768px){
+
+  .nav-inner{
+    height:84px;
+  }
+
+  .logo img{
+    width:110px;
+  }
+
+  .btn{
+    padding:14px 20px;
+    font-size:15px;
+  }
 
   .revisit-hero{
     padding:34px 0 28px;
@@ -895,7 +942,7 @@ MOBILE
   }
 
   .revisit-hero-content h1{
-    font-size:54px;
+    font-size:52px;
     line-height:.94;
     margin-bottom:16px;
   }
@@ -920,17 +967,11 @@ MOBILE
     height:54px;
   }
 
-  .mini-icon img{
-    width:24px;
-    height:24px;
-  }
-
   .mini-feature p{
     font-size:15px;
   }
 
   .what-is-grid{
-    grid-template-columns:1fr;
     padding:28px;
     gap:34px;
   }
@@ -958,18 +999,21 @@ MOBILE
 
   .why-grid,
   .steps-grid,
-  .industry-grid{
+  .industry-grid,
+  .business-grid,
+  .build-grid,
+  .footer-grid,
+  .revisit-card{
     grid-template-columns:1fr;
   }
 
   .why-card h3,
   .step-card h3{
     font-size:24px;
+    min-height:auto;
   }
 
   .cta-box-products{
-    flex-direction:column;
-    align-items:flex-start;
     padding:28px;
   }
 
@@ -995,6 +1039,18 @@ MOBILE
 
   .cta-box-products .btn{
     width:100%;
+  }
+
+  .socials{
+    justify-content:flex-start;
+  }
+
+  .footer-bottom-inner{
+    height:auto;
+    flex-direction:column;
+    gap:10px;
+    padding:22px 0;
+    text-align:center;
   }
 
 }
