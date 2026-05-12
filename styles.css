@@ -1075,12 +1075,24 @@ MOBILE
 CONTACT PAGE
 ========================================================= */
 
+/* NAVBAR CENTER FIX */
+
+.contact-page .nav-inner{
+  position:relative;
+  justify-content:center;
+}
+
+.contact-page .logo{
+  position:absolute;
+  left:0;
+}
+
 /* HERO */
 
 .contact-hero{
   position:relative;
   overflow:hidden;
-  padding:54px 0 42px;
+  padding:44px 0 34px;
 
   background:
   linear-gradient(
@@ -1097,8 +1109,8 @@ CONTACT PAGE
   display:grid;
   grid-template-columns:1fr 1fr;
   align-items:center;
-  gap:60px;
-  min-height:620px;
+  gap:44px;
+  min-height:540px;
 }
 
 .contact-hero-content{
@@ -1182,12 +1194,13 @@ CONTACT PAGE
 .contact-hero-image img{
   width:100%;
   max-width:560px;
+  object-fit:contain;
 }
 
 /* CONTACT BOX */
 
 .contact-box-section{
-  padding:48px 0;
+  padding:38px 0;
 }
 
 .contact-box-grid{
@@ -1306,10 +1319,19 @@ CONTACT PAGE
   font-size:15px;
 }
 
+.info-item a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.info-item a:hover{
+  color:#f5b12a;
+}
+
 /* WHY CONTACT */
 
 .why-contact{
-  padding:10px 0 70px;
+  padding:0 0 56px;
 }
 
 .why-contact-grid{
@@ -1369,13 +1391,13 @@ CONTACT PAGE
 /* FINAL CTA */
 
 .contact-final-cta{
-  padding-bottom:70px;
+  padding-bottom:60px;
 }
 
 .contact-final-box{
   background:#090909;
   border-radius:30px;
-  padding:40px 44px;
+  padding:38px 42px;
 
   display:flex;
   align-items:center;
@@ -1406,6 +1428,15 @@ CONTACT PAGE
   line-height:1.7;
 }
 
+/* FOOTER COMPACT FIX */
+
+.footer-grid{
+  padding:54px 0;
+  display:grid;
+  grid-template-columns:1.2fr .8fr .8fr;
+  gap:34px;
+}
+
 /* =========================================================
 CONTACT TABLET
 ========================================================= */
@@ -1419,7 +1450,7 @@ CONTACT TABLET
   }
 
   .contact-hero{
-    padding:44px 0;
+    padding:40px 0;
   }
 
   .contact-hero-grid{
@@ -1441,6 +1472,14 @@ CONTACT MOBILE
 ========================================================= */
 
 @media(max-width:768px){
+
+  .contact-page .nav-inner{
+    justify-content:space-between;
+  }
+
+  .contact-page .logo{
+    position:static;
+  }
 
   .contact-hero{
     padding:34px 0 28px;
