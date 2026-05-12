@@ -115,7 +115,16 @@
 
         <h2>SEND US A MESSAGE</h2>
 
-        <form>
+        <form
+          id="contactForm"
+          action="https://formsubmit.co/info@brandoverhaul.in"
+          method="POST">
+
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden"
+            name="_subject"
+            value="New Brand Overhaul Contact Form Submission">
 
           <div class="contact-row">
 
@@ -125,7 +134,9 @@
 
               <input
                 type="text"
-                placeholder="Your full name">
+                name="full-name"
+                placeholder="Your full name"
+                required>
 
             </div>
 
@@ -135,7 +146,9 @@
 
               <input
                 type="email"
-                placeholder="you@company.com">
+                name="email"
+                placeholder="you@company.com"
+                required>
 
             </div>
 
@@ -147,6 +160,7 @@
 
             <input
               type="text"
+              name="company"
               placeholder="Your company name">
 
           </div>
@@ -155,9 +169,11 @@
 
             <label>What can we help you with?</label>
 
-            <select>
+            <select
+              name="service"
+              required>
 
-              <option>Select an option</option>
+              <option value="">Select an option</option>
 
               <option>Revisit Demo</option>
 
@@ -176,13 +192,21 @@
             <label>Your Message</label>
 
             <textarea
-              placeholder="Tell us more about your project or question..."></textarea>
+              name="message"
+              placeholder="Tell us more about your project or question..."
+              required></textarea>
 
           </div>
 
-          <button type="submit" class="btn btn-primary">
+          <button
+            type="submit"
+            class="btn btn-primary">
             Send Message →
           </button>
+
+          <p class="form-note">
+            Please fill all required details before submitting.
+          </p>
 
         </form>
 
@@ -509,6 +533,37 @@
     </div>
 
   </footer>
+
+  <script>
+
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function (e) {
+
+      const requiredFields = form.querySelectorAll('[required]');
+      let valid = true;
+
+      requiredFields.forEach(field => {
+
+        if (!field.value.trim()) {
+          valid = false;
+          field.style.borderColor = '#ff5c5c';
+        } else {
+          field.style.borderColor = 'rgba(255,255,255,.06)';
+        }
+
+      });
+
+      if (!valid) {
+        e.preventDefault();
+        alert('Please fill all required details.');
+      } else {
+        alert('Message sent successfully.');
+      }
+
+    });
+
+  </script>
 
 </body>
 
