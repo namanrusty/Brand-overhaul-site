@@ -1,271 +1,467 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Contact – Brand Overhaul</title>
+
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
 </head>
+
 <body>
 
   <!-- NAVBAR -->
 
   <header class="navbar">
-    <div class="nav-inner container">
+
+    <div class="container nav-inner">
+
       <a href="index.html" class="logo">
-        <img src="assets/logo.png" alt="Brand Overhaul" class="logo-img" />
+        <img src="assets/logo.png" alt="Brand Overhaul">
       </a>
+
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
-      <div class="nav-right">
-        <a href="contact.html" class="btn btn-primary nav-cta">Let's Talk &rarr;</a>
-        <button class="hamburger" id="hamburger" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+
     </div>
+
   </header>
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-menu-close" id="menuClose">&times;</button>
-    <nav class="mobile-nav">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-primary mobile-cta">Let's Talk &rarr;</a>
-    </nav>
-  </div>
-  <div class="mobile-overlay" id="menuOverlay"></div>
 
-  <!-- CONTACT HERO -->
+  <!-- HERO -->
 
-  <section class="hero hero-contact">
-    <div class="hero-inner container">
-      <div class="hero-content">
-        <p class="eyebrow">CONTACT US</p>
-        <h1 class="hero-heading contact-heading">
-          Let's build<br>something great<br>
-          <span class="gold">together.</span>
+  <section class="contact-hero">
+
+    <div class="container contact-hero-grid">
+
+      <!-- LEFT -->
+
+      <div class="contact-hero-content">
+
+        <p class="section-tag">CONTACT US</p>
+
+        <h1>
+          Let’s build<br>
+          something great<br>
+          <span>together.</span>
         </h1>
-        <p class="hero-sub">Have a question, want to learn more about our products, or ready to get started? We'd love to hear from you.</p>
-        <div class="contact-trust">
-          <div class="trust-item">
-            <div class="trust-icon">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l2.5 6H18l-4.5 3.5 1.5 6L10 14l-5 3.5 1.5-6L2 8h5.5z" stroke="#F5A623" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+
+        <p class="contact-hero-description">
+          Have a question, want to learn more about our
+          products, or ready to get started?
+          We’d love to hear from you.
+        </p>
+
+        <div class="contact-mini-info">
+
+          <div class="contact-mini-card">
+
+            <div class="contact-mini-icon">
+              <img src="assets/icons/bolt.svg" alt="">
             </div>
+
             <div>
-              <strong>Quick Response</strong>
+              <h4>Quick Response</h4>
               <p>We respond within 24 business hours.</p>
             </div>
+
           </div>
-          <div class="trust-item">
-            <div class="trust-icon">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="4" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M3 19c0-4 3-7 7-7s7 3 7 7" stroke="#F5A623" stroke-width="1.5" fill="none"/></svg>
+
+          <div class="contact-mini-divider"></div>
+
+          <div class="contact-mini-card">
+
+            <div class="contact-mini-icon">
+              <img src="assets/icons/user.svg" alt="">
             </div>
+
             <div>
-              <strong>Real People</strong>
-              <p>Talk to our team of product experts.</p>
+              <h4>Real People</h4>
+              <p>Talk to our team directly.</p>
             </div>
+
           </div>
+
         </div>
+
       </div>
-      <div class="hero-visual contact-hero-visual">
-        <img src="assets/mug-book.png" alt="Building What Matters" class="contact-hero-img" />
+
+      <!-- RIGHT -->
+
+      <div class="contact-hero-image">
+
+        <img src="assets/contact-hero.png" alt="Brand Overhaul">
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- CONTACT FORM + INFO -->
+  <!-- CONTACT BOX -->
 
-  <section class="contact-main">
-    <div class="container contact-main-inner">
-      <div class="contact-form-wrap">
-        <p class="eyebrow">SEND US A MESSAGE</p>
-        <form class="contact-form" onsubmit="return false;">
+  <section class="contact-box-section">
+
+    <div class="container contact-box-grid">
+
+      <!-- FORM -->
+
+      <div class="contact-form-side">
+
+        <h3>SEND US A MESSAGE</h3>
+
+        <form action="mailto:info@brandoverhaul.in" method="post" enctype="text/plain">
+
           <div class="form-row">
+
             <div class="form-group">
-              <label for="full-name">Full Name</label>
-              <input type="text" id="full-name" placeholder="Your full name" />
+              <label>Full Name</label>
+              <input type="text" placeholder="Your full name">
             </div>
+
             <div class="form-group">
-              <label for="work-email">Work Email</label>
-              <input type="email" id="work-email" placeholder="you@company.com" />
+              <label>Work Email</label>
+              <input type="email" placeholder="you@company.com">
             </div>
+
           </div>
+
           <div class="form-group">
-            <label for="company">Company Name (Optional)</label>
-            <input type="text" id="company" placeholder="Your company name" />
+            <label>Company Name (Optional)</label>
+            <input type="text" placeholder="Your company name">
           </div>
+
           <div class="form-group">
-            <label for="help-topic">What can we help you with?</label>
-            <select id="help-topic">
-              <option value="" disabled selected>Select an option</option>
-              <option>Product Demo</option>
+            <label>What can we help you with?</label>
+
+            <select>
+              <option>Select an option</option>
+              <option>Revisit Demo</option>
+              <option>Growth Consultation</option>
               <option>Custom Solution</option>
-              <option>Growth Advice</option>
-              <option>Partnership</option>
-              <option>Other</option>
+              <option>Partnerships</option>
             </select>
+
           </div>
+
           <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" rows="5" placeholder="Tell us more about your project or question..."></textarea>
+            <label>Your Message</label>
+
+            <textarea rows="6"
+              placeholder="Tell us more about your project or question..."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message &rarr;</button>
+
+          <button type="submit" class="btn btn-primary">
+            Send Message →
+          </button>
+
         </form>
+
       </div>
-      <div class="contact-info-wrap">
-        <p class="eyebrow">GET IN TOUCH</p>
-        <p class="contact-info-sub">Choose the way that works best for you.</p>
-        <div class="contact-info-list">
-          <div class="contact-info-item">
-            <div class="ci-icon">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="3" width="16" height="12" rx="2" stroke="#F5A623" stroke-width="1.5" fill="none"/><polyline points="1,3 9,10 17,3" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
-            </div>
-            <div>
-              <strong>Email Us</strong>
-              <p>hello@brandoverhaul.in</p>
-              <p class="ci-note">We'll get back to you within 24 hours.</p>
-            </div>
+
+      <!-- CONTACT INFO -->
+
+      <div class="contact-info-side">
+
+        <h3>GET IN TOUCH</h3>
+
+        <p class="contact-info-sub">
+          Choose the way that works best for you.
+        </p>
+
+        <!-- EMAIL -->
+
+        <div class="info-item">
+
+          <div class="info-icon">
+            <img src="assets/icons/mail.svg" alt="">
           </div>
-          <div class="contact-info-item">
-            <div class="ci-icon">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 2h3.5l1.5 4-2 2a11 11 0 005 5l2-2 4 1.5V16a1 1 0 01-1 1C7 17 1 11 1 3a1 1 0 011-1z" stroke="#F5A623" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
-            </div>
-            <div>
-              <strong>Call Us</strong>
-              <p>+91 12345 67890</p>
-              <p class="ci-note">Mon - Fri, 10:00 AM - 6:00 PM IST</p>
-            </div>
+
+          <div>
+
+            <h4>Email Us</h4>
+
+            <p>info@brandoverhaul.in</p>
+
+            <span>We’ll get back to you within 24 hours.</span>
+
           </div>
-          <div class="contact-info-item">
-            <div class="ci-icon">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="8" r="3" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M9 1C5.5 1 2 4 2 8c0 5 7 10 7 10s7-5 7-10c0-4-3.5-7-7-7z" stroke="#F5A623" stroke-width="1.5" fill="none"/></svg>
-            </div>
-            <div>
-              <strong>Our Location</strong>
-              <p>Mumbai, India</p>
-              <p class="ci-note">Working with businesses across India and beyond.</p>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="ci-icon">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#F5A623" stroke-width="1.5" fill="none"/><polyline points="9,5 9,9 12,11" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div>
-              <strong>Business Hours</strong>
-              <p>Monday - Friday</p>
-              <p class="ci-note">10:00 AM - 6:00 PM IST</p>
-            </div>
-          </div>
+
         </div>
+
+        <!-- PHONE -->
+
+        <div class="info-item">
+
+          <div class="info-icon">
+            <img src="assets/icons/phone.svg" alt="">
+          </div>
+
+          <div>
+
+            <h4>Call Us</h4>
+
+            <p>+91 9758788808</p>
+
+            <span>Mon – Fri, 1:00 PM – 6:00 PM IST</span>
+
+          </div>
+
+        </div>
+
+        <!-- LOCATION -->
+
+        <div class="info-item">
+
+          <div class="info-icon">
+            <img src="assets/icons/location.svg" alt="">
+          </div>
+
+          <div>
+
+            <h4>Our Location</h4>
+
+            <p>Gurgaon, India</p>
+
+            <span>
+              Working with businesses across India and beyond.
+            </span>
+
+          </div>
+
+        </div>
+
+        <!-- HOURS -->
+
+        <div class="info-item">
+
+          <div class="info-icon">
+            <img src="assets/icons/clock.svg" alt="">
+          </div>
+
+          <div>
+
+            <h4>Business Hours</h4>
+
+            <p>Monday – Friday</p>
+
+            <span>1:00 PM – 6:00 PM IST</span>
+
+          </div>
+
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- WHY REACH OUT -->
 
-  <section class="why-reach-out">
-    <div class="container why-reach-inner">
-      <div class="why-reach-text">
-        <p class="eyebrow">WHY REACH OUT?</p>
-        <h2>We're here to help<br>your business <span class="gold">grow.</span></h2>
-        <p>Whether you're exploring Revisit or have a question about our products, our team is here to help.</p>
+  <section class="why-contact">
+
+    <div class="container why-contact-grid">
+
+      <div class="why-contact-left">
+
+        <p class="section-tag">WHY REACH OUT?</p>
+
+        <h2>
+          We’re here to help
+          your business <span>grow.</span>
+        </h2>
+
+        <p>
+          Whether you’re exploring Revisit or have a
+          question about our products, our team is here to help.
+        </p>
+
       </div>
-      <div class="why-reach-grid">
-        <div class="reach-item">
-          <div class="reach-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 6h20v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M4 6l10 8 10-8" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg></div>
+
+      <div class="why-contact-right">
+
+        <div class="why-contact-item">
+
+          <img src="assets/icons/demo.svg" alt="">
+
           <h4>Product Demos</h4>
-          <p>See how Revisit can work for your business.</p>
+
+          <p>
+            See how Revisit can work for your business.
+          </p>
+
         </div>
-        <div class="reach-item">
-          <div class="reach-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="4" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M6 24c0-4 3-8 8-8s8 4 8 8" stroke="#F5A623" stroke-width="1.5" fill="none"/><line x1="20" y1="6" x2="26" y2="6" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/><line x1="20" y1="10" x2="24" y2="10" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+
+        <div class="why-contact-item">
+
+          <img src="assets/icons/solution.svg" alt="">
+
           <h4>Custom Solutions</h4>
-          <p>We'll help you find the right solution for your needs.</p>
+
+          <p>
+            We’ll help you find the right solution.
+          </p>
+
         </div>
-        <div class="reach-item">
-          <div class="reach-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="2" y="16" width="6" height="9" rx="1.5" fill="#F5A623" opacity="0.4"/><rect x="11" y="10" width="6" height="15" rx="1.5" fill="#F5A623" opacity="0.65"/><rect x="20" y="3" width="6" height="22" rx="1.5" fill="#F5A623"/><polyline points="4,14 14,8 23,2" stroke="#F5A623" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+
+        <div class="why-contact-item">
+
+          <img src="assets/icons/growth.svg" alt="">
+
           <h4>Growth Advice</h4>
-          <p>Get expert insights to grow repeat visits and customer loyalty.</p>
+
+          <p>
+            Get expert insights to grow repeat visits.
+          </p>
+
         </div>
-        <div class="reach-item">
-          <div class="reach-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 26C8 26 2 20 2 14S8 2 14 2s12 6 12 12-6 12-12 12z" stroke="#F5A623" stroke-width="1.5" fill="none"/><path d="M10 14c0-2 1.5-4 4-4s4 2 4 4-1.5 4-4 4" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" fill="none"/><circle cx="14" cy="14" r="2" fill="#F5A623" opacity="0.5"/></svg></div>
+
+        <div class="why-contact-item">
+
+          <img src="assets/icons/partnership.svg" alt="">
+
           <h4>Partnerships</h4>
-          <p>Interested in partnering with us? Let's talk.</p>
+
+          <p>
+            Interested in partnering with us?
+          </p>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- CONTACT CTA -->
+  <!-- FINAL CTA -->
 
-  <section class="cta-banner">
-    <div class="container cta-banner-inner">
-      <div class="cta-text-block">
-        <h3>Ready to take the next step?</h3>
-        <p class="cta-sub">Let's connect and build something amazing together.</p>
+  <section class="contact-final-cta">
+
+    <div class="container contact-final-box">
+
+      <div class="contact-final-left">
+
+        <img src="assets/plant.png" alt="Brand Overhaul">
+
+        <div>
+
+          <h2>
+            Ready to take the next step?
+          </h2>
+
+          <p>
+            Let’s connect and build something amazing together.
+          </p>
+
+        </div>
+
       </div>
-      <div class="cta-btns">
-        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
-      </div>
+
+      <a href="mailto:info@brandoverhaul.in" class="btn btn-primary">
+        Email Us →
+      </a>
+
     </div>
+
   </section>
 
   <!-- FOOTER -->
 
   <footer class="footer">
-    <div class="container footer-top">
+
+    <div class="container footer-grid">
+
+      <!-- LEFT -->
+
       <div class="footer-brand">
-        <a href="index.html" class="logo footer-logo">
-          <img src="assets/logo.png" alt="Brand Overhaul" class="logo-img footer-logo-img" />
-        </a>
-        <p>Building growth systems that help businesses acquire, retain, and scale customers with clarity and consistency.</p>
-        <div class="social-links">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Instagram"><svg width="13" height="13" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="10.5" cy="3.5" r="1" fill="currentColor"/></svg></a>
-          <a href="#" aria-label="Email">&#x2709;</a>
+
+        <img src="assets/logo.png" alt="Brand Overhaul">
+
+        <p>
+          Building growth systems that help businesses
+          acquire, retain, and scale customers
+          with clarity and consistency.
+        </p>
+
+        <div class="socials">
+
+          <a href="#">
+            <img src="assets/icons/linkedin.svg" alt="">
+          </a>
+
+          <a href="#">
+            <img src="assets/icons/instagram.svg" alt="">
+          </a>
+
+          <a href="#">
+            <img src="assets/icons/mail.svg" alt="">
+          </a>
+
         </div>
+
       </div>
+
+      <!-- CENTER -->
+
       <div class="footer-links">
+
         <h4>QUICK LINKS</h4>
+
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
-        <a href="contact.html" class="gold">Contact</a>
+        <a href="contact.html" class="active-footer">Contact</a>
+
       </div>
-      <div class="footer-connect">
+
+      <!-- RIGHT -->
+
+      <div class="footer-contact">
+
         <h4>LET'S CONNECT</h4>
-        <p>Have a question or want to learn more about our products?</p>
-        <a href="contact.html" class="btn btn-primary">Let's Talk &rarr;</a>
+
+        <p>
+          Have a question or want to
+          learn more about our products?
+        </p>
+
+        <a href="mailto:info@brandoverhaul.in" class="btn btn-primary">
+          Email Us →
+        </a>
+
       </div>
+
     </div>
-    <div class="footer-bottom container">
-      <div class="footer-bottom-info">
-        <span>&#x2709; hello@brandoverhaul.in</span>
-        <span>&#x260E; +91 12345 67890</span>
-        <span>&#x1F4CD; Mumbai, India</span>
+
+    <div class="footer-bottom">
+
+      <div class="container footer-bottom-inner">
+
+        <p>
+          © 2025 Brand Overhaul. All rights reserved.
+        </p>
+
+        <p>
+          Made with 💛
+        </p>
+
       </div>
-      <div class="footer-bottom-copy">
-        <p>&copy; 2025 Brand Overhaul. All rights reserved.</p>
-        <p>Made with &#x2665; purpose.</p>
-      </div>
+
     </div>
+
   </footer>
 
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuClose = document.getElementById('menuClose');
-    const menuOverlay = document.getElementById('menuOverlay');
-    function openMenu() { mobileMenu.classList.add('open'); menuOverlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
-    function closeMenu() { mobileMenu.classList.remove('open'); menuOverlay.classList.remove('open'); document.body.style.overflow = ''; }
-    hamburger.addEventListener('click', openMenu);
-    menuClose.addEventListener('click', closeMenu);
-    menuOverlay.addEventListener('click', closeMenu);
-  </script>
-
 </body>
+
 </html>
