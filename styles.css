@@ -1080,15 +1080,15 @@ CONTACT PAGE
 .contact-hero{
   position:relative;
   overflow:hidden;
-  padding:70px 0 64px;
+  padding:46px 0 38px;
 
   background-image:
   linear-gradient(
     90deg,
-    rgba(0,0,0,.92) 0%,
-    rgba(0,0,0,.78) 32%,
-    rgba(0,0,0,.38) 58%,
-    rgba(0,0,0,.12) 78%
+    rgba(0,0,0,.94) 0%,
+    rgba(0,0,0,.86) 24%,
+    rgba(0,0,0,.48) 52%,
+    rgba(0,0,0,.14) 76%
   ),
   url('assets/contact-hero.png');
 
@@ -1101,21 +1101,21 @@ CONTACT PAGE
 .contact-hero-grid{
   display:grid;
   grid-template-columns:1fr;
-  min-height:620px;
+  min-height:560px;
   align-items:center;
 }
 
 .contact-hero-content{
-  max-width:520px;
+  max-width:470px;
   position:relative;
   z-index:2;
 }
 
 .contact-hero-content h1{
   font-family:'Barlow Condensed',sans-serif;
-  font-size:72px;
+  font-size:64px;
   line-height:.92;
-  margin-bottom:24px;
+  margin-bottom:20px;
 }
 
 .contact-hero-content h1 span{
@@ -1124,39 +1124,39 @@ CONTACT PAGE
 
 .contact-hero-sub{
   color:#d0d0d0;
-  font-size:18px;
-  line-height:1.8;
-  margin-bottom:34px;
-  max-width:500px;
+  font-size:17px;
+  line-height:1.75;
+  margin-bottom:28px;
+  max-width:470px;
 }
 
 .contact-mini-features{
   display:flex;
-  gap:34px;
-  margin-top:10px;
+  gap:28px;
+  margin-top:8px;
 }
 
 .contact-mini-feature{
   display:flex;
   align-items:flex-start;
-  gap:16px;
+  gap:14px;
   position:relative;
 }
 
 .contact-mini-feature:first-child::after{
   content:'';
   position:absolute;
-  right:-18px;
-  top:6px;
+  right:-14px;
+  top:4px;
   width:1px;
-  height:72px;
+  height:62px;
   background:rgba(255,255,255,.08);
 }
 
 .contact-mini-icon{
-  width:58px;
-  height:58px;
-  border-radius:18px;
+  width:54px;
+  height:54px;
+  border-radius:16px;
   border:1px solid rgba(245,177,42,.16);
   display:flex;
   align-items:center;
@@ -1166,32 +1166,33 @@ CONTACT PAGE
 }
 
 .contact-mini-icon img{
-  width:26px;
-  height:26px;
+  width:24px;
+  height:24px;
   object-fit:contain;
 }
 
 .contact-mini-feature h4{
-  font-size:18px;
-  margin-bottom:6px;
+  font-size:17px;
+  margin-bottom:4px;
 }
 
 .contact-mini-feature p{
   color:#bcbcbc;
-  line-height:1.7;
-  font-size:16px;
+  line-height:1.6;
+  font-size:15px;
 }
 
 /* FORM SECTION */
 
 .contact-form-section{
-  padding:44px 0 34px;
+  padding:34px 0 26px;
 }
 
 .contact-grid{
   display:grid;
-  grid-template-columns:1.2fr .88fr;
-  gap:26px;
+  grid-template-columns:1.1fr .9fr;
+  gap:22px;
+  align-items:start;
 }
 
 .contact-form-box,
@@ -1199,37 +1200,33 @@ CONTACT PAGE
   background:#090909;
   border:1px solid rgba(255,255,255,.06);
   border-radius:28px;
-  padding:40px;
+  padding:34px;
 }
 
 .contact-form-box h2,
 .contact-info-box h2{
   font-family:'Barlow Condensed',sans-serif;
-  font-size:54px;
-  margin-bottom:24px;
+  font-size:46px;
+  margin-bottom:18px;
   line-height:.92;
-}
-
-.contact-info-box h2{
-  margin-bottom:20px;
 }
 
 .contact-info-sub{
   color:#b9b9b9;
-  margin-bottom:34px;
-  font-size:17px;
+  margin-bottom:24px;
+  font-size:16px;
 }
 
 .contact-form{
   display:flex;
   flex-direction:column;
-  gap:20px;
+  gap:18px;
 }
 
 .form-row{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:18px;
+  gap:16px;
 }
 
 .form-group{
@@ -1238,8 +1235,8 @@ CONTACT PAGE
 }
 
 .form-group label{
-  margin-bottom:10px;
-  font-size:16px;
+  margin-bottom:8px;
+  font-size:15px;
   color:#d7d7d7;
 }
 
@@ -1249,17 +1246,17 @@ CONTACT PAGE
   width:100%;
   background:#0d0d0d;
   border:1px solid rgba(255,255,255,.06);
-  border-radius:16px;
-  padding:18px 18px;
+  border-radius:15px;
+  padding:16px 16px;
   color:#fff;
   font-family:'Barlow',sans-serif;
-  font-size:16px;
+  font-size:15px;
   outline:none;
 }
 
 .form-group textarea{
   resize:none;
-  min-height:170px;
+  min-height:150px;
 }
 
 .form-group input:focus,
@@ -1269,9 +1266,9 @@ CONTACT PAGE
 }
 
 .contact-form .btn{
-  margin-top:8px;
+  margin-top:6px;
   align-self:flex-start;
-  min-width:230px;
+  min-width:210px;
 }
 
 /* CONTACT INFO */
@@ -1279,8 +1276,8 @@ CONTACT PAGE
 .contact-info-item{
   display:flex;
   align-items:flex-start;
-  gap:18px;
-  padding:24px 0;
+  gap:16px;
+  padding:22px 0;
   border-bottom:1px solid rgba(255,255,255,.05);
 }
 
@@ -1290,9 +1287,9 @@ CONTACT PAGE
 }
 
 .contact-info-icon{
-  width:60px;
-  height:60px;
-  border-radius:18px;
+  width:56px;
+  height:56px;
+  border-radius:16px;
   border:1px solid rgba(245,177,42,.16);
   display:flex;
   align-items:center;
@@ -1302,21 +1299,21 @@ CONTACT PAGE
 }
 
 .contact-info-icon img{
-  width:28px;
-  height:28px;
+  width:24px;
+  height:24px;
   object-fit:contain;
 }
 
 .contact-info-item h4{
-  font-size:18px;
-  margin-bottom:8px;
+  font-size:17px;
+  margin-bottom:6px;
 }
 
 .contact-info-item a,
 .contact-info-item p{
   color:#d6d6d6;
-  line-height:1.8;
-  font-size:16px;
+  line-height:1.7;
+  font-size:15px;
 }
 
 .contact-info-item a{
@@ -1326,35 +1323,36 @@ CONTACT PAGE
 .contact-info-item span{
   color:#969696;
   display:block;
-  margin-top:4px;
+  margin-top:2px;
   line-height:1.7;
+  font-size:14px;
 }
 
 /* HELP SECTION */
 
 .contact-help-section{
-  padding:26px 0 34px;
+  padding:20px 0 28px;
 }
 
 .help-grid{
   display:grid;
-  grid-template-columns:1.05fr 1fr;
-  gap:28px;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
   align-items:center;
 }
 
 .help-left h5{
   color:#b7b7b7;
   letter-spacing:5px;
-  font-size:14px;
-  margin-bottom:22px;
+  font-size:13px;
+  margin-bottom:18px;
 }
 
 .help-left h2{
-  font-size:78px;
+  font-size:64px;
   line-height:.94;
-  margin-bottom:22px;
-  max-width:540px;
+  margin-bottom:18px;
+  max-width:460px;
 }
 
 .help-left h2 span{
@@ -1363,28 +1361,28 @@ CONTACT PAGE
 
 .help-left p{
   color:#bdbdbd;
-  font-size:19px;
-  line-height:1.8;
-  max-width:520px;
+  font-size:17px;
+  line-height:1.75;
+  max-width:470px;
 }
 
 .help-cards{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:20px;
+  gap:18px;
 }
 
 .help-card{
   background:#090909;
   border:1px solid rgba(255,255,255,.06);
-  border-radius:26px;
-  padding:30px;
+  border-radius:24px;
+  padding:26px;
 }
 
 .help-card-icon{
-  width:46px;
-  height:46px;
-  margin-bottom:22px;
+  width:42px;
+  height:42px;
+  margin-bottom:18px;
 }
 
 .help-card-icon img{
@@ -1394,75 +1392,75 @@ CONTACT PAGE
 }
 
 .help-card h3{
-  font-size:22px;
+  font-size:20px;
   line-height:1.2;
-  margin-bottom:14px;
+  margin-bottom:10px;
 }
 
 .help-card p{
   color:#b9b9b9;
-  line-height:1.8;
-  font-size:16px;
+  line-height:1.75;
+  font-size:15px;
 }
 
 /* CTA */
 
 .contact-cta{
-  padding:20px 0 60px;
+  padding:18px 0 48px;
 }
 
 .contact-cta-box{
   background:#090909;
   border-radius:30px;
-  padding:34px 40px;
+  padding:28px 34px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:34px;
+  gap:28px;
 }
 
 .contact-cta-left{
   display:flex;
   align-items:center;
-  gap:28px;
+  gap:24px;
 }
 
 .contact-cta-left img{
-  width:150px;
+  width:132px;
   border-radius:18px;
 }
 
 .contact-cta-left h2{
-  font-size:58px;
-  line-height:.98;
-  margin-bottom:12px;
+  font-size:48px;
+  line-height:.96;
+  margin-bottom:10px;
 }
 
 .contact-cta-left p{
   color:#bdbdbd;
-  font-size:18px;
+  font-size:17px;
 }
 
 .contact-cta-box .btn{
-  min-width:180px;
-  min-height:60px;
+  min-width:170px;
+  min-height:58px;
 }
 
 /* FOOTER COMPACT */
 
 .footer-grid{
-  padding:52px 0;
+  padding:48px 0;
   display:grid;
-  grid-template-columns:1.2fr .8fr .8fr;
-  gap:40px;
+  grid-template-columns:1.1fr .8fr .8fr;
+  gap:34px;
 }
 
 .footer-brand p{
-  max-width:420px;
+  max-width:390px;
 }
 
 .footer-links a{
-  margin-bottom:14px;
+  margin-bottom:12px;
 }
 
 /* =========================================================
@@ -1485,13 +1483,13 @@ CONTACT RESPONSIVE
 @media(max-width:768px){
 
   .contact-hero{
-    padding:44px 0 38px;
+    padding:42px 0 36px;
 
     background-image:
     linear-gradient(
       to bottom,
-      rgba(0,0,0,.84),
-      rgba(0,0,0,.92)
+      rgba(0,0,0,.86),
+      rgba(0,0,0,.94)
     ),
     url('assets/contact-hero.png');
 
@@ -1507,7 +1505,7 @@ CONTACT RESPONSIVE
   }
 
   .contact-hero-content h1{
-    font-size:54px;
+    font-size:52px;
   }
 
   .contact-mini-features{
@@ -1520,17 +1518,17 @@ CONTACT RESPONSIVE
   }
 
   .contact-grid{
-    gap:20px;
+    gap:18px;
   }
 
   .contact-form-box,
   .contact-info-box{
-    padding:28px;
+    padding:26px;
   }
 
   .contact-form-box h2,
   .contact-info-box h2{
-    font-size:42px;
+    font-size:40px;
   }
 
   .form-row{
@@ -1538,7 +1536,7 @@ CONTACT RESPONSIVE
   }
 
   .help-left h2{
-    font-size:52px;
+    font-size:50px;
   }
 
   .help-cards{
@@ -1546,7 +1544,7 @@ CONTACT RESPONSIVE
   }
 
   .contact-cta-box{
-    padding:28px;
+    padding:26px;
   }
 
   .contact-cta-left{
@@ -1559,7 +1557,7 @@ CONTACT RESPONSIVE
   }
 
   .contact-cta-left h2{
-    font-size:44px;
+    font-size:42px;
   }
 
   .contact-cta-box .btn{
