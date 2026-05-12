@@ -1686,3 +1686,422 @@ DESKTOP NAV CENTER FIX
 
 }
 
+/* =========================================================
+FINAL MOBILE OPTIMIZATION
+========================================================= */
+
+.menu-toggle{
+  display:none;
+  width:52px;
+  height:52px;
+  border:1px solid rgba(245,177,42,.22);
+  border-radius:16px;
+  background:rgba(255,255,255,.02);
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.menu-toggle span{
+  width:20px;
+  height:2px;
+  background:#f5b12a;
+  border-radius:10px;
+}
+
+.mobile-menu{
+  position:fixed;
+  inset:0;
+  background:rgba(5,5,5,.98);
+  backdrop-filter:blur(18px);
+  z-index:9999;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+
+  transition:.35s ease;
+}
+
+.mobile-menu.active{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+.mobile-menu-inner{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:30px;
+}
+
+.mobile-menu-inner a{
+  color:#fff;
+  font-size:32px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.mobile-menu-inner a:hover{
+  color:#f5b12a;
+}
+
+.mobile-menu-cta{
+  margin-top:14px;
+  border:1px solid #f5b12a;
+  border-radius:18px;
+  padding:16px 28px;
+  color:#f5b12a !important;
+}
+
+/* =========================================================
+MOBILE REFINEMENT
+========================================================= */
+
+@media(max-width:768px){
+
+  /* NAVBAR */
+
+  .navbar{
+    background:rgba(5,5,5,.94);
+  }
+
+  .nav-inner{
+    height:78px;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .navbar .btn{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:flex;
+  }
+
+  .logo img{
+    width:102px;
+  }
+
+  /* GLOBAL SPACING */
+
+  .container{
+    width:min(100%,92%);
+  }
+
+  /* HERO */
+
+  .hero{
+    padding:56px 0 54px;
+    background-position:72% center;
+  }
+
+  .hero-heading{
+    font-size:52px;
+    line-height:.92;
+    margin-bottom:20px;
+  }
+
+  .hero-sub{
+    font-size:17px;
+    line-height:1.7;
+  }
+
+  .hero-btns{
+    flex-direction:column;
+    gap:14px;
+  }
+
+  .hero-btns .btn{
+    width:100%;
+  }
+
+  /* BUSINESS GRID */
+
+  .business-grid{
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:24px;
+    overflow:hidden;
+  }
+
+  .business-item{
+    padding:28px 12px;
+    border-right:none;
+    border-bottom:1px solid rgba(255,255,255,.06);
+  }
+
+  .business-item:nth-child(odd){
+    border-right:1px solid rgba(255,255,255,.06);
+  }
+
+  .business-item:nth-last-child(-n+2){
+    border-bottom:none;
+  }
+
+  /* REVISIT CARD */
+
+  .revisit-section{
+    padding:12px 0 64px;
+  }
+
+  .revisit-card{
+    padding:22px;
+    border-radius:24px;
+    gap:28px;
+  }
+
+  .revisit-content h2{
+    font-size:52px;
+  }
+
+  .revisit-content h3{
+    font-size:30px;
+  }
+
+  .revisit-content p{
+    font-size:17px;
+    line-height:1.75;
+  }
+
+  .gold-link{
+    font-size:17px;
+  }
+
+  /* WHAT WE BUILD */
+
+  .what-we-build{
+    padding:70px 0;
+  }
+
+  .section-title{
+    font-size:38px;
+    margin-bottom:38px;
+  }
+
+  .build-card{
+    padding:26px;
+  }
+
+  .build-card h3{
+    font-size:26px;
+  }
+
+  .build-card p{
+    font-size:16px;
+  }
+
+  /* CTA */
+
+  .cta-box{
+    padding:28px 24px;
+    gap:24px;
+    border-radius:24px;
+  }
+
+  .cta-text{
+    font-size:32px;
+  }
+
+  .cta-buttons{
+    width:100%;
+    flex-direction:column;
+  }
+
+  .cta-buttons .btn{
+    width:100%;
+  }
+
+  /* PRODUCTS HERO */
+
+  .revisit-hero{
+    padding:24px 0 36px;
+  }
+
+  .revisit-hero-grid{
+    min-height:auto;
+  }
+
+  .revisit-hero-content h1{
+    font-size:48px;
+  }
+
+  .hero-mini-features{
+    gap:14px;
+  }
+
+  .mini-feature{
+    width:calc(50% - 7px);
+  }
+
+  /* WHAT IS REVISIT */
+
+  .what-is-grid{
+    padding:24px;
+    border-radius:24px;
+  }
+
+  .what-left p{
+    font-size:18px;
+  }
+
+  .what-left li{
+    font-size:16px;
+  }
+
+  /* WHY GRID */
+
+  .why-card{
+    padding:28px 22px;
+  }
+
+  .why-card h3{
+    font-size:24px;
+  }
+
+  .why-card p{
+    font-size:16px;
+  }
+
+  /* STEPS */
+
+  .step-card{
+    padding:24px;
+  }
+
+  .step-card h3{
+    font-size:24px;
+  }
+
+  .step-card p{
+    font-size:16px;
+  }
+
+  /* INDUSTRIES */
+
+  .industry-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .industry-card{
+    padding:24px 12px;
+  }
+
+  .industry-card p{
+    font-size:16px;
+  }
+
+  /* PRODUCT CTA */
+
+  .cta-box-products{
+    padding:24px;
+    border-radius:24px;
+  }
+
+  .cta-left h2{
+    font-size:34px;
+  }
+
+  .cta-left p{
+    font-size:17px;
+  }
+
+  /* CONTACT HERO */
+
+  .contact-hero{
+    padding:48px 0;
+  }
+
+  .contact-hero-content h1{
+    font-size:48px;
+  }
+
+  /* CONTACT */
+
+  .contact-form-box,
+  .contact-info-box{
+    padding:22px;
+  }
+
+  .contact-form-box h2,
+  .contact-info-box h2{
+    font-size:34px;
+  }
+
+  .contact-reasons-content h2{
+    font-size:40px;
+  }
+
+  .contact-card{
+    padding:22px;
+  }
+
+  .contact-cta-left h2{
+    font-size:36px;
+  }
+
+  /* FOOTER */
+
+  .footer-grid{
+    grid-template-columns:1fr;
+    gap:36px;
+    padding:44px 0;
+  }
+
+  .footer-brand p,
+  .footer-contact p{
+    font-size:16px;
+  }
+
+  .footer-links a{
+    font-size:16px;
+  }
+
+  .footer-bottom-inner{
+    gap:8px;
+  }
+
+  .footer-bottom p{
+    font-size:13px;
+  }
+
+}
+
+/* =========================================================
+SMALL MOBILE
+========================================================= */
+
+@media(max-width:480px){
+
+  .hero-heading,
+  .revisit-hero-content h1,
+  .contact-hero-content h1{
+    font-size:44px;
+  }
+
+  .section-title,
+  .cta-text,
+  .contact-reasons-content h2{
+    font-size:32px;
+  }
+
+  .revisit-content h3,
+  .cta-left h2,
+  .contact-cta-left h2{
+    font-size:28px;
+  }
+
+}
+
