@@ -1609,3 +1609,61 @@ CONTACT PAGE MOBILE
   }
 
 }
+/* =========================================================
+FINAL CONTACT + NAV FIXES
+========================================================= */
+
+/* NAVBAR ALIGNMENT */
+
+.nav-inner{
+  justify-content:flex-start;
+  gap:80px;
+}
+
+.nav-links{
+  margin-left:auto;
+}
+
+/* FORM NOTE */
+
+.form-note{
+  margin-top:14px;
+  margin-left:4px;
+  font-size:12px;
+  color:#8f8f8f;
+  font-style:italic;
+  letter-spacing:.2px;
+  line-height:1.6;
+}
+
+/* BUTTON IMPROVEMENTS */
+
+.contact-form-box .btn{
+  margin-top:10px;
+  transition:.3s;
+}
+
+.contact-form-box .btn:disabled{
+  opacity:1;
+  cursor:not-allowed;
+}
+
+/* INPUT FOCUS */
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus{
+  border-color:rgba(245,177,42,.5);
+  box-shadow:0 0 0 1px rgba(245,177,42,.12);
+}
+
+/* MOBILE NAV FIX */
+
+@media(max-width:768px){
+
+  .nav-inner{
+    justify-content:space-between;
+    gap:0;
+  }
+
+}
