@@ -1667,3 +1667,22 @@ FINAL CONTACT + NAV FIXES
   }
 
 }
+/* =========================================================
+DESKTOP NAV CENTER FIX
+========================================================= */
+
+@media(min-width:1101px){
+
+  .nav-inner{
+    display:grid;
+    grid-template-columns:140px 1fr 140px;
+    align-items:center;
+  }
+
+  .nav-links{
+    justify-self:center;
+    margin-left:0;
+  }
+
+}
+
