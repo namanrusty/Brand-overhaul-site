@@ -122,7 +122,13 @@
 
           <input type="hidden" name="_captcha" value="false">
 
-          <input type="hidden"
+          <input
+            type="hidden"
+            name="_next"
+            value="https://brandoverhaul.in/contact.html">
+
+          <input
+            type="hidden"
             name="_subject"
             value="New Brand Overhaul Contact Form Submission">
 
@@ -199,13 +205,14 @@
           </div>
 
           <button
+            id="submitBtn"
             type="submit"
             class="btn btn-primary">
             Send Message →
           </button>
 
           <p class="form-note">
-            Please fill all required details before submitting.
+            * Please fill all required details before submitting.
           </p>
 
         </form>
@@ -537,6 +544,7 @@
   <script>
 
     const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
 
     form.addEventListener('submit', function (e) {
 
@@ -546,19 +554,28 @@
       requiredFields.forEach(field => {
 
         if (!field.value.trim()) {
+
           valid = false;
           field.style.borderColor = '#ff5c5c';
+
         } else {
+
           field.style.borderColor = 'rgba(255,255,255,.06)';
+
         }
 
       });
 
       if (!valid) {
+
         e.preventDefault();
         alert('Please fill all required details.');
+
       } else {
-        alert('Message sent successfully.');
+
+        submitBtn.innerHTML = 'Message Sent ✓';
+        submitBtn.style.pointerEvents = 'none';
+
       }
 
     });
