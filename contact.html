@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="contact-page">
+<body>
 
   <!-- NAVBAR -->
 
@@ -44,11 +44,11 @@
 
     <div class="container contact-hero-grid">
 
-      <!-- LEFT -->
-
       <div class="contact-hero-content">
 
-        <p class="section-tag">CONTACT US</p>
+        <p class="section-tag">
+          CONTACT US
+        </p>
 
         <h1>
           Let’s build<br>
@@ -56,38 +56,41 @@
           <span>together.</span>
         </h1>
 
-        <p class="contact-hero-description">
-          Have a question, want to learn more about our
-          products, or ready to get started?
-          We’d love to hear from you.
+        <p>
+          Have a question, want to learn more about our products,
+          or ready to get started? We’d love to hear from you.
         </p>
 
-        <div class="contact-mini-info">
+        <div class="contact-hero-features">
 
-          <div class="contact-mini-card">
+          <div class="contact-feature">
 
-            <div class="contact-mini-icon">
-              <img src="assets/icons/growth.svg" alt="">
+            <div class="contact-feature-icon">
+              <img src="assets/icons/contact-response.svg" alt="">
             </div>
 
             <div>
               <h4>Quick Response</h4>
-              <p>We respond within 24 business hours.</p>
+              <span>
+                We respond within 24 business hours.
+              </span>
             </div>
 
           </div>
 
-          <div class="contact-mini-divider"></div>
+          <div class="contact-feature-divider"></div>
 
-          <div class="contact-mini-card">
+          <div class="contact-feature">
 
-            <div class="contact-mini-icon">
-              <img src="assets/icons/linkedin.svg" alt="">
+            <div class="contact-feature-icon">
+              <img src="assets/icons/contact-team.svg" alt="">
             </div>
 
             <div>
               <h4>Real People</h4>
-              <p>Talk to our team directly.</p>
+              <span>
+                Talk to our team directly.
+              </span>
             </div>
 
           </div>
@@ -96,69 +99,85 @@
 
       </div>
 
-      <!-- RIGHT -->
-
-      <div class="contact-hero-image">
-
-        <img src="assets/contact-hero.png" alt="Brand Overhaul">
-
-      </div>
-
     </div>
 
   </section>
 
-  <!-- CONTACT BOX -->
+  <!-- CONTACT FORM -->
 
-  <section class="contact-box-section">
+  <section class="contact-main">
 
-    <div class="container contact-box-grid">
+    <div class="container contact-main-grid">
 
-      <!-- FORM -->
+      <!-- LEFT -->
 
-      <div class="contact-form-side">
+      <div class="contact-form-box">
 
-        <h3>SEND US A MESSAGE</h3>
+        <h2>SEND US A MESSAGE</h2>
 
-        <form action="mailto:info@brandoverhaul.in" method="post" enctype="text/plain">
+        <form>
 
-          <div class="form-row">
+          <div class="contact-row">
 
-            <div class="form-group">
+            <div class="input-group">
+
               <label>Full Name</label>
-              <input type="text" placeholder="Your full name">
+
+              <input
+                type="text"
+                placeholder="Your full name">
+
             </div>
 
-            <div class="form-group">
+            <div class="input-group">
+
               <label>Work Email</label>
-              <input type="email" placeholder="you@company.com">
+
+              <input
+                type="email"
+                placeholder="you@company.com">
+
             </div>
 
           </div>
 
-          <div class="form-group">
+          <div class="input-group">
+
             <label>Company Name (Optional)</label>
-            <input type="text" placeholder="Your company name">
+
+            <input
+              type="text"
+              placeholder="Your company name">
+
           </div>
 
-          <div class="form-group">
+          <div class="input-group">
+
             <label>What can we help you with?</label>
 
             <select>
+
               <option>Select an option</option>
+
               <option>Revisit Demo</option>
-              <option>Growth Consultation</option>
+
               <option>Custom Solution</option>
-              <option>Partnerships</option>
+
+              <option>Growth Consultation</option>
+
+              <option>Partnership</option>
+
             </select>
 
           </div>
 
-          <div class="form-group">
+          <div class="input-group">
+
             <label>Your Message</label>
 
-            <textarea rows="6"
+            <textarea
               placeholder="Tell us more about your project or question..."></textarea>
+
           </div>
 
           <button type="submit" class="btn btn-primary">
@@ -169,70 +188,74 @@
 
       </div>
 
-      <!-- CONTACT INFO -->
+      <!-- RIGHT -->
 
-      <div class="contact-info-side">
+      <div class="contact-info-box">
 
-        <h3>GET IN TOUCH</h3>
+        <h2>GET IN TOUCH</h2>
 
         <p class="contact-info-sub">
           Choose the way that works best for you.
         </p>
 
-        <!-- EMAIL -->
+        <!-- ITEM -->
 
-        <div class="info-item">
+        <div class="contact-info-item">
 
-          <div class="info-icon">
-            <img src="assets/icons/mail.svg" alt="">
+          <div class="contact-info-icon">
+            <img src="assets/icons/contact-email.svg" alt="">
           </div>
 
           <div>
 
             <h4>Email Us</h4>
 
-            <p>
-              <a href="mailto:info@brandoverhaul.in">
-                info@brandoverhaul.in
-              </a>
-            </p>
+            <a
+              href="mailto:info@brandoverhaul.in"
+              class="contact-link">
+              info@brandoverhaul.in
+            </a>
 
-            <span>We’ll get back to you within 24 hours.</span>
+            <span>
+              We’ll get back to you within 24 hours.
+            </span>
 
           </div>
 
         </div>
 
-        <!-- PHONE -->
+        <!-- ITEM -->
 
-        <div class="info-item">
+        <div class="contact-info-item">
 
-          <div class="info-icon">
-            <img src="assets/icons/mail.svg" alt="">
+          <div class="contact-info-icon">
+            <img src="assets/icons/contact-call.svg" alt="">
           </div>
 
           <div>
 
             <h4>Call Us</h4>
 
-            <p>
-              <a href="tel:+919758788808">
-                +91 9758788808
-              </a>
-            </p>
+            <a
+              href="tel:+919758788808"
+              class="contact-link">
+              +91 9758788808
+            </a>
 
-            <span>Mon – Fri, 1:00 PM – 6:00 PM IST</span>
+            <span>
+              Mon - Fri, 1:00 PM - 6:00 PM IST
+            </span>
 
           </div>
 
         </div>
 
-        <!-- LOCATION -->
+        <!-- ITEM -->
 
-        <div class="info-item">
+        <div class="contact-info-item">
 
-          <div class="info-icon">
-            <img src="assets/icons/easy.svg" alt="">
+          <div class="contact-info-icon">
+            <img src="assets/icons/contact-location.svg" alt="">
           </div>
 
           <div>
@@ -249,21 +272,23 @@
 
         </div>
 
-        <!-- HOURS -->
+        <!-- ITEM -->
 
-        <div class="info-item">
+        <div class="contact-info-item">
 
-          <div class="info-icon">
-            <img src="assets/icons/clock.svg" alt="">
+          <div class="contact-info-icon">
+            <img src="assets/icons/contact-hours.svg" alt="">
           </div>
 
           <div>
 
             <h4>Business Hours</h4>
 
-            <p>Monday – Friday</p>
+            <p>Monday - Friday</p>
 
-            <span>1:00 PM – 6:00 PM IST</span>
+            <span>
+              1:00 PM - 6:00 PM IST
+            </span>
 
           </div>
 
@@ -277,33 +302,39 @@
 
   <!-- WHY REACH OUT -->
 
-  <section class="why-contact">
+  <section class="contact-reasons">
 
-    <div class="container why-contact-grid">
+    <div class="container contact-reasons-grid">
 
-      <div class="why-contact-left">
+      <!-- LEFT -->
 
-        <p class="section-tag">WHY REACH OUT?</p>
+      <div class="contact-reasons-content">
+
+        <p class="section-tag">
+          WHY REACH OUT?
+        </p>
 
         <h2>
-          We’re here to help
+          We’re here to help<br>
           your business <span>grow.</span>
         </h2>
 
         <p>
-          Whether you’re exploring Revisit or have a
-          question about our products, our team is here to help.
+          Whether you’re exploring Revisit or have a question
+          about our products, our team is here to help.
         </p>
 
       </div>
 
-      <div class="why-contact-right">
+      <!-- RIGHT -->
 
-        <div class="why-contact-item">
+      <div class="contact-cards-grid">
 
-          <img src="assets/icons/ecosystem.svg" alt="">
+        <div class="contact-card">
 
-          <h4>Product Demos</h4>
+          <img src="assets/icons/contact-demo.svg" alt="">
+
+          <h3>Product Demos</h3>
 
           <p>
             See how Revisit can work for your business.
@@ -311,11 +342,11 @@
 
         </div>
 
-        <div class="why-contact-item">
+        <div class="contact-card">
 
-          <img src="assets/icons/strategy.svg" alt="">
+          <img src="assets/icons/contact-solutions.svg" alt="">
 
-          <h4>Custom Solutions</h4>
+          <h3>Custom Solutions</h3>
 
           <p>
             We’ll help you find the right solution.
@@ -323,11 +354,11 @@
 
         </div>
 
-        <div class="why-contact-item">
+        <div class="contact-card">
 
-          <img src="assets/icons/growth.svg" alt="">
+          <img src="assets/icons/contact-growth.svg" alt="">
 
-          <h4>Growth Advice</h4>
+          <h3>Growth Advice</h3>
 
           <p>
             Get expert insights to grow repeat visits.
@@ -335,11 +366,11 @@
 
         </div>
 
-        <div class="why-contact-item">
+        <div class="contact-card">
 
-          <img src="assets/icons/repeat.svg" alt="">
+          <img src="assets/icons/contact-partnership.svg" alt="">
 
-          <h4>Partnerships</h4>
+          <h3>Partnerships</h3>
 
           <p>
             Interested in partnering with us?
@@ -353,15 +384,17 @@
 
   </section>
 
-  <!-- FINAL CTA -->
+  <!-- CTA -->
 
-  <section class="contact-final-cta">
+  <section class="contact-cta">
 
-    <div class="container contact-final-box">
+    <div class="container contact-cta-box">
 
-      <div class="contact-final-left">
+      <div class="contact-cta-left">
 
-        <img src="assets/contact-cta.png" alt="Brand Overhaul">
+        <img
+          src="assets/contact-cta.png"
+          alt="Brand Overhaul">
 
         <div>
 
@@ -377,7 +410,9 @@
 
       </div>
 
-      <a href="mailto:info@brandoverhaul.in" class="btn btn-primary">
+      <a
+        href="mailto:info@brandoverhaul.in"
+        class="btn btn-primary">
         Email Us →
       </a>
 
@@ -391,16 +426,15 @@
 
     <div class="container footer-grid">
 
-      <!-- LEFT -->
+      <!-- BRAND -->
 
       <div class="footer-brand">
 
         <img src="assets/logo.png" alt="Brand Overhaul">
 
         <p>
-          Building growth systems that help businesses
-          acquire, retain, and scale customers
-          with clarity and consistency.
+          Building growth systems that help businesses acquire,
+          retain, and scale customers with clarity and consistency.
         </p>
 
         <div class="socials">
@@ -413,7 +447,7 @@
             <img src="assets/icons/instagram.svg" alt="">
           </a>
 
-          <a href="mailto:info@brandoverhaul.in">
+          <a href="#">
             <img src="assets/icons/mail.svg" alt="">
           </a>
 
@@ -421,30 +455,36 @@
 
       </div>
 
-      <!-- CENTER -->
+      <!-- LINKS -->
 
       <div class="footer-links">
 
         <h4>QUICK LINKS</h4>
 
         <a href="index.html">Home</a>
+
         <a href="products.html">Products</a>
-        <a href="contact.html" class="active-footer">Contact</a>
+
+        <a href="contact.html" class="active-footer">
+          Contact
+        </a>
 
       </div>
 
-      <!-- RIGHT -->
+      <!-- CONTACT -->
 
       <div class="footer-contact">
 
         <h4>LET'S CONNECT</h4>
 
         <p>
-          Have a question or want to
-          learn more about our products?
+          Have a question or want to learn more
+          about our products?
         </p>
 
-        <a href="mailto:info@brandoverhaul.in" class="btn btn-primary">
+        <a
+          href="mailto:info@brandoverhaul.in"
+          class="btn btn-primary">
           Email Us →
         </a>
 
